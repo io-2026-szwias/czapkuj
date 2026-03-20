@@ -1,38 +1,37 @@
 graph LR
 
 %% Aktorzy i UC
-Czlonek --> UC01["UC-01: Kalendarz wydarzeń"]
+Czlonek["Członek"] --> UC01["UC-01: Kalendarz wydarzeń"]
 Czlonek --> UC02["UC-02: Sprawdzenie składek"]
 Czlonek --> UC03["UC-03: Drzewo genealogiczne"]
 Czlonek --> UC04["UC-04: Kompas nawojkowy"]
 Czlonek --> UC24["UC-24: Piny belgijskie"]
 
-Skarbnik --> UC05["UC-05: Import historii transakcji"]
+Skarbnik["Skarbnik"] --> UC05["UC-05: Import historii transakcji"]
 Skarbnik --> UC06["UC-06: Cele składkowe"]
 Skarbnik --> UC07["UC-07: Przypomnienia o płatnościach"]
 Skarbnik --> UC08["UC-08: Analiza danych w BI"]
 Skarbnik --> UC09["UC-09: Złożenie zamówienia pinów"]
 
-Kandydat --> UC10["UC-10: Wyszukiwanie informacji"]
+Kandydat["Kandydat"] --> UC10["UC-10: Wyszukiwanie informacji"]
 Kandydat --> UC11["UC-11: Wyszukiwanie zaawansowane"]
 Kandydat --> UC12["UC-12: Przeglądanie kodeksu"]
 
-Muzyk --> UC13["UC-13: Korzystanie ze śpiewnika"]
+Muzyk["Muzyk"] --> UC13["UC-13: Korzystanie ze śpiewnika"]
 Muzyk --> UC14["UC-14: Tryb focus"]
 Czlonek --> UC15["UC-15: Edycja piosenki"]
 Muzyk --> UC16["UC-16: Akceptacja zmian"]
 Muzyk --> UC17["UC-17: Tryb Cantandiego"]
 
-WielkiMistrz --> UC18["UC-18: Zarządzanie TODO"]
+WielkiMistrz["Wielki Mistrz"] --> UC18["UC-18: Zarządzanie TODO"]
 WielkiMistrz --> UC19["UC-19: Sprawdzanie znajomości organizacji"]
 
-Kasztelan --> UC20["UC-20: Tworzenie wniosku"]
+Kasztelan["Kasztelan"] --> UC20["UC-20: Tworzenie wniosku"]
 Kasztelan --> UC21["UC-21: Przegląd zarządzeń SSUJ"]
 Kasztelan --> UC22["UC-22: Przegląd mapy miejscówek"]
 Kasztelan --> UC23["UC-23: Przegląd zniżek"]
 
 %% UC -> wymagania z opisami
-
 UC01 --> KW10["KW-10: System wyświetla listę nadchodzących wydarzeń organizacji (Must)"]
 UC01 --> KW11["KW-11: Użytkownik może dodać kalendarz wydarzeń organizacji do Google Calendar (Should)"]
 
@@ -77,3 +76,18 @@ UC23 --> MG1["MG-10: Wyświetlenie zniżek (Must)"]
 
 UC24 --> PB10["PB-10: Członek wybiera produkty z listy (Should)"]
 UC24 --> PB11["PB-11: System oblicza łączną kwotę zamówienia (Must)"]
+
+%% Kolory dla aktorów
+classDef czlonek fill:#f9f,stroke:#333,stroke-width:1px;
+classDef skarbnik fill:#9f9,stroke:#333,stroke-width:1px;
+classDef kandydat fill:#ff9,stroke:#333,stroke-width:1px;
+classDef muzyk fill:#9ff,stroke:#333,stroke-width:1px;
+classDef wielkimistrz fill:#f99,stroke:#333,stroke-width:1px;
+classDef kasztelan fill:#fc9,stroke:#333,stroke-width:1px;
+
+class Czlonek,UC01,UC02,UC03,UC04,UC15,UC24 czlonek;
+class Skarbnik,UC05,UC06,UC07,UC08,UC09 skarbnik;
+class Kandydat,UC10,UC11,UC12 kandydat;
+class Muzyk,UC13,UC14,UC16,UC17 muzyk;
+class WielkiMistrz,UC18,UC19 wielkimistrz;
+class Kasztelan,UC20,UC21,UC22,UC23 kasztelan;
