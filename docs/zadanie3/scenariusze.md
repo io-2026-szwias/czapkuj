@@ -31,6 +31,7 @@
 1. Użytkownik wybiera „Drzewo genealogiczne”
 2. System generuje drzewo na podstawie danych (**DG-10**)
 3. Użytkownik może zastosować filtry (np. rocznik) (**DG-11**)  
+
 **Scenariusz alternatywny:**
 2a. Brak danych → system wyświetla komunikat
 
@@ -43,6 +44,7 @@
 1. Użytkownik wybiera „Kompas nawojkowy”
 2. System pobiera lokalizację użytkownika
 3. System wyświetla kierunek przeciwny do D.S. Nawojka (**KN-10**)  
+
 **Scenariusz alternatywny:**
 2a. Brak zgody na lokalizację → system wyświetla komunikat
 
@@ -60,6 +62,7 @@
 2. Przeciąga plik CSV
 3. System przetwarza plik (SK-11)
 4. System zapisuje dane (SK-12)  
+
 **Scenariusz alternatywny:**
 3a. Plik ma niepoprawny format → system wyświetla błąd
 
@@ -108,6 +111,7 @@
 4. Skarbnik naciska „Złóż zamówienie”
 5. System przekierowuje na stronę dostawcy
 6. Skarbnik loguje się i opłaca zamówienie (**PB-0**)  
+
 **Scenariusz alternatywny:**
 5a. Błąd przekierowania → system wyświetla komunikat
 
@@ -181,6 +185,7 @@
 3. Wprowadza zmiany (tekst, akordy)
 4. Wybiera „Przekaż do autoryzacji”
 5. System zapisuje propozycję zmian (**SP-10**, **SP-12**)  
+
 **Scenariusz alternatywny:**
 4a. Użytkownik rezygnuje → zmiany nie są zapisywane
 
@@ -195,6 +200,7 @@
 3. Muzyk wybiera zmianę
 4. Muzyk akceptuje lub odrzuca zmianę
 5. System aktualizuje piosenkę (**SP-12**)  
+
 **Scenariusz alternatywny:**
 2a. Brak zmian → system wyświetla komunikat
 
@@ -233,6 +239,7 @@
 2. Wpisuje adres e-mail organizacji
 3. System wyszukuje dane (**SB-12**)
 4. System wyświetla relację z organizacją  
+
 **Scenariusz alternatywny:**
 3a. Brak wyników → system wyświetla komunikat
 
@@ -260,6 +267,7 @@
 1. Użytkownik wybiera „Zarządzenia”
 2. System pobiera dane z dostępnych źródeł
 3. System wyświetla listę zarządzeń (**WN-11**)  
+
 **Scenariusz alternatywny:**
 2a. Brak dostępu do danych → system wyświetla komunikat
 
@@ -276,6 +284,7 @@
 1. Użytkownik wybiera „Mapa miejscówek”
 2. Ustawia filtry (typ miejsca, dystans)
 3. System wyświetla miejsca na mapie (**MG-0**)  
+
 **Scenariusz alternatywny:**
 3a. Brak wyników → system wyświetla komunikat
 
@@ -300,5 +309,6 @@
 2. Wybiera produkty (**PB-10**)
 3. System oblicza koszt (**PB-11**)
 4. Użytkownik zatwierdza zamówienie
+
 **Scenariusz alternatywny:**
 3a. Brak dostępnych pinów → system wyświetla komunikat
