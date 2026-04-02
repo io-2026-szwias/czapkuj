@@ -66,7 +66,7 @@ Facebook, Dysk Google
 
 **Frustracje:**
 - papierowy śpiewnik bezużyteczny po ciemku
-- redakcja śpiewnika ograniczony do pojedynczego śpiewnika
+- redakcja śpiewnika ograniczona do pojedynczego śpiewnika
 - akordy zlewają się z tekstem lub w ogóle ich nie ma
 - ktoś musi przytrzymywać śpiewnik
 - konieczność kartkowania
@@ -122,6 +122,8 @@ Pakiet Google, Copilot, system bankowy, Facebook, Gmail
 - **WN-1:** łatwiejszy dostęp do najnowszych ustaleń SSUJ
 - **WN-2:** łatwiejszy dostęp do poprzednich wniosków
 - **KR-0:** możliwość korespondencji z SSUJ za pomocą maila organizacji
+- **MG-0:** mapa miejscówek z danymi dotyczącymi zniżek i datami kiedy organizacja je odwiedzała
+- **MG-1:** zestawienie zniżek studenckich dla danych dni tygodnia
 
 **Narzędzia:**
 Pakiet Google, Facebook, Gmail, strona SSUJ
@@ -161,8 +163,18 @@ Pakiet Google, Gmail
 ## KW - Kalendarz wydarzeń
 1. **Członek** wybiera opcję "Kalendarz" z dashboardu
 2. Może sprawdzić kiedy są następne wydarzenia i dołączyć kalendarz do swojego Kalendarza Google - cel ***KW-0***
+
+## MG - Mapa miejscówek
+
+1. **Kasztelan** wybiera opcję "Mapa miejscówek" z dashboardu
+2. Wybiera dystans/typ miejsca
+3. Aplikacja pokazuje pasujące miejsca - cel ***MG-0***
+4. Wybiera opcję "Mapa zniżek"
+5. Wybiera dzień tygodnia
+6. Mapa pokazuje mu miejscówki ze zniżkami w tym dniu i informacje na temat tej zniżki - cel ***MG-1***
+
 ## PB - Aplikacja do zamówień pinów belgijskich
-1. **Członek** wybiera opcję "Piny belgijskie" do dashboardu
+1. **Członek** wybiera opcję "Piny belgijskie" z dashboardu
 2. Zaznacza piny które chce kupić
 3. System oblicza ile musi zapłacić
 4. **Członek** zatwierdza
@@ -173,7 +185,7 @@ Pakiet Google, Gmail
 9. Loguje się i płaci
 10. Piny przychodzą po paru tygodniach - cel ***PB-0***
 ## SB - System bazodanowy
-1. **Bean** wybiera opcję "Czapkopedia" z dashboardu
+1. **Kandydat na członka** wybiera opcję "Czapkopedia" z dashboardu
 2. Wchodzi w "Kodeks"
 3. Czyta - cel ***SB-0***
 
@@ -209,6 +221,16 @@ Pakiet Google, Gmail
 5. Muzyk wybiera opcję "Focus"
 6. Aplikacja focusuje się na zwrotce - po naciśnięciu "Next" przechodzi do następnego fragmentu - cel ***SP-2***
 
+
+1. **Członek** wybiera opcję "Śpiewnik" z dashboardu
+2. Wybiera piosenkę z listy lub znajduje ją poprzez wyszukiwarkę (po nazwie lub po akordzie - wybiera odpowiednią opcję)
+3. Naciska przycisk "Edytuj"
+4. Wprowadza zmiany w piosence - tekst, tekst alternatywny, autor, akordy
+5. Naciska "Przekaż do autoryzacji"
+6. **Muzyk** wchodzi do "Centrum zarządzania" i wybiera opcję "Redakcja śpiewnika"
+7. Zatwierdza, bądź odrzuca zmiany
+8. Jeżeli zatwierdził, zmiany są widoczne dla wszystkich użytkowników w aplikacji "Śpiewnik" - cel ***SP-3***
+
 ## WM - Panel Wielkiego Mistrza
 1. **Wielki Mistrz** wybiera opcję "TODO" z "Centrum zarządzania"
 2. Czyta co jest do zrobienia, jak to zrobić, co jest potrzebne, do kiedy trzeba to zrobić, itd. - cel ***WM-0***
@@ -226,7 +248,7 @@ Pakiet Google, Gmail
 3. Wyszukiwarka znajduje wszystkie pasujące rekordy, grupując je po kategorii - cel ***WY-0***
 4. Każdy rekord ma podgląd tej części która zawiera najwięcej matchów
 5. Matche dokładne podświetlają się inaczej niż podobne
-6. **Bean** naciska przycisk "Wyszukiwanie zaawansowane"
+6. **Kandydat na członka** naciska przycisk "Wyszukiwanie zaawansowane"
 7. Aplikacja wyświetla strukturę modeli
 8. Po naciśnięciu modelu, bean może filtrować rekordy po wartościach kolumn - cel ***WY-1***
 
