@@ -1,0 +1,89 @@
+classDiagram
+
+class SearchableModel {
+  <<abstract>>
+}
+
+class Miejsce {
+  +nazwa
+  +adres
+  +latitude
+  +longitude
+  +zamkniete_na_stale
+}
+
+class TypMiejsca {
+  +nazwa
+  +emoji
+}
+
+class Znizka {
+  +dzien_tygodnia
+  +opis
+}
+
+class MapView {
+  +mapa()
+  +mapa_dane()
+}
+
+%% =========================
+%% FILTERING (UC-22, UC-23)
+%% =========================
+
+class MapFilters {
+  +typ
+  +max_distance
+}
+
+class DiscountFilters {
+  +dzien_tygodnia
+}
+
+%% =========================
+%% NEW (JS / FRONTEND LOGIC)
+%% =========================
+
+class LocationService {
+  <<JS>>
+  +get_user_location()
+  +get_device_orientation()
+}
+
+class CompassService {
+  <<JS>>
+  +calculate_bearing(from, to)
+  +get_opposite_direction()
+}
+
+class MapRenderer {
+  <<JS>>
+  +render_map()
+  +render_markers()
+  +render_user_marker()
+  +render_compass_marker()
+}
+
+%% =========================
+%% RELATIONS
+%% =========================
+
+SearchableModel <|-- Miejsce
+SearchableModel <|-- TypMiejsca
+SearchableModel <|-- Znizka
+
+Miejsce --> TypMiejsca : has type
+Znizka --> Miejsce : applies to
+
+MapView --> Miejsce : returns places JSON
+MapView --> Znizka : returns discounts JSON
+
+MapView --> MapFilters : applies filters
+MapView --> DiscountFilters : applies filters
+
+MapRenderer --> MapView : fetches data
+
+LocationService --> MapRenderer : updates user marker (🔵)
+LocationService --> CompassService : provides location
+
+CompassService --> MapRenderer : direction overlay (🔴)

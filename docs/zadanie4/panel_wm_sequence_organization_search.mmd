@@ -1,0 +1,20 @@
+sequenceDiagram
+    actor WielkiMistrz
+    participant UI
+    participant SearchView
+    participant SearchService
+    participant DB
+
+    WielkiMistrz ->> UI: Open search
+    WielkiMistrz ->> UI: Enter email / organization name
+
+    UI ->> SearchView: GET /search?q=...
+    SearchView ->> SearchService: search(query)
+
+    SearchService ->> DB: full-text search
+    DB -->> SearchService: results
+
+    SearchService -->> SearchView: aggregated results
+    SearchView -->> UI: render results
+
+    UI -->> WielkiMistrz: display organization data

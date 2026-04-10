@@ -1,0 +1,13 @@
+sequenceDiagram
+    actor Skarbnik
+    participant UI
+    participant BIService
+    participant DB
+
+    Skarbnik ->> UI: Open BI panel
+    UI ->> BIService: get_reports(filters)
+
+    BIService ->> DB: aggregate queries
+    DB -->> BIService: results
+
+    BIService -->> UI: charts / stats

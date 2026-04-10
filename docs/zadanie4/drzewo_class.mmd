@@ -1,0 +1,47 @@
+classDiagram
+
+class Czlonek {
+  +pk
+  +rok_chrztu
+  +staz
+  +rodzic_1
+  +rodzic_2
+  +get_member_children()
+  +get_member_step_children()
+}
+
+class Bean
+
+class TreeNode {
+  +member
+  +depth
+  +year
+  +layer
+  +get_year()
+  +get_layer()
+}
+
+class TreeService {
+  +build_layers_and_edges_from_db()
+  +generate_full_tree()
+}
+
+class GraphRenderer {
+  +render_layered_graph()
+  +build_d3_nodes()
+}
+
+class DrzewoView {
+  +full_tree_interactive_view()
+  +full_tree_data_graphviz()
+}
+
+DrzewoView --> TreeService : requests tree generation
+DrzewoView --> GraphRenderer : delegates visualization
+
+TreeService --> TreeNode : creates nodes
+TreeService --> Czlonek : reads member data (default source)
+TreeService --> Bean : reads alternative node data (optional)
+
+GraphRenderer --> Czlonek : formats member data
+GraphRenderer --> Bean : formats alternative nodes

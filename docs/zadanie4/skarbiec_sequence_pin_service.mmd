@@ -1,0 +1,32 @@
+sequenceDiagram
+    actor Skarbnik
+    participant UI
+    participant PinView
+    participant PinService
+    participant ZamowieniePinu
+    participant ExternalSupplier
+
+    Skarbnik->>UI: Wybiera "Piny belgijskie"
+    UI->>PinView: GET /piny
+
+    PinView->>ZamowieniePinu: fetch_all_pending()
+    ZamowieniePinu-->>PinView: lista zamówień
+
+    PinView-->>UI: wyświetl listę
+
+    Skarbnik->>UI: Klik "Złóż zamówienie"
+    UI->>PinView: POST /submit
+
+    PinView->>PinService: prepare_order()
+
+    PinService->>ZamowieniePinu: aggregate ilości
+    PinService-->>PinView: dane zamówienia
+
+    alt Sukces
+        PinView->>ExternalSupplier: redirect + dane
+        PinView->>ZamowieniePinu: mark_as_submitted()
+        PinView-->>UI: przekierowanie
+    else Błąd
+        PinService-->>PinView: error
+        PinView-->>UI: komunikat błędu
+    end

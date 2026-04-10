@@ -1,0 +1,20 @@
+sequenceDiagram
+actor User
+participant Browser
+participant View as SongView
+participant FocusService as FocusModeService
+participant Session as FocusSession
+
+User->>Browser: Enable focus mode
+Browser->>View: request focus mode
+View->>FocusService: start_session(song)
+FocusService->>Session: create session
+
+User->>Browser: Next verse
+Browser->>View: next()
+View->>FocusService: get_next_verse()
+FocusService->>Session: next()
+Session-->>FocusService: current verse index
+FocusService-->>View: verse content
+View-->>Browser: render single verse
+Browser-->>User: displays focused verse

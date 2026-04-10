@@ -1,0 +1,144 @@
+classDiagram
+
+class AppConfig {
+    <<Django>>
+}
+
+class WyszukiwarkaConfig {
+    +ready()
+}
+
+AppConfig <|-- WyszukiwarkaConfig : extends Django AppConfig
+
+class SearchableManager {
+    +get_queryset()
+    +search(query_text, config)
+}
+
+class SearchableQuerySet {
+    +search_with_snippets(query_text, config)
+}
+
+class SearchablePolymorphicManager {
+    +get_queryset()
+    +search(query_text, config)
+}
+
+class SearchablePolymorphicQuerySet {
+    +search_with_snippets(query_text, config)
+}
+
+class AbstractSearchableModel {
+    <<abstract>>
+    +search_dict
+    +simple_tsv
+    +tsv
+    +_create_search_dict()
+    +_flatten_search_dict()
+}
+
+class SearchableModel {
+    +search_indexable
+    +objects
+}
+
+class SearchablePolymorphicModel {
+    +search_indexable
+    +objects
+}
+
+AbstractSearchableModel <|-- SearchableModel : base searchable fields
+AbstractSearchableModel <|-- SearchablePolymorphicModel : base searchable fields
+
+class PolymorphicModel {
+    <<Django Polymorphic>>
+}
+
+PolymorphicModel <|-- SearchablePolymorphicModel : polymorphic inheritance
+
+SearchableManager --> SearchableQuerySet : builds queryset and delegates search
+SearchablePolymorphicManager --> SearchablePolymorphicQuerySet : builds polymorphic queryset
+
+SearchableQuerySet --> AbstractSearchableModel : operates on model fields
+SearchablePolymorphicQuerySet --> SearchableQuerySet : reuses search logic
+
+class SEARCH_REGISTRY {
+    <<registry>>
+}
+
+class register_search {
+    +register_search(apps_to_register)
+}
+
+class search_models {
+    +search_models(query_text, models)
+}
+
+class search_view {
+    +search(request)
+    +advanced_search(request)
+}
+
+search_view --> SEARCH_REGISTRY : retrieves registered models
+search_view --> search_models : basic search flow
+
+%% =========================
+%% ADVANCED SEARCH
+%% =========================
+
+class AdvancedSearchService {
+    +advanced_search(query_text, model, filters)
+}
+
+class FilterBuilder {
+    +build_filters(model, filter_data)
+}
+
+search_view --> AdvancedSearchService : delegates advanced search
+
+AdvancedSearchService --> FilterBuilder : builds dynamic filters
+AdvancedSearchService --> SearchableManager : reuses search()
+
+FilterBuilder --> AbstractSearchableModel : inspects fields
+FilterBuilder --> UtilsSearch : uses field discovery
+
+%% =========================
+%% SIGNALS & INDEXING
+%% =========================
+
+class Signals {
+    <<Django signals>>
+}
+
+class update_search_vectors {
+    +update_search_vectors(sender, instance)
+}
+
+Signals --> update_search_vectors : triggered on post_save
+update_search_vectors --> AbstractSearchableModel : updates search fields
+
+%% =========================
+%% UTILS
+%% =========================
+
+class UtilsSearch {
+    <<module>>
+    +find_searchable_fields(model)
+}
+
+class UtilsSearchHelpers {
+    <<module>>
+    +search_models(query_text, models)
+}
+
+UtilsSearchHelpers --> UtilsSearch : discovers searchable fields
+SearchableQuerySet --> UtilsSearch : determines snippet fields
+
+%% =========================
+%% REGISTRATION FLOW
+%% =========================
+
+register_search --> SEARCH_REGISTRY : populates registry
+
+WyszukiwarkaConfig --> register_search : register models on startup
+WyszukiwarkaConfig --> Signals : connect signals

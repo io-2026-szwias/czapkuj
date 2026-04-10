@@ -1,0 +1,56 @@
+sequenceDiagram
+    actor User
+    participant Browser
+    participant View as search view (views.py)
+    participant Registry as SEARCH_REGISTRY
+    participant Helpers as search_models (utils)
+    participant Manager as SearchableManager
+    participant QuerySet as SearchableQuerySet
+    participant DB as Database
+
+    %% =========================
+    %% SEARCH REQUEST FLOW
+    %% =========================
+    User ->> Browser: Enter query
+    Browser ->> View: GET /search/?q=...
+
+    View ->> Registry: Read registered models
+    Registry -->> View: List of searchable models
+
+    View ->> Helpers: search_models(query, models)
+
+    loop For each model
+        Helpers ->> Manager: search(query_text)
+        Manager ->> QuerySet: build queryset with snippets
+        QuerySet ->> DB: Full-text search (tsvector/tsquery)
+        DB -->> QuerySet: Matching rows
+        QuerySet -->> Helpers: Annotated results
+    end
+
+    Helpers -->> View: Aggregated and grouped results
+    View -->> Browser: Render template
+    Browser -->> User: Display results
+
+    %% =========================
+    %% SIGNAL-BASED INDEXING
+    %% =========================
+    participant Signals as post_save signal
+
+    Note over Signals: Triggered whenever a searchable model is saved
+
+    Signals ->> DB: Update search_dict, tsv, simple_tsv
+    DB -->> Signals: Indexed data stored
+
+    %% =========================
+    %% BACKFILL MANAGEMENT COMMAND
+    %% =========================
+    participant Command as backfill_searchable_models
+
+    Note over Command: Runs manually via Django management command
+
+    Command ->> DB: Fetch all model instances
+    loop For each instance
+        Command ->> DB: Save instance (triggers update)
+        DB ->> Signals: post_save signal emitted
+        Signals ->> DB: Recompute search_dict and vectors
+    end

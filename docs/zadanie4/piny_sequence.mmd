@@ -1,0 +1,59 @@
+sequenceDiagram
+
+actor User as Członek
+participant UI as Frontend / Panel
+participant PinService as PinCatalogService
+participant DB as Database
+participant OrderService as OrderService
+participant Pricing as PricingEngine
+
+%% =========================
+%% 1. OPEN PIN CATALOG
+%% =========================
+User ->> UI: Otwiera "Piny belgijskie"
+UI ->> PinService: getAvailablePins()
+PinService ->> DB: SELECT * FROM Pin WHERE active = true
+DB -->> PinService: Lista pinów
+PinService -->> UI: Available pins
+UI -->> User: Wyświetla katalog
+
+%% =========================
+%% 2. SELECT PRODUCTS
+%% =========================
+User ->> UI: Wybiera piny + ilości
+UI ->> OrderService: createDraftOrder(items)
+
+%% =========================
+%% 3. PRICE CALCULATION
+%% =========================
+OrderService ->> PinService: getPinDetails(pin_ids)
+PinService ->> DB: Fetch pin prices
+DB -->> PinService: Pin data
+PinService -->> OrderService: Pricing data
+
+OrderService ->> Pricing: calculateTotal(items, prices)
+Pricing -->> OrderService: total_cost
+
+OrderService -->> UI: Draft order + total_cost
+UI -->> User: Wyświetla podsumowanie
+
+%% =========================
+%% 4. ORDER CONFIRMATION
+%% =========================
+User ->> UI: Zatwierdza zamówienie
+UI ->> OrderService: submitOrder()
+
+OrderService ->> DB: Save Order
+OrderService ->> DB: Save OrderItems
+DB -->> OrderService: Order persisted
+
+OrderService -->> UI: Order confirmed
+UI -->> User: Potwierdzenie zamówienia
+
+%% =========================
+%% ALT FLOW
+%% =========================
+alt Brak dostępnych pinów
+    PinService -->> UI: Empty list
+    UI -->> User: Komunikat "Brak pinów"
+end

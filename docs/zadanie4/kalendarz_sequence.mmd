@@ -1,0 +1,43 @@
+sequenceDiagram
+    actor User
+    participant Browser
+    participant View as CalendarView
+    participant DB as Database
+    participant Model as WydarzenieKalendarzowe (Polymorphic QuerySet)
+    participant Google as Google Calendar
+
+    %% =========================
+    %% OPEN CALENDAR
+    %% =========================
+    User ->> Browser: Open "Kalendarz"
+    Browser ->> View: GET /kalendarz/
+
+    View ->> Model: Query upcoming events
+    Model ->> DB: SELECT * (polymorphic join)
+    DB -->> Model: Wydarzenie + Chrzest records
+
+    Model -->> View: Unified queryset of events
+
+    View -->> Browser: Render calendar page (KW-10)
+
+    Browser -->> User: Display list of upcoming events
+
+    %% =========================
+    %% SUBSCRIBE TO CALENDAR
+    %% =========================
+    User ->> Browser: Click "Dodaj do Google Calendar"
+
+    Browser ->> View: GET /kalendarz/subscription/
+
+    View ->> Model: Get events for calendar feed
+    Model ->> DB: Fetch event data
+    DB -->> Model: Event records
+
+    Model -->> View: Event dataset
+
+    View ->> View: Generate ICS / subscription feed (KW-11)
+
+    View -->> Browser: Return calendar feed / link
+
+    Browser ->> Google: Open / subscribe to calendar feed
+    Google -->> User: Calendar added / subscribed

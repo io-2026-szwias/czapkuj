@@ -1,0 +1,17 @@
+sequenceDiagram
+    actor Skarbnik
+    participant UI
+    participant NotificationService
+    participant CelSkladkowyPlatnik
+    participant User
+
+    Skarbnik ->> UI: Send reminders
+    UI ->> NotificationService: send_reminders(cel)
+
+    NotificationService ->> CelSkladkowyPlatnik: get unpaid users
+
+    loop for each debtor
+        NotificationService ->> User: send email
+    end
+
+    NotificationService -->> UI: success

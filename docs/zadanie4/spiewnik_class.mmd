@@ -1,0 +1,116 @@
+classDiagram
+
+class SearchableModel {
+  <<abstract>>
+}
+
+class KategoriaPiosenki {
+  +nazwa
+}
+
+class Piosenka {
+  +tytul
+  +autor
+  +tekst
+  +tekst_alternatywny
+}
+
+class PiosenkaAdmin
+
+class Osoba
+
+class WyszukiwarkaApp {
+  <<external>>
+}
+
+%% =========================
+%% NEW FEATURES
+%% =========================
+
+class SongFormatter {
+  <<context>>
+  +format()
+}
+
+class FormattingStrategy {
+  <<interface>>
+  +format(lines)
+}
+
+class DefaultFormatting
+class CantandiFormatting
+
+class FocusModeService {
+  +start_session()
+}
+
+class FocusSession {
+  +current_index
+  +next()
+  +prev()
+}
+
+class EditProposal {
+  +proposed_text
+  +status
+}
+
+class ModerationService {
+  +approve()
+  +reject()
+}
+
+class User {
+  <<future>>
+}
+
+%% =========================
+%% EXISTING RELATIONS
+%% =========================
+
+SearchableModel <|-- KategoriaPiosenki
+SearchableModel <|-- Piosenka
+
+Piosenka "many" --> "many" KategoriaPiosenki : categories
+Piosenka "many" --> "many" Osoba : authors
+
+PiosenkaAdmin --> Piosenka : manages
+
+Piosenka ..> WyszukiwarkaApp : searchable via
+KategoriaPiosenki ..> WyszukiwarkaApp : searchable via
+
+%% =========================
+%% STRATEGY (UC-17)
+%% =========================
+
+SongFormatter --> FormattingStrategy : delegates formatting
+FormattingStrategy <|-- DefaultFormatting : standard display
+FormattingStrategy <|-- CantandiFormatting : highlight chords
+
+DefaultFormatting --> Piosenka : formats text
+CantandiFormatting --> Piosenka : formats with chord emphasis
+
+%% =========================
+%% FOCUS MODE (UC-14)
+%% =========================
+
+FocusModeService --> FocusSession : creates and manages session
+FocusSession --> Piosenka : navigates through verses
+
+FocusSession --> Piosenka : retrieves next/previous verse
+FocusModeService --> Piosenka : initializes focus for song
+
+%% =========================
+%% OTHER USE CASES
+%% =========================
+
+%% UC-15
+EditProposal --> Piosenka : proposes changes to
+EditProposal --> User : created by
+
+%% UC-16
+ModerationService --> EditProposal : reviews
+ModerationService --> Piosenka : updates on approval
+
+%% UC-13 (usage)
+Piosenka --> SongFormatter : formatted for display

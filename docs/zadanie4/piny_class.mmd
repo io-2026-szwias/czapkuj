@@ -1,0 +1,71 @@
+classDiagram
+
+%% =========================
+%% USER
+%% =========================
+class User {
+    +id
+    +email
+    +name
+    +role
+}
+
+%% =========================
+%% PRODUCT CATALOG (MANUAL SYNCED)
+%% =========================
+class Pin {
+    +id
+    +name
+    +description
+    +price
+    +available_quantity
+    +active
+}
+
+class PinCatalogService {
+    +syncPins()
+    +getAvailablePins()
+}
+
+%% =========================
+%% ORDERING DOMAIN
+%% =========================
+class Order {
+    +id
+    +created_at
+    +status
+    +total_cost
+}
+
+class OrderItem {
+    +id
+    +quantity
+    +unit_price
+}
+
+class Status {
+    <<enumeration>>
+    DRAFT
+    SUBMITTED
+    PAID
+}
+
+%% =========================
+%% RELATIONSHIPS
+%% =========================
+User "1" --> "0..*" Order : creates
+Order "1" --> "1..*" OrderItem : contains
+OrderItem --> Pin : references
+Order --> Status : has
+
+%% =========================
+%% BUSINESS LOGIC
+%% =========================
+Order --> PinCatalogService : uses pricing data
+
+%% =========================
+%% NOTES (SAFE COMMENTS)
+%% =========================
+%% PinCatalogService is maintained manually (admin sync from external website)
+%% Pins are NOT fetched dynamically at runtime
+%% Order total cost is computed from OrderItems (quantity * price snapshot)

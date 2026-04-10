@@ -1,0 +1,45 @@
+sequenceDiagram
+    actor User
+    participant Browser
+    participant JS as MapRenderer
+    participant Location as LocationService
+    participant Compass as CompassService
+
+    %% =========================
+    %% START COMPASS
+    %% =========================
+    User ->> Browser: Open "Kompas nawojkowy"
+    Browser ->> JS: Initialize map
+
+    %% =========================
+    %% GET USER LOCATION
+    %% =========================
+    JS ->> Location: get_user_location()
+
+    alt Permission granted
+        Location -->> JS: latitude, longitude
+
+        JS ->> JS: render_user_marker() (🔵)
+
+        %% =========================
+        %% DEVICE ORIENTATION
+        %% =========================
+        JS ->> Location: get_device_orientation()
+
+        loop On device movement
+            Location -->> JS: alpha (rotation)
+
+            JS ->> Compass: calculate_bearing(user, Nawojka)
+            Compass ->> Compass: get_opposite_direction()
+
+            Compass -->> JS: direction angle
+
+            JS ->> JS: render_compass_marker() (🔴 rotated)
+        end
+
+    else Permission denied
+        Location -->> JS: error
+        JS -->> Browser: Show error message
+    end
+
+    Browser -->> User: Compass view (or error)

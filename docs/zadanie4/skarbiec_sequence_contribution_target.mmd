@@ -1,0 +1,19 @@
+sequenceDiagram
+    actor Skarbnik
+    participant UI
+    participant CelService
+    participant CelSkladkowy
+    participant CelSkladkowyPlatnik
+
+    Skarbnik ->> UI: Enter goal data
+    UI ->> CelService: create_cel()
+
+    CelService ->> CelSkladkowy: create()
+
+    alt CSV provided
+        CelService ->> CelSkladkowyPlatnik: bulk create (custom amounts)
+    else equal amounts
+        CelService ->> CelSkladkowyPlatnik: create for each user
+    end
+
+    CelService -->> UI: success

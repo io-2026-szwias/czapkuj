@@ -1,0 +1,44 @@
+sequenceDiagram
+    actor Skarbnik
+    participant UI
+    participant ImportService
+    participant ImportSesja
+    participant Transakcja
+    participant MatchingService
+    participant Konto
+    participant User
+    participant CelSkladkowy
+    participant CelSkladkowyPlatnik
+    participant PrzypisaniePlatnosci
+
+    Skarbnik ->> UI: Upload CSV
+    UI ->> ImportService: import_csv(file)
+
+    ImportService ->> ImportSesja: create session
+
+    loop for each row in CSV
+        ImportService ->> Transakcja: create()
+
+        ImportService ->> MatchingService: match(transaction)
+
+        MatchingService ->> Konto: find by nr_konta
+        Konto -->> MatchingService: konto
+
+        MatchingService ->> User: resolve from konto
+        User -->> MatchingService: user
+
+        MatchingService ->> CelSkladkowy: find by kod
+        CelSkladkowy -->> MatchingService: cel
+
+        alt match found
+            MatchingService ->> PrzypisaniePlatnosci: create(AUTO)
+
+            MatchingService ->> CelSkladkowyPlatnik: update kwota_zaplacona
+
+            MatchingService ->> CelSkladkowyPlatnik: update status
+        else no confident match
+            MatchingService ->> PrzypisaniePlatnosci: create(NIEPEWNE)
+        end
+    end
+
+    ImportService -->> UI: success / errors

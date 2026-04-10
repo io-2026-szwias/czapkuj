@@ -1,0 +1,68 @@
+classDiagram
+
+class CalendarView {
+    +get(request)
+    +get_queryset()
+    +render_calendar()
+    +generate_subscription()
+}
+
+class WydarzenieKalendarzowe {
+    +nazwa: string
+    +data_rozpoczecia: date
+    +link: url
+    +opis: text
+}
+
+class Wydarzenie {
+    +czy_jednodniowe: bool
+    +data_zakonczenia: date
+    +czy_to_wyjazd: bool
+}
+
+class Chrzest {
+    +miejsce: Miejsce
+}
+
+class Zdarzenie {
+    +nazwa: string
+    +data: date
+    +godzina: time
+    +opis: text
+}
+
+class TypWydarzenia {
+    +typ: string
+}
+
+class TypWyjazdu {
+    +typ: string
+}
+
+class Miejsce
+class Osoba
+class Dokument
+
+%% Inheritance
+WydarzenieKalendarzowe <|-- Wydarzenie
+WydarzenieKalendarzowe <|-- Chrzest
+
+%% View dependencies
+CalendarView --> WydarzenieKalendarzowe : queries
+CalendarView --> Wydarzenie : polymorphic access
+CalendarView --> Chrzest : polymorphic access
+
+%% Associations
+WydarzenieKalendarzowe "1" --> "0..*" Zdarzenie : zdarzenia_z_wydarzenia
+Zdarzenie --> Miejsce : miejsce
+Zdarzenie --> "0..*" Osoba : powiazane_osoby
+
+Wydarzenie --> "0..*" Miejsce : miejsca
+Wydarzenie --> "0..*" Osoba : uczestnicy
+Wydarzenie --> TypWydarzenia : typ_wydarzenia
+Wydarzenie --> TypWyjazdu : typ_wyjazdu
+
+Chrzest --> Miejsce : miejsce
+Chrzest --> "0..*" Osoba : chrzczeni
+Chrzest --> Osoba : hymn
+Chrzest --> "0..1" Dokument : dokument

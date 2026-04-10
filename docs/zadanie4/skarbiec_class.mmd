@@ -1,0 +1,184 @@
+classDiagram
+
+%% =========================
+%% IDENTITY
+%% =========================
+
+class User {
+  +id
+  +email
+  +username
+  +password
+  +bio
+}
+
+class Konto {
+  +id
+  +numer_konta
+  +numer_telefonu
+  +nazwa_wlasciciela
+}
+
+User "1" --> "1..*" Konto : owns
+
+%% =========================
+%% CELE SKŁADKOWE
+%% =========================
+
+class CelSkladkowy {
+  +id
+  +tytul
+  +opis
+  +termin
+  +kod
+  +status
+  +data_utworzenia
+}
+
+class CelSkladkowyPlatnik {
+  +id
+  +kwota_docelowa
+  +kwota_zaplacona
+  +status
+}
+
+CelSkladkowy "1" --> "0..*" CelSkladkowyPlatnik
+CelSkladkowyPlatnik --> User : platnik
+
+%% =========================
+%% TRANSAKCJE
+%% =========================
+
+class Transakcja {
+  +id
+  +data
+  +kwota
+  +tytul
+  +nr_konta
+  +nadawca
+}
+
+class PrzypisaniePlatnosci {
+  +id
+  +kwota_przypisana
+  +status_dopasowania
+  +data_przypisania
+}
+
+Transakcja --> Konto : matched_by
+PrzypisaniePlatnosci --> Transakcja
+PrzypisaniePlatnosci --> CelSkladkowy
+PrzypisaniePlatnosci --> User
+
+%% =========================
+%% IMPORT / AUDYT
+%% =========================
+
+class ImportSesja {
+  +id
+  +data_importu
+  +nazwa_pliku
+  +status
+}
+
+ImportSesja --> "0..*" Transakcja
+
+%% =========================
+%% ENUMY (STATUSY)
+%% =========================
+
+class CelStatus {
+  <<enumeration>>
+  OPEN
+  CLOSED
+  EXPIRED
+}
+
+class PlatnikStatus {
+  <<enumeration>>
+  NIEZAPLACONE
+  CZESCIOWO
+  OPLACONE
+}
+
+class DopasowanieStatus {
+  <<enumeration>>
+  AUTO
+  MANUAL
+  NIEPEWNE
+}
+
+class ImportStatus {
+  <<enumeration>>
+  SUCCESS
+  FAILED
+  PARTIAL
+}
+
+CelSkladkowy --> CelStatus
+CelSkladkowyPlatnik --> PlatnikStatus
+PrzypisaniePlatnosci --> DopasowanieStatus
+ImportSesja --> ImportStatus
+
+%% =========================
+%% SERVICES (LOGIKA)
+%% =========================
+
+class ImportService {
+  +import_csv()
+}
+
+class MatchingService {
+  +match_by_account()
+  +match_by_code()
+  +match_by_name()
+  +match_transactions()
+}
+
+class CelService {
+  +create_cel()
+  +assign_platnicy()
+  +update_status()
+}
+
+class NotificationService {
+  +send_reminders()
+  +send_mass_email()
+}
+
+class SchedulerService {
+  +close_expired_goals()
+  +send_auto_reminders()
+}
+
+ImportService --> ImportSesja
+ImportService --> MatchingService
+
+MatchingService --> Transakcja
+MatchingService --> Konto
+MatchingService --> User
+MatchingService --> CelSkladkowy
+
+CelService --> CelSkladkowy
+CelService --> CelSkladkowyPlatnik
+
+NotificationService --> User
+NotificationService --> CelSkladkowyPlatnik
+
+SchedulerService --> CelSkladkowy
+SchedulerService --> NotificationService
+
+classDiagram
+
+class BIService {
+  +get_goal_summary()
+  +get_user_debtors()
+  +get_payment_trends()
+  +get_collection_ratio()
+}
+
+BIService --> CelSkladkowy
+BIService --> CelSkladkowyPlatnik
+BIService --> PrzypisaniePlatnosci
+BIService --> Transakcja
+BIService --> User

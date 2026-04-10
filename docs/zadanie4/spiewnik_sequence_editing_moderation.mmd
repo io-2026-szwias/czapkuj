@@ -1,0 +1,52 @@
+sequenceDiagram
+actor User as Członek/Muzyk
+actor Admin as Moderator
+
+participant Browser
+participant View as SongView / ModerationView
+participant Edit as EditProposal
+participant Moderation as ModerationService
+participant DB as Database
+participant Song as Piosenka
+
+%% =========================
+%% EDIT PHASE (UC-15)
+%% =========================
+
+User->>Browser: Edit song
+Browser->>View: submit edit
+
+View->>Edit: create proposal (proposed_text, changes)
+Edit->>Edit: store status = pending
+Edit-->>View: proposal saved
+
+View-->>Browser: confirmation
+Browser-->>User: edit submitted for review
+
+%% =========================
+%% MODERATION PHASE (UC-16)
+%% =========================
+
+Admin->>Browser: Open moderation panel
+Browser->>View: GET pending proposals
+
+View->>Moderation: fetch pending EditProposals
+Moderation-->>View: list of proposals
+
+Admin->>Browser: Approve / Reject proposal
+Browser->>View: moderation action
+
+View->>Moderation: approve(proposal) / reject(proposal)
+
+alt Approved
+    Moderation->>Song: apply changes from proposal
+    Moderation->>Edit: update status = approved
+    Moderation->>DB: persist updated Piosenka
+    DB-->>Moderation: success
+else Rejected
+    Moderation->>Edit: update status = rejected
+end
+
+Moderation-->>View: result
+View-->>Browser: moderation confirmation
+Browser-->>Admin: status updated

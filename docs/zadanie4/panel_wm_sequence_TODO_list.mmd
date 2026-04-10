@@ -1,0 +1,64 @@
+sequenceDiagram
+    actor WielkiMistrz
+    participant UI
+    participant TodoView
+    participant TodoService
+    participant DB
+
+    %% =========================
+    %% LIST VIEW
+    %% =========================
+    WielkiMistrz ->> UI: Open TODO list
+    UI ->> TodoView: GET /todo/
+
+    TodoView ->> TodoService: get_tasks()
+    TodoService ->> DB: fetch tasks + dependencies
+    DB -->> TodoService: tasks
+
+    TodoService -->> TodoView: tasks
+    TodoView -->> UI: render list
+
+    %% =========================
+    %% OPEN TASK DETAILS
+    %% =========================
+    WielkiMistrz ->> UI: Open task details
+    UI ->> TodoView: GET /todo/{id}
+
+    TodoView ->> TodoService: get_task(id)
+    TodoService ->> DB: fetch task + dependencies
+    DB -->> TodoService: task
+
+    TodoService -->> TodoView: task details
+    TodoView -->> UI: show details (opis + warunki + zależności)
+
+    %% =========================
+    %% COMPLETE TASK
+    %% =========================
+    WielkiMistrz ->> UI: Mark as DONE
+    UI ->> TodoView: POST /todo/{id}/complete
+
+    TodoView ->> TodoService: complete_task(id)
+    TodoService ->> DB: update status = DONE
+
+    TodoService -->> TodoView: success
+    TodoView -->> UI: refresh task
+
+    %% =========================
+    %% ADD DEPENDENCY
+    %% =========================
+    WielkiMistrz ->> UI: Add dependency (A -> B)
+    UI ->> TodoView: POST /todo/{A}/depends_on/{B}
+
+    TodoView ->> TodoService: add_dependency(A, B)
+    TodoService ->> DB: fetch dependency graph
+
+    TodoService ->> TodoService: check cycle
+
+    alt cycle detected
+        TodoService -->> TodoView: error (cycle not allowed)
+        TodoView -->> UI: show error
+    else valid
+        TodoService ->> DB: save dependency
+        TodoService -->> TodoView: success
+        TodoView -->> UI: update task view
+    end

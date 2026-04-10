@@ -1,0 +1,50 @@
+sequenceDiagram
+    actor Skarbnik
+    actor User
+    participant UI
+    participant CelService
+    participant Bank
+    participant ImportService
+    participant MatchingService
+    participant NotificationService
+    participant SchedulerService
+
+    %% 1. Create goal
+    Skarbnik ->> UI: Create goal
+    UI ->> CelService: create_cel(data)
+    CelService ->> CelService: assign_platnicy()
+
+    %% 2. User sees goal
+    User ->> UI: Open dashboard
+    UI ->> CelService: get_user_goals()
+    CelService -->> UI: unpaid goals
+
+    %% 3. Payment happens
+    User ->> Bank: Make transfer (with code)
+
+    %% 4. Import
+    Skarbnik ->> UI: Upload CSV
+    UI ->> ImportService: import_csv()
+
+    ImportService ->> MatchingService: match_transactions()
+
+    %% 5. Matching updates state
+    MatchingService ->> CelService: update payments
+
+    %% 6. Treasurer checks
+    Skarbnik ->> UI: View goals
+    UI ->> CelService: get_goal_status()
+
+    %% 7. Notifications
+    Skarbnik ->> UI: Send reminders
+    UI ->> NotificationService: send_reminders()
+
+    %% 8a. Manual close
+    Skarbnik ->> UI: Close goal
+    UI ->> CelService: close()
+
+    %% 8b. Auto close
+    SchedulerService ->> CelService: close_expired_goals()
+
+    %% 8c. Auto reminders
+    SchedulerService ->> NotificationService: send_auto_reminders()

@@ -1,0 +1,29 @@
+sequenceDiagram
+actor User
+participant Browser
+participant View as SongView
+participant Formatter as SongFormatter
+participant Strategy as FormattingStrategy
+participant Cantandi as CantandiFormatting
+participant Song as Piosenka
+
+User->>Browser: Enable Cantandi mode
+Browser->>View: toggle mode
+
+View->>Formatter: format(song, mode="cantandiego")
+
+Formatter->>Strategy: select CantandiFormatting
+Strategy-->>Formatter: strategy selected
+
+Formatter->>Cantandi: format(song)
+
+Cantandi->>Song: read lyrics + chords
+Song-->>Cantandi: text data
+
+Cantandi->>Cantandi: apply chord highlighting
+
+Cantandi-->>Formatter: formatted output
+Formatter-->>View: formatted song
+
+View-->>Browser: updated view
+Browser-->>User: chords highlighted

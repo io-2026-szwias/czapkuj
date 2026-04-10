@@ -1,0 +1,62 @@
+sequenceDiagram
+
+actor User
+participant Browser
+participant View as advanced_search view
+participant Registry as SEARCH_REGISTRY
+participant Fields as find_searchable_fields
+participant Service as AdvancedSearchService
+participant Filter as FilterBuilder
+participant Manager as SearchableManager
+participant DB as Database
+
+%% =========================
+%% STEP 1: LOAD MODELS
+%% =========================
+
+User->>Browser: Open advanced search
+Browser->>View: GET /search/advanced
+
+View->>Registry: get searchable models
+Registry-->>View: model list
+
+View-->>Browser: display models
+Browser-->>User: user selects model
+
+%% =========================
+%% STEP 2: LOAD FIELDS
+%% =========================
+
+Browser->>View: select model
+View->>Fields: find_searchable_fields(model)
+Fields-->>View: list of fields
+
+View-->>Browser: display filter form
+
+%% =========================
+%% STEP 3: EXECUTE SEARCH
+%% =========================
+
+User->>Browser: set filters + optional query
+Browser->>View: GET /search/advanced?filters...
+
+View->>Service: advanced_search(query, model, filters)
+
+Service->>Filter: build_filters(model, filters)
+Filter-->>Service: Django filter kwargs
+
+Service->>Manager: filter(**kwargs)
+Manager->>DB: apply filters
+DB-->>Manager: filtered queryset
+
+alt query_text provided
+    Service->>Manager: search(query_text)
+    Manager->>DB: full-text search
+    DB-->>Manager: ranked results
+end
+
+Manager-->>Service: final queryset
+Service-->>View: results
+
+View-->>Browser: render results
+Browser-->>User: display filtered + searched results

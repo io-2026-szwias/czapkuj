@@ -1,0 +1,51 @@
+sequenceDiagram
+    actor Kandydat as Kandydat
+    participant Browser
+    participant View as KodeksView
+    participant Section as KodeksSection
+    participant Rule as PrawoObowiazek
+    participant Podmiot
+    participant DB as Database
+
+    %% =========================
+    %% NAVIGATION
+    %% =========================
+    Kandydat ->> Browser: Wybiera "Czapkopedia"
+    Kandydat ->> Browser: Otwiera "Kodeks"
+
+    Browser ->> View: GET /kodeks/
+
+    %% =========================
+    %% DATA FETCH
+    %% =========================
+    View ->> Section: Pobierz sekcje (ordered)
+    Section ->> DB: SELECT * ORDER BY kolejnosc
+    DB -->> Section: Lista sekcji
+
+    View ->> Rule: Pobierz aktualne zasady
+    Rule ->> DB: SELECT * WHERE aktualne=True
+    DB -->> Rule: Lista zasad
+
+    %% =========================
+    %% ENRICHMENT
+    %% =========================
+    View ->> Podmiot: Pobierz powiązane podmioty
+    Podmiot ->> DB: SELECT related Podmiot
+    DB -->> Podmiot: Dane podmiotów
+
+    %% =========================
+    %% PROCESSING
+    %% =========================
+    View ->> View: Grupuj zasady wg sekcji
+    View ->> View: Sortuj w obrębie sekcji
+
+    %% =========================
+    %% RESPONSE
+    %% =========================
+    View -->> Browser: Render kodeks (SB-0)
+    Browser -->> Kandydat: Wyświetla kodeks
+
+    %% =========================
+    %% USER INTERACTION
+    %% =========================
+    Kandydat ->> Browser: Przegląda treść

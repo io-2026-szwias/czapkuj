@@ -1,0 +1,67 @@
+classDiagram
+
+%% =========================
+%% USER
+%% =========================
+class User {
+    +id
+    +email
+    +name
+    +role
+}
+
+%% =========================
+%% APPLICATION DOMAIN
+%% =========================
+class Wniosek {
+    +id
+    +data_utworzenia
+    +status
+    +filled_data
+}
+
+class ApplicationTemplate {
+    +id
+    +name
+    +format (pdf/json/html)
+    +template_blob
+    +fillTemplate(data)
+}
+
+class Status {
+    <<enumeration>>
+    DRAFT
+    SUBMITTED
+}
+
+%% =========================
+%% EXTERNAL DOMAIN (SSUJ)
+%% =========================
+class SSUJService {
+    +getLatestOrders()
+}
+
+class ZarzadzenieSSUJ {
+    +id
+    +title
+    +content
+    +date
+}
+
+%% =========================
+%% RELATIONSHIPS
+%% =========================
+
+User "1" --> "0..*" Wniosek : creates
+Wniosek --> ApplicationTemplate : uses
+Wniosek --> Status : has
+
+SSUJService --> ZarzadzenieSSUJ : fetches
+User ..> SSUJService : requests data
+
+%% =========================
+%% NOTES (SAFE VIA COMMENTS)
+%% =========================
+%% ApplicationTemplate is responsible for filling structured data into a document (e.g. PDF or HTML form)
+%% SSUJService is an external integration adapter (web scraping/API abstraction)
+%% Wniosek stores only processed result, not raw template logic

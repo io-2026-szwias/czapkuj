@@ -1,0 +1,18 @@
+sequenceDiagram
+actor User
+participant Browser
+participant View as SpisTresciView
+participant Search as search_models()
+participant Manager as SearchableManager
+participant DB as Database
+
+User->>Browser: Enter query "q"
+Browser->>View: GET /spis_tresci/?q=...
+View->>Search: search_models(query_text, [Piosenka])
+Search->>Manager: Piosenka.objects.search(query_text)
+Manager->>DB: full-text search (tsvector)
+DB-->>Manager: matching songs
+Manager-->>Search: results with rank/snippets
+Search-->>View: results_by_app
+View-->>Browser: render song list
+Browser-->>User: displays categorized songs

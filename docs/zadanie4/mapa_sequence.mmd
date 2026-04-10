@@ -1,0 +1,48 @@
+sequenceDiagram
+    actor User
+    participant Browser
+    participant View as MapView (mapa / mapa_dane)
+    participant DB as Database
+    participant JS as MapRenderer
+
+    %% =========================
+    %% INITIAL MAP LOAD
+    %% =========================
+    User ->> Browser: Open map page
+    Browser ->> View: GET /miejsca/mapa/
+    View -->> Browser: HTML + JS
+
+    Browser ->> JS: Initialize map
+
+    %% =========================
+    %% USER APPLIES FILTERS
+    %% =========================
+    User ->> JS: Set filters (typ, distance, day)
+
+    JS ->> View: GET /miejsca/mapa/dane/?filters...
+
+    %% =========================
+    %% BACKEND PROCESSING
+    %% =========================
+    alt Filtering places (UC-22)
+        View ->> DB: Query Miejsce with filters (typ, distance)
+        DB -->> View: Filtered Miejsce records
+    end
+
+    alt Filtering discounts (UC-23)
+        View ->> DB: Query Znizka + related Miejsce by day
+        DB -->> View: Matching discounted places
+    end
+
+    %% =========================
+    %% RESPONSE
+    %% =========================
+    View -->> JS: JSON (places with optional discount info)
+
+    %% =========================
+    %% RENDERING
+    %% =========================
+    JS ->> JS: render_markers()
+    JS -->> Browser: Display markers on map
+
+    Browser -->> User: Map with filtered places and/or discounts

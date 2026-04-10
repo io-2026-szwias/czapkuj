@@ -1,0 +1,34 @@
+classDiagram
+
+class User {
+    +id
+    +email
+    +name
+    +role
+}
+
+class Zadanie {
+    +id
+    +tytul: string
+    +opis: text
+    +warunki: text
+    +status: Status
+    +created_at
+    +completed_at
+}
+
+class Status {
+    <<enumeration>>
+    TODO
+    DONE
+}
+
+%% relationships
+User "1" --> "0..*" Zadanie : assigned_to
+Zadanie "0..*" --> "0..*" Zadanie : depends_on
+Zadanie --> Status : uses
+
+%% semantic constraints (as comments only)
+%% - dependencies must not form cycles
+%% - status is controlled by service layer
+%% - Wielki Mistrz is a role inside User

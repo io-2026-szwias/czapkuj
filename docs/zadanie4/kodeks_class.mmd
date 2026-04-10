@@ -1,0 +1,48 @@
+classDiagram
+
+class KodeksView {
+  +get()
+  +render_kodeks()
+}
+
+class Podmiot {
+  +nazwa
+  +opis
+  +aktualne
+}
+
+class Rola
+class Struktura
+
+class RelacjaPrawna {
+  +tresc
+  +prawo_czy_obowiazek
+}
+
+class PrawoObowiazek {
+  +aktualne
+}
+
+class KodeksSection {
+  +nazwa
+  +kolejnosc
+}
+
+class Dokument
+
+%% Inheritance
+Podmiot <|-- Rola
+Podmiot <|-- Struktura
+
+%% Core relations
+PrawoObowiazek --> Podmiot : dotyczy
+PrawoObowiazek --> RelacjaPrawna : opisuje
+PrawoObowiazek --> Dokument : źródło
+
+%% New: structure
+PrawoObowiazek --> KodeksSection : należy do
+
+%% View
+KodeksView --> PrawoObowiazek : pobiera
+KodeksView --> KodeksSection : grupuje
+KodeksView --> Podmiot : wyświetla kontekst

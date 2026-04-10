@@ -1,0 +1,29 @@
+sequenceDiagram
+actor User
+participant Browser
+participant DjangoView as Django View (full_tree_interactive_view)
+participant DjangoAPI as Django API (full_tree_data_graphviz)
+participant TreeService as Tree Building Logic
+participant GraphRenderer as Graph Rendering (Backend)
+participant FrontendJS as D3 Frontend
+
+User->>Browser: Opens "interactive tree" page
+Browser->>DjangoView: GET /drzewo/full-tree-interactive/
+
+DjangoView->>Browser: HTML + JS + initial form
+
+Browser->>FrontendJS: Initialize application (main.js)
+FrontendJS->>DjangoAPI: Fetch tree data (GET /full-tree-data/)
+
+DjangoAPI->>TreeService: Build layers and edges
+TreeService->>TreeService: Traverse models, compute structure
+TreeService->>GraphRenderer: Render graph (Graphviz)
+GraphRenderer-->>DjangoAPI: Graph + metadata
+
+DjangoAPI-->>FrontendJS: JSON (nodes, links, years, childrenDict)
+
+FrontendJS->>FrontendJS: Build internal state
+FrontendJS->>FrontendJS: Render graph using D3
+
+User->>FrontendJS: Interacts (filters / color / view modes)
+FrontendJS->>FrontendJS: Update visualization dynamically
