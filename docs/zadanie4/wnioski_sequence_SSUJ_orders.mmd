@@ -1,0 +1,40 @@
+sequenceDiagram
+actor Kasztelan
+participant Browser
+participant View as OrdersView
+participant SSUJ as SSUJService
+participant Parser as DataParser
+participant DB as Database
+
+%% =========================
+%% OPEN ORDERS PANEL
+%% =========================
+Kasztelan ->> Browser: Open "Zarządzenia SSUJ"
+Browser ->> View: GET /ssuj/orders/
+
+%% =========================
+%% FETCH FROM EXTERNAL SOURCE
+%% =========================
+View ->> SSUJ: getLatestOrders()
+
+SSUJ ->> SSUJ: call external SSUJ website/API
+SSUJ -->> View: raw HTML / JSON / documents
+
+%% =========================
+%% PARSING
+%% =========================
+View ->> Parser: parse(raw_data)
+Parser ->> Parser: extract orders, dates, titles
+Parser -->> View: structured orders list
+
+%% =========================
+%% OPTIONAL CACHE
+%% =========================
+View ->> DB: store latest SSUJ snapshot
+DB -->> View: saved
+
+%% =========================
+%% RENDER
+%% =========================
+View -->> Browser: render orders list
+Browser -->> Kasztelan: display SSUJ orders

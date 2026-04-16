@@ -1,0 +1,38 @@
+sequenceDiagram
+actor Kasztelan
+participant Browser
+participant View as ApplicationView
+participant Template as ApplicationTemplate
+participant DB as Database
+
+%% =========================
+%% CREATE APPLICATION
+%% =========================
+Kasztelan ->> Browser: Open "Nowy wniosek"
+Browser ->> View: GET /wnioski/new/
+
+View ->> Template: load_default_template()
+Template -->> View: base template (PDF/structured form)
+
+View -->> Browser: render form template
+Browser -->> Kasztelan: display form
+
+%% =========================
+%% FILL DATA
+%% =========================
+Kasztelan ->> Browser: Fill form data
+Browser ->> View: POST /wnioski/create
+
+View ->> Template: fillTemplate(user_data)
+Template ->> Template: merge data into template structure
+
+Template -->> View: filled application document
+
+%% =========================
+%% SAVE
+%% =========================
+View ->> DB: save ApplicationDocument
+DB -->> View: confirmation
+
+View -->> Browser: success response
+Browser -->> Kasztelan: application saved
