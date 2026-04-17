@@ -1,0 +1,8 @@
+"""
+Test requirements file for pytest and dependencies.
+"""
+pytest==7.4.0
+pytest-django==4.5.2
+pytest-mock==3.11.1
+django==4.2.0
+
