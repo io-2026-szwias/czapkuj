@@ -526,57 +526,65 @@ przez poprzednich `Kasztelanów`.
 
 
 # WYMAGANIA
+
 ## Ograniczenia
 
 **O-01 – Ograniczenia korespondencji z SSUJ**
+
 System nie może umożliwiać oficjalnej korespondencji z SSUJ za pomocą maila organizacji, ponieważ SSUJ akceptuje wyłącznie wiadomości wysyłane z adresów w domenie uczelnianej.
 W związku z tym cel **KR-0** nie może zostać zrealizowany w systemie.
 
 **O-02 – Dostęp do danych historycznych**
+
 System nie ma dostępu do wszystkich historycznych dokumentów organizacji znajdujących się na prywatnych dyskach członków i byłych zarządów. Dane te mogą zostać dodane do systemu wyłącznie ręcznie przez użytkowników.
 
 **O-03 – Dane zewnętrzne SSUJ**
+
 System może pobierać zarządzenia SSUJ tylko z publicznie dostępnych źródeł (np. strony internetowej SSUJ). Jeśli struktura strony się zmieni, funkcjonalność może przestać działać.
 
 **O-04 – Dane bankowe**
+
 System nie ma bezpośredniego dostępu do systemu bankowego i może przetwarzać historię transakcji wyłącznie na podstawie plików eksportowanych przez użytkownika (np. CSV).
 
 ## 4.4.2 Wymagania systemowe
 
 **SYS-01 – Dostępność systemu**
+
 System powinien być dostępny jako aplikacja webowa dostępna z poziomu przeglądarki internetowej.
 
 **SYS-02 – Profile użytkowników**
-System powinien obsługiwać co najmniej następujące role użytkowników:
 
-* kandydat (bean)
-* członek
-* skarbnik
-* kasztelan
-* wielki mistrz
-* muzyk
+System powinien obsługiwać co najmniej następujące role użytkowników:
+- kandydat (bean)
+- członek
+- skarbnik
+- kasztelan
+- wielki mistrz
+- muzyk
 
 **SYS-03 – Liczba użytkowników**
+
 System powinien obsługiwać co najmniej **200 użytkowników** jednocześnie zapisanych w bazie.
 
 **SYS-04 – Przechowywanie danych**
-System powinien przechowywać dane o:
 
-* członkach organizacji
-* wydarzeniach
-* dokumentach
-* transakcjach finansowych
-* piosenkach w śpiewniku
+System powinien przechowywać dane o:
+- członkach organizacji
+- wydarzeniach
+- dokumentach
+- transakcjach finansowych
+- piosenkach w śpiewniku
 
 **SYS-05 – Obsługiwane urządzenia**
+
 System powinien działać na komputerach oraz urządzeniach mobilnych z przeglądarką internetową.
 
 **SYS-06 – Integracje zewnętrzne**
-System może integrować się z następującymi usługami:
 
-* Facebook
-* Google Calendar
-* Google Drive
+System może integrować się z następującymi usługami:
+- Facebook
+- Google Calendar
+- Google Drive
 
 ## 4.4.3 Wymagania funkcjonalne
 
