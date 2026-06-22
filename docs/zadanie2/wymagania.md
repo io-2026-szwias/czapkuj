@@ -210,17 +210,22 @@ System może integrować się z następującymi usługami:
 ## 4.4.4 Wymagania niefunkcjonalne
 
 **NFR-01 – Wydajność**
+
 System powinien zwracać wyniki wyszukiwania w czasie krótszym niż **2 sekundy** dla bazy zawierającej do 10 000 rekordów.
 
 **NFR-02 – Bezpieczeństwo danych**
+
 Dane użytkowników muszą być przechowywane zgodnie z zasadami ochrony danych osobowych (RODO).
 
 **NFR-03 – Dostępność**
+
 System powinien być dostępny przez co najmniej **99% czasu w skali miesiąca**.
 
 **NFR-04 – Kopie zapasowe**
+
 System powinien wykonywać automatyczną kopię zapasową bazy danych co najmniej raz na dobę.
 
 **NFR-05 – Responsywność**
+
 Interfejs użytkownika powinien być dostosowany do ekranów komputerów i urządzeń mobilnych.
 
