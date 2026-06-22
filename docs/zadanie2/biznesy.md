@@ -588,135 +588,148 @@ System może integrować się z następującymi usługami:
 
 ## 4.4.3 Wymagania funkcjonalne
 
-### DG – Drzewo genealogiczne
+### SPI - Śpiewnik
 
-**DG-10**
-System umożliwia wygenerowanie drzewa genealogicznego organizacji na podstawie danych zapisanych w bazie.
-**Priorytet:** Should
+| Kod        | Wymaganie                                                                            | Priorytet |
+|------------|--------------------------------------------------------------------------------------|-----------|
+| SPI-FR-001 | System musi umożliwiać otwarcie modułu Śpiewnik z dashboardu.                        | M         |
+| SPI-FR-002 | System musi wyświetlać listę kategorii piosenek.                                     | M         |
+| SPI-FR-003 | System musi umożliwiać wyszukiwanie piosenek.                                        | S         |
+| SPI-FR-004 | System musi wyświetlać listę piosenek przypisanych do wybranej kategorii.            | M         |
+| SPI-FR-005 | System musi wyświetlać tekst piosenki wraz z akordami.                               | M         |
+| SPI-FR-006 | System musi umożliwiać przechodzenie do następnej piosenki w obrębie kategorii.      | S         |
+| SPI-FR-007 | System musi umożliwiać zwijanie i rozwijanie kategorii.                              | S         |
+| SPI-FR-008 | System musi umożliwiać powrót do dashboardu.                                         | M         |
+| SPI-FR-009 | System musi udostępniać zaawansowane wyszukiwanie po tytule.                         | C         |
+| SPI-FR-010 | System musi udostępniać zaawansowane wyszukiwanie po fragmencie tekstu.              | C         |
+| SPI-FR-011 | System musi udostępniać wyszukiwanie po pierwszym akordzie.                          | C         |
+| SPI-FR-012 | System musi udostępniać wyszukiwanie po sekwencji akordów.                           | C         |
+| SPI-FR-013 | System musi grupować wyniki wyszukiwania według kategorii.                           | S         |
+| SPI-FR-014 | System musi udostępniać tryb Focus dla muzyków.                                      | S         |
+| SPI-FR-015 | System musi umożliwiać wyświetlanie jednej lub dwóch zwrotek w trybie Focus.         | S         |
+| SPI-FR-016 | System musi umożliwiać zmianę koloru prezentacji akordów.                            | C         |
+| SPI-FR-017 | System musi umożliwiać nawigację pomiędzy zwrotkami gestami lub kliknięciami ekranu. | S         |
 
-**DG-11**
-Użytkownik może filtrować drzewo genealogiczne według wybranych kryteriów (np. rok dołączenia).
-**Priorytet:** Could
+### IDG - Interaktywne drzewo genealogiczne
 
-### KN – Kompas nawojkowy
+| Kod        | Wymaganie                                                                                     | Priorytet |
+|------------|-----------------------------------------------------------------------------------------------|-----------|
+| IDG-FR-001 | System musi umożliwiać otwarcie drzewa genealogicznego z dashboardu.                          | M         |
+| IDG-FR-002 | System musi wyświetlać interaktywne drzewo genealogiczne.                                     | M         |
+| IDG-FR-003 | System musi umożliwiać stosowanie filtrów drzewa.                                             | M         |
+| IDG-FR-004 | System musi umożliwiać kolorowanie węzłów według wybranego kryterium.                         | S         |
+| IDG-FR-005 | System musi umożliwiać aktywację dodatkowych widoków drzewa.                                  | S         |
+| IDG-FR-006 | System musi obsługiwać zoomowanie drzewa.                                                     | M         |
+| IDG-FR-007 | System musi obsługiwać przewijanie drzewa w pionie i poziomie.                                | M         |
+| IDG-FR-008 | System musi wyświetlać biografię osoby po kliknięciu węzła.                                   | M         |
+| IDG-FR-009 | System musi podświetlać węzeł po wskazaniu kursorem.                                          | S         |
+| IDG-FR-010 | System musi umożliwiać zaznaczanie pojedynczych węzłów.                                       | S         |
+| IDG-FR-011 | System musi umożliwiać zaznaczanie ścieżki pomiędzy dwoma węzłami przy użyciu klawisza Shift. | C         |
+| IDG-FR-012 | System musi obsługiwać operacje Cofnij i Ponów dla zaznaczeń.                                 | S         |
+| IDG-FR-013 | System musi umożliwiać kolorowanie zaznaczonych węzłów.                                       | C         |
+| IDG-FR-014 | System musi umożliwiać drukowanie zaznaczeń.                                                  | C         |
+| IDG-FR-015 | System musi umożliwiać tworzenie nowych drzew z zaznaczeń.                                    | C         |
+| IDG-FR-016 | System musi umożliwiać dodawanie węzłów do istniejącego drzewa użytkownika.                   | C         |
+| IDG-FR-017 | System musi umożliwiać usuwanie węzłów z drzewa użytkownika.                                  | C         |
+| IDG-FR-018 | System musi umożliwiać eksport drzewa do pliku PNG.                                           | S         |
+| IDG-FR-019 | System musi umożliwiać otwarcie drzewa z poziomu biografii członka.                           | S         |
 
-**KN-10**
-System wyświetla kierunek przeciwny do lokalizacji D.S. Nawojka na podstawie lokalizacji użytkownika.
-**Priorytet:** Could
+### KOD - Kodeks
 
-### KW – Kalendarz wydarzeń
+| Kod        | Wymaganie                                            | Priorytet |
+|------------|------------------------------------------------------|-----------|
+| KOD-FR-001 | System musi udostępniać moduł Kodeks.                | M         |
+| KOD-FR-002 | System musi prezentować sekcję Prawa i obowiązki.    | M         |
+| KOD-FR-003 | System musi prezentować sekcję Zasady wydarzeń.      | M         |
+| KOD-FR-004 | System musi prezentować sekcję Tradycje.             | M         |
+| KOD-FR-005 | System musi prezentować sekcję Księga znaku.         | M         |
+| KOD-FR-006 | System musi obsługiwać rozwijanie i zwijanie sekcji. | S         |
 
-**KW-10**
-System wyświetla listę nadchodzących wydarzeń organizacji.
-**Priorytet:** Must
+### MAP - Mapa
 
-**KW-11**
-Użytkownik może dodać kalendarz wydarzeń organizacji do swojego kalendarza w Google Calendar.
-**Priorytet:** Should
+| Kod        | Wymaganie                                                          | Priorytet |
+|------------|--------------------------------------------------------------------|-----------|
+| MAP-FR-001 | System musi wyświetlać mapę świata ze znacznikami miejsc.          | M         |
+| MAP-FR-002 | System musi domyślnie wyśrodkowywać mapę na Polsce.                | S         |
+| MAP-FR-003 | System musi obsługiwać przybliżanie, oddalanie i przewijanie mapy. | M         |
+| MAP-FR-004 | System musi prezentować szczegóły miejsca po najechaniu kursorem.  | M         |
+| MAP-FR-005 | System musi wyświetlać wzmianki z Kroniki po kliknięciu znacznika. | S         |
+| MAP-FR-006 | System musi umożliwiać filtrowanie miejsc według typu.             | M         |
+| MAP-FR-007 | System musi umożliwiać filtrowanie miejsc zamkniętych na stałe.    | S         |
+| MAP-FR-008 | System musi aktualizować liczbę znaczników zgodnie z filtrami.     | M         |
+| MAP-FR-009 | System mobilny musi wyświetlać wskaźnik kierunku urządzenia.       | S         |
+| MAP-FR-010 | System mobilny musi udostępniać funkcję Kompas Nawojkowy.          | C         |
 
-### PB – Piny belgijskie
+### KAL - Kalendarz
 
-**PB-10**
-Członek może wybrać piny belgijskie z listy dostępnych wzorów.
-**Priorytet:** Should
+| Kod        | Wymaganie                                                                      | Priorytet |
+|------------|--------------------------------------------------------------------------------|-----------|
+| KAL-FR-001 | System musi wyświetlać kalendarz wydarzeń Bractwa.                             | M         |
+| KAL-FR-002 | System musi prezentować szczegóły wydarzenia.                                  | M         |
+| KAL-FR-003 | System musi prezentować listę uczestników dla wydarzeń zakończonych.           | S         |
+| KAL-FR-004 | System musi umożliwiać integrację z Google Calendar.                           | S         |
+| KAL-FR-005 | System musi umożliwiać dodanie kalendarza Bractwa do konta Google użytkownika. | S         |
 
-**PB-11**
-System automatycznie oblicza łączną kwotę zamówienia na podstawie wybranych pinów.
-**Priorytet:** Must
+### KRO - Kronika
 
-### SB – System bazodanowy
+| Kod        | Wymaganie                                                                 | Priorytet |
+|------------|---------------------------------------------------------------------------|-----------|
+| KRO-FR-001 | System musi prezentować sekcje tematyczne Kroniki.                        | M         |
+| KRO-FR-002 | System musi obsługiwać wielopoziomową strukturę kategorii i podkategorii. | M         |
+| KRO-FR-003 | System musi umożliwiać przeglądanie pozycji przypisanych do podkategorii. | M         |
+| KRO-FR-004 | System musi umożliwiać wyszukiwanie pełnotekstowe.                        | M         |
+| KRO-FR-005 | System musi wyróżniać dopasowania dokładne kolorem zielonym.              | S         |
+| KRO-FR-006 | System musi wyróżniać dopasowania kontekstowe kolorem żółtym.             | S         |
+| KRO-FR-007 | System musi udostępniać wyszukiwanie zaawansowane.                        | C         |
+| KRO-FR-008 | System musi prezentować dane w formie tabelarycznej.                      | C         |
+| KRO-FR-009 | System musi umożliwiać filtrowanie kolumn w trybie włączającym.           | C         |
+| KRO-FR-010 | System musi umożliwiać filtrowanie kolumn w trybie wykluczającym.         | C         |
 
-**SB-10**
-System udostępnia użytkownikom jeden centralny kodeks zasad organizacji.
-**Priorytet:** Must
+### ENC - Encyklopedia
 
-**SB-11**
-System umożliwia skarbnikowi przeglądanie danych o członkach i organizacjach powiązanych z transakcjami.
-**Priorytet:** Should
+| Kod        | Wymaganie                                                             | Priorytet |
+|------------|-----------------------------------------------------------------------|-----------|
+| ENC-FR-001 | System musi prezentować spis pojęć pogrupowanych alfabetycznie.       | M         |
+| ENC-FR-002 | System musi umożliwiać wybór pojęcia.                                 | M         |
+| ENC-FR-003 | System musi wyświetlać artykuł encyklopedyczny dla wybranego pojęcia. | M         |
 
-**SB-12**
-System umożliwia wyszukiwanie informacji o organizacjach na podstawie adresu e-mail.
-**Priorytet:** Could
+### CYT - Cytaty
 
+| Kod        | Wymaganie                                                    | Priorytet |
+|------------|--------------------------------------------------------------|-----------|
+| CYT-FR-001 | System musi wyświetlać cytaty pogrupowane według autorów.    | M         |
+| CYT-FR-002 | System musi umożliwiać otwarcie szczegółów cytatu.           | M         |
+| CYT-FR-003 | System musi prezentować autora i kontekst cytatu.            | M         |
+| CYT-FR-004 | System musi umożliwiać przechodzenie do następnego cytatu.   | S         |
+| CYT-FR-005 | System musi umożliwiać przechodzenie do poprzedniego cytatu. | S         |
+| CYT-FR-006 | System musi prezentować Cytat Dnia.                          | C         |
 
-### SK – Skarbiec
+### PIN - Piny belgijskie
 
-**SK-10**
-Członek może sprawdzić historię swoich wpłat oraz aktualne zaległości.
-**Priorytet:** Must
+| Kod        | Wymaganie                                                                        | Priorytet |
+|------------|----------------------------------------------------------------------------------|-----------|
+| PIN-FR-001 | System musi prezentować katalog pinów w formie kafelków.                         | M         |
+| PIN-FR-002 | System musi prezentować nazwę, cenę i grafikę pina.                              | M         |
+| PIN-FR-003 | System musi umożliwiać wybór ilości pinów.                                       | M         |
+| PIN-FR-004 | System musi wyświetlać opis pina po najechaniu kursorem.                         | S         |
+| PIN-FR-005 | System musi umożliwiać filtrowanie pinów według kategorii.                       | M         |
+| PIN-FR-006 | System musi obsługiwać koszyk zakupowy.                                          | M         |
+| PIN-FR-007 | System musi wyświetlać sumę zamówienia.                                          | M         |
+| PIN-FR-008 | System musi umożliwiać wysłanie zamówienia do Skarbnika.                         | M         |
+| PIN-FR-009 | System musi umożliwiać ponowne przesłanie zamówienia przed upływem limitu czasu. | S         |
+| PIN-FR-010 | System musi prezentować licznik czasu na modyfikację zamówienia.                 | S         |
 
-**SK-11**
-Skarbnik może wczytać historię transakcji poprzez przesłanie pliku CSV.
-**Priorytet:** Must
+### SKL - Składki
 
-**SK-12**
-System automatycznie analizuje plik CSV i zapisuje transakcje w bazie danych.
-**Priorytet:** Must
+| Kod        | Wymaganie                                                         | Priorytet |
+|------------|-------------------------------------------------------------------|-----------|
+| SKL-FR-001 | System musi prezentować cele składkowe przypisane do użytkownika. | M         |
+| SKL-FR-002 | System musi prezentować postęp wpłat dla każdego celu.            | M         |
+| SKL-FR-003 | System musi prezentować szczegóły celu składkowego.               | M         |
+| SKL-FR-004 | System musi umożliwiać deklarowanie dokonanej wpłaty.             | M         |
+| SKL-FR-005 | System musi przekazywać deklarację wpłaty do Skarbnika.           | M         |
+| SKL-FR-006 | System musi aktualizować historię wpłat i postęp realizacji celu. | M         |
 
-**SK-13**
-Skarbnik może tworzyć cele składkowe z określoną kwotą i listą użytkowników.
-**Priorytet:** Must
-
-**SK-14**
-System umożliwia wysłanie zbiorowego maila do użytkowników zalegających z płatnością.
-**Priorytet:** Should
-
-### SP – Śpiewnik
-
-**SP-10**
-System umożliwia wyszukiwanie piosenek po tytule.
-**Priorytet:** Must
-
-**SP-11**
-System umożliwia wyszukiwanie piosenek po akordach.
-**Priorytet:** Should
-
-**SP-12**
-System wyróżnia akordy wizualnie w stosunku do tekstu piosenki.
-**Priorytet:** Must
-
-**SP-13**
-System umożliwia przełączanie trybu focus, który wyświetla jedną zwrotkę naraz.
-**Priorytet:** Should
-
-### WM – Panel Wielkiego Mistrza
-
-**WM-10**
-System umożliwia zarządzanie listą zadań dla zarządu organizacji.
-**Priorytet:** Must
-
-**WM-11**
-Użytkownik może oznaczać zadania jako wykonane.
-**Priorytet:** Must
-
-
-### WN – Wnioski
-
-**WN-10**
-System umożliwia utworzenie nowego wniosku na podstawie szablonu.
-**Priorytet:** Should
-
-**WN-11**
-System umożliwia przeglądanie listy zarządzeń SSUJ.
-**Priorytet:** Could
-
-**WN-12**
-System umożliwia wyszukiwanie wniosków z przeszłości.
-**Priorytet:** Should
-
-### WY – Wyszukiwarka
-
-**WY-10**
-System umożliwia wyszukiwanie informacji w bazie danych organizacji.
-**Priorytet:** Must
-
-**WY-11**
-System wyświetla wyniki wyszukiwania pogrupowane według kategorii danych.
-**Priorytet:** Should
-
-**WY-12**
-System umożliwia filtrowanie wyników według pól modelu danych.
-**Priorytet:** Could
 
 ## 4.4.4 Wymagania niefunkcjonalne
 
