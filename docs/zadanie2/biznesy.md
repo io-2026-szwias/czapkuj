@@ -64,138 +64,175 @@ a także ułatwiać kandydatom dostęp do rzetelnych informacji o organizacji.
 
 # PERSONY
 
-## Wiktor Wedel - Członek
-**Motto:** 
-"Grunt to fun i wygoda"
+## Waleria Wedel – Członek
+
+**Motto:**  
+
+„Grunt to zabawa i wygoda”
 
 **Zadania:**
-- uczestnictwo w wydarzeniach
-- zakładanie rodziny
+- uczestnictwo w wydarzeniach  
+- zakładanie rodziny czapkowej
 - płacenie składek
-- toast Nawojkowy
 
 **Frustracje:**
-- wydarzenia na FB pojawiające się kilka dni przed faktycznym wydarzeniem
-- można nigdy nie dowiedzieć się o swoim krewnym
-- posty składkowe giną na FB
+- opóźnione informacje o wydarzeniach  
+- brak wiedzy o relacjach rodzinnych między członkami  
+- ginące posty składkowe  
 
 **Cele:**
-- **KW-0:** pobieranie Kalendarza Google wydarzeń 
-- **DG-0:** generowanie drzewa genealogicznego
-- **SK-0:** śledzenie zaległości
-- **KN-0:** łatwe sprawdzanie w którą stronę NIE jest Nawojka
+- prosty kalendarz  
+- drzewo genealogiczne  
+- kontrola składek  
 
-**Narzędzia:**
-Facebook, Kalendarz Google, Google Maps
-## Marcin Skorpion - Kandydat na członka
-**Motto:** "Wyszukiwanie informacji powinno być proste"
+**Narzędzia:** 
+- Facebook
+- Kalendarz Google
+- Google Maps  
+
+---
+
+## Marcin Skorpion – Kandydat na członka
+
+**Motto:** 
+
+„Nauka o Bractwie powinna być prosta”
 
 **Zadania:**
-- research na temat organizacji
-- nauka zasad
+- research na temat Bractwa  
+- nauka zasad i tradycji
 
 **Frustracje:**
-- informacje rozrzucone na wieloletnich grupach Facebook, dyskach, .docx, itd.
-- sprzeczne wersje zasad, brak one-source-of-truth
-- przeklikiwanie się przez kilkadziesiąt edyktów by coś znaleźć
+- rozproszone źródła informacji  
+- sprzeczne wersje zasad  
+- brak jednego źródła prawdy  
 
 **Cele:**
-- **WY-0:** wyszukiwanie informacji w wyszukiwarce
-- **SB-0:** nauka zasad z jednego kodeksu
-- **WY-1:** przeprowadzanie zaawansowanych wyszukiwań (np. ilu było wielkich mistrzów)
+- proste wyszukiwanie i znajdowanie informacji  
+- jeden spójny kodeks praw i zasad  
 
-**Narzędzia:**
-Facebook, Dysk Google
-## Karol Arifeks - Muzyk
-**Motto:** "Śpiewnik dostosowany do gitarzysty"
+**Narzędzia:** 
+- Facebook
+- Dysk Google  
+
+---
+
+## Karol Artifex – Muzyk
+
+**Motto:** 
+
+„Śpiewnik dostosowany do gitarzysty”
 
 **Zadania:**
-- gra piosenki na gitarze podczas wydarzeń
+- gra podczas wydarzeń  
 
 **Frustracje:**
-- papierowy śpiewnik bezużyteczny po ciemku
-- redakcja śpiewnika ograniczona do pojedynczego śpiewnika
-- akordy zlewają się z tekstem lub w ogóle ich nie ma
-- ktoś musi przytrzymywać śpiewnik
-- konieczność kartkowania
-- upośledzony spis treści
+- nieczytelny śpiewnik w ciemności  
+- brak widocznych akordów  
+- kartkowanie i brak wygody  
 
 **Cele:**
-- **SP-0:** błyskawiczne wyszukiwanie piosenek po tytułach/akordach
-- **SP-1:** widoczne akordy
-- **SP-2:** focus na zwrotki
-- **SP-3:** redakcja piosenek widoczna dla wszystkich
+- szybkie wyszukiwanie utworów  
+- czytelne akordy  
+- tryb skupienia  
+- edycja piosenek widoczna dla wszystkich  
 
-**Narzędzia:**
-papierowy śpiewnik, gitara i inne instrumenty muzyczne
-## Sylwia Turowska - Skarbnik
-**Motto:** "Finanse organizacji w jednym miejscu"
+**Narzędzia:** 
+- papierowy śpiewnik
+- gitara  
+
+---
+
+## Sylwester Turowski – Skarbnik
+
+**Motto:** 
+
+„Finanse organizacji w jednym miejscu”
 
 **Zadania:**
-- zbieranie składek
-- zbieranie danych o członkach
-- wykonywanie przelewów
-- składanie zamówień
+- składki  
+- rozliczenia  
+- przelewy  
+- zamówienia  
 
 **Frustracje:**
-- konieczność ręcznego kopiowania historii konta
-- praca na wielu arkuszach Excel
-- niemożność utworzenia relacji między danymi
-- ściganie każdego spóźnialskiego z osobna
-- Piny belgijskie: członkowie mylą kody pinów, strona gubi zamówienia, godziny/dni przeklikiwania się
+- ręczne dane bankowe  
+- wiele arkuszy  
+- brak relacji danych  
+- indywidualne ściganie zaległości  
+- problemy z zamówieniami  
 
 **Cele:**
-- **SK-1:** automatyczne wczytywanie historii konta
-- **SK-2:** tworzenie celów składkowych z możliwością zbiorowych maili do spóźnialskich
-- **SB-1:** system bazodanowy przechowujący dane o członkach i firmach
-- **PB-0:** aplikacja ułatwiająca zamówienia na piny belgijskie
+- import historii konta  
+- proste maile zbiorcze  
+- baza członków  
+- system zamówień  
 
-**Narzędzia:**
-Pakiet Google, Copilot, system bankowy, Facebook, Gmail
-## Łukasz Chłopiński - Kasztelan
-**Motto:** "Grunt to jasne zasady"
+**Narzędzia:** 
+- Google Workspace
+- bank
+- Facebook
+- Gmail  
+
+---
+
+## Łukasz Chłopiński – Kasztelan
+
+**Motto:** 
+
+„Grunt to jasne zasady”
 
 **Zadania:**
-- śledzenie zarządzeń SSUJ
-- pisanie wniosków o dofinansowanie
-- załatwianie miejscówek na wydarzenia
+- rozporządzenia SSUJ  
+- wnioski  
+- rezerwacja miejsc na wydarzenia  
 
 **Frustracje:**
-- przeszukiwanie całego dysku w poszukiwaniu wniosków
-- przegapianie najnowszych zarządzeń
-- zaśmiecanie własnego maila
+- rozproszone dokumenty  
+- brak aktualizacji o rozporządzeniach  
+- chaos w mailach  
+- trudność z wyborem miejsca
 
 **Cele:**
-- **WN-0:** pisanie wniosków na templatkach
-- **WN-1:** łatwiejszy dostęp do najnowszych ustaleń SSUJ
-- **WN-2:** łatwiejszy dostęp do poprzednich wniosków
-- **KR-0:** możliwość korespondencji z SSUJ za pomocą maila organizacji
-- **MG-0:** mapa miejscówek z danymi dotyczącymi zniżek i datami kiedy organizacja je odwiedzała
-- **MG-1:** zestawienie zniżek studenckich dla danych dni tygodnia
+- szablony wniosków  
+- aktualne rozporządzenia  
+- archiwum wniosków  
+- mapa miejsc  
+- jeden mail do wszystkiego  
 
-**Narzędzia:**
-Pakiet Google, Facebook, Gmail, strona SSUJ
+**Narzędzia:** 
+- Google Workspace
+- Gmail
+- Facebook  
 
-## Nikola Szynka - Wielki Mistrz
-**Motto:** "Chaos organizacyjny to mój największy wróg"
+---
+
+## Nikola Szynka – Wielki Mistrz
+
+**Motto:** 
+
+„Chaos organizacyjny to mój największy wróg”
 
 **Zadania:**
-- realizacja programu wyborczego
 - organizacja wydarzeń
-- korespondencja z organizacjami
+- realizacja programu  
+- korespondencja  
 
 **Frustracje:**
-- zapominanie o rzeczach do zrobienia
-- konieczność wypytywania poprzednich Zarządów co rok
-- brak nauki na błędach
-- konieczność pamiętania wszystkich organizacji
+- zapominanie zadań  
+- brak historii decyzji  
+- powtarzanie błędów  
 
 **Cele:**
-- **WM-0:** odhaczanie TODO-listy przez rok
-- **SB-2:** sprawdzanie kim jest autor e-maila
+- system zadań  
+- identyfikacja autorów maili
+- kumulacja doświadczenia poprzednich zarządów
 
-**Narzędzia:**
-Pakiet Google, Gmail
+**Narzędzia:** 
+- Google Workspace
+- Gmail  
+
+---
 
 # PODRÓŻE UŻYTKOWNIKA
 ## DG - Generator drzew genealogicznych
