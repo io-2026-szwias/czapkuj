@@ -1,18 +1,66 @@
 # DOMENA BIZNESOWA
 
-Organizacja studencka prowadząca działalność integracyjną, kulturalną i organizacyjną dla swoich członków oraz kandydatów. W jej strukturze funkcjonują członkowie, kandydaci, osoby odpowiedzialne za wydarzenia, muzycy prowadzący część artystyczną oraz osoby zarządzające finansami i administracją. Organizacja regularnie organizuje spotkania, wydarzenia integracyjne, śpiewanki, a także prowadzi wewnętrzną działalność administracyjną obejmującą finanse, komunikację oraz archiwizację wiedzy.
+## 1. Charakterystyka organizacji
 
-Obecnie większość procesów organizacyjnych odbywa się w rozproszonych narzędziach takich jak Facebook, Google Drive, Google Calendar czy poczta elektroniczna. Informacje o wydarzeniach publikowane są w mediach społecznościowych, gdzie często pojawiają się z opóźnieniem lub giną wśród innych postów. Dokumenty organizacyjne, zasady oraz archiwa przechowywane są w wielu plikach i folderach, co utrudnia odnalezienie aktualnych wersji i powoduje powstawanie sprzecznych informacji.
+Organizacja studencka prowadzi działalność integracyjną, kulturalną i organizacyjną dla swoich członków oraz kandydatów. 
+W jej strukturze funkcjonują członkowie, kandydaci, osoby odpowiedzialne za wydarzenia, 
+muzycy prowadzący część artystyczną oraz osoby zarządzające finansami i administracją.
 
-Kandydaci na członków mają trudność z odnalezieniem podstawowych informacji o organizacji i jej zasadach, ponieważ wiedza jest rozproszona w wieloletnich grupach dyskusyjnych, dokumentach i wiadomościach. Członkowie organizacji natomiast nie zawsze są na bieżąco z wydarzeniami, mają trudności z kontrolowaniem swoich zobowiązań finansowych oraz odnajdywaniem informacji o strukturze organizacji.
+Organizacja regularnie organizuje spotkania, wydarzenia integracyjne i śpiewanki, 
+a także prowadzi działalność administracyjną obejmującą finanse, komunikację oraz archiwizację wiedzy.
 
-Szczególnym wyzwaniem jest również zarządzanie wiedzą organizacyjną. Osoby odpowiedzialne za organizację wydarzeń często muszą ponownie zbierać informacje, które były już kiedyś opracowane przez poprzednie zarządy. Brakuje centralnego miejsca przechowującego historię działań, dokumenty, kontakty do współpracujących instytucji oraz sprawdzone procedury organizacyjne.
+## 2. Obecne narzędzia i rozproszenie informacji
 
-Dodatkowym obszarem działalności organizacji jest część artystyczna – podczas wielu wydarzeń wykonywane są wspólne śpiewy przy akompaniamencie gitary. Obecnie wykorzystywany jest papierowy śpiewnik, który jest niewygodny w użyciu w warunkach wieczornych wydarzeń, utrudnia szybkie wyszukiwanie utworów oraz nie zapewnia czytelnego zapisu akordów.
+Obecnie większość procesów organizacyjnych realizowana jest z użyciem rozproszonych narzędzi, 
+takich jak Facebook, Google Drive, Google Calendar oraz poczta elektroniczna.
 
-Istotną rolę w funkcjonowaniu organizacji odgrywają także kwestie finansowe. Skarbnik odpowiedzialny jest za zbieranie składek, prowadzenie rozliczeń oraz realizowanie zamówień organizacyjnych. Obecnie wymaga to ręcznego przetwarzania historii konta bankowego oraz pracy na wielu arkuszach kalkulacyjnych, co utrudnia kontrolę nad płatnościami i identyfikację osób zalegających ze składkami.
+Informacje o wydarzeniach publikowane są w mediach społecznościowych, 
+gdzie często pojawiają się z opóźnieniem lub giną w strumieniu innych treści. 
+Dokumenty organizacyjne, zasady oraz archiwa są przechowywane w wielu plikach i folderach, 
+co utrudnia odnalezienie aktualnych wersji i prowadzi do powstawania niespójności.
 
-Zarząd organizacji chciałby zastąpić rozproszone narzędzia jednym systemem informatycznym, który umożliwi centralne zarządzanie informacjami, wydarzeniami, dokumentami, finansami oraz materiałami muzycznymi. System miałby wspierać zarówno codzienne funkcjonowanie członków organizacji, jak i działania administracyjne zarządu, a także ułatwiać kandydatom dostęp do rzetelnych informacji o organizacji.
+## 3. Problemy z dostępem do informacji
+
+Kandydaci na członków mają trudności z odnalezieniem podstawowych informacji o organizacji i jej zasadach, 
+ponieważ wiedza jest rozproszona w wieloletnich grupach dyskusyjnych, dokumentach i wiadomościach.
+
+Członkowie organizacji również nie zawsze są na bieżąco z wydarzeniami. 
+Mają trudności z kontrolowaniem zobowiązań finansowych oraz odnajdywaniem informacji o strukturze organizacji.
+
+## 4. Zarządzanie wiedzą organizacyjną
+
+Szczególnym wyzwaniem jest zarządzanie wiedzą organizacyjną. 
+Osoby odpowiedzialne za organizację wydarzeń często muszą ponownie gromadzić informacje, 
+które były już wcześniej opracowane przez poprzednie zarządy.
+
+Brakuje centralnego repozytorium przechowującego historię działań, dokumenty, 
+kontakty do współpracujących instytucji oraz sprawdzone procedury organizacyjne.
+
+## 5. Działalność artystyczna i śpiewnik
+
+Istotnym obszarem działalności organizacji jest część artystyczna. 
+Podczas wielu wydarzeń wykonywane są wspólne śpiewy przy akompaniamencie gitary.
+
+Obecnie wykorzystywany jest papierowy śpiewnik, który jest niewygodny w warunkach wieczornych wydarzeń, 
+utrudnia szybkie wyszukiwanie utworów oraz nie zapewnia czytelnego zapisu akordów.
+
+## 6. Zarządzanie finansami
+
+Istotną rolę w funkcjonowaniu organizacji odgrywają kwestie finansowe. Skarbnik odpowiada za zbieranie składek, 
+prowadzenie rozliczeń oraz realizację zamówień organizacyjnych.
+
+Obecnie proces ten wymaga ręcznego przetwarzania historii konta bankowego oraz pracy na wielu arkuszach kalkulacyjnych, 
+co utrudnia kontrolę płatności i identyfikację osób zalegających ze składkami.
+
+## 7. Potrzeba centralnego systemu
+
+Zarząd organizacji chce zastąpić rozproszone narzędzia jednym systemem informatycznym, 
+który umożliwi centralne zarządzanie informacjami, wydarzeniami, dokumentami, finansami oraz materiałami muzycznymi.
+
+System ma wspierać zarówno codzienne funkcjonowanie członków organizacji, jak i działania administracyjne zarządu, 
+a także ułatwiać kandydatom dostęp do rzetelnych informacji o organizacji.
+
+---
 
 # PERSONY
 
