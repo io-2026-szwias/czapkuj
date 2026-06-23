@@ -292,5 +292,83 @@ przez poprzednich `Kasztelanów`.
 12. System wyświetla `Centrum Zarządzania`.
 
 ---
+
+### WNI - Wnioski
+
+1. Użytkownik wybiera moduł `„Wnioski”` z `Panelu Kasztelana`.
+2. System wyświetla listę dotychczasowych wniosków. Dostępne są opcje sortowania według daty złożenia lub daty 
+ostatniej modyfikacji, a także grupowania według statusu akceptacji.
+3. Użytkownik wybiera jeden z wniosków.
+4. System wyświetla szczegóły wniosku, obejmujące nazwę, datę złożenia, datę ostatniej modyfikacji, status akceptacji 
+przez SSUJ oraz podgląd dokumentu.
+5. Użytkownik zamyka widok wniosku.
+6. Użytkownik wybiera ikonę dodawania (plus) dostępną przy jednym z istniejących wniosków.
+7. System otwiera kopię wybranego wniosku w trybie edycji.
+8. Użytkownik wprowadza zmiany i zapisuje dokument.
+9. System dodaje nowy wniosek do listy oraz nadaje mu status `„Czeka na akceptację”`.
+10. Użytkownik wybiera ikonę edycji przy wybranym wniosku.
+11. System umożliwia modyfikację nazwy, daty, statusu oraz załączonego dokumentu.
+12. Po zapisaniu zmian system automatycznie aktualizuje datę ostatniej modyfikacji.
+13. Użytkownik zapisuje zmiany i zamyka widok wniosku.
+14. Wszystkie dokonane przez użytkownika zmiany zostaną zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
+15. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`.
+16. System wyświetla `Centrum Zarządzania`.
+
+---
+
+### WMI - Wywiad miejscówek
+
+1. Użytkownik wybiera moduł `"Wywiad miejscówek"` z `Panelu Kasztelana`.
+2. System wyświetla mapę świata sfokusowaną na Krakowie ze znacznikami odpowiadającymi miejscom, w których odbywały się 
+wydarzenia.
+   * Najechanie na znacznik wyświetla tooltip zawierający nazwę, kategorię oraz adres.
+   * Naciśnięcie na znacznik dodatkowo pokazuje godziny otwarcia, informację czy miejsce nadaje się na Karczmę, 
+ocenę Google, ocenę Zarządu, dostępne zniżki w poszczególne dni tygodnia oraz trzy ostatnie wydarzenia w danym miejscu.
+3. Użytkownik wybiera datę oraz czas rozpoczęcia i czas trwania planowanego wydarzenia w prawym panelu bocznym, określa 
+czy jest to Karczma i wybiera opcję `"Znajdź najlepsze miejsca"`.
+4. System analizuje zniżki, natężenie ruchu, przydatność miejsca do organizacji Karczmy, oceny oraz inne czynniki i na 
+tej podstawie wskazuje najlepsze lokalizacje.
+5. Wyniki można filtrować według kategorii, odległości od centrum, przydatności do organizacji Karczmy, ocen oraz 
+dostępnych zniżek w danym dniu tygodnia.
+6. Użytkownik zaznacza jedną z rekomendowanych miejscówek jako miejsce wydarzenia i wybiera opcję 
+`"Znajdź miejscówki na after"`.
+7. System analizuje natężenie ruchu, odległość od wybranego miejsca wydarzenia oraz oceny, a następnie wskazuje 
+najlepsze lokalizacje na after.
+8. Użytkownik naciska jeden ze znaczników i wybiera opcję edycji.
+9. Użytkownik edytuje informacje i zapisuje zmiany. Akcje zostają zarejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+10. Użytkownik odznacza miejsce wydarzenia i wybiera opcję `"Wróć do Centrum Zarządzania"`.
 10. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`. 
 11. System wyświetla `Centrum Zarządzania`.
+
+---
+
+### SKA - Skarbiec
+
+1. Użytkownik wybiera moduł `"Skarbiec"` z `Panelu Skarbnika`.
+2. System wyświetla saldo oraz numer konta, a także skróty do historii transakcji, spisu płatników i spisu firm.
+3. Użytkownik rozwija historię transakcji. Każda pozycja zawiera tytuł operacji, kwotę przelewu, 
+link do odbiorcy/adresata oraz saldo konta po transakcji.
+4. Użytkownik wybiera opcję `"Wczytaj historię"`.
+5. System otwiera okno umożliwiające przeciągnięcie lub wybranie pliku CSV zawierającego historię transakcji konta 
+bankowego.
+6. Użytkownik dodaje plik CSV.
+7. System analizuje transakcje i dodaje je do historii transakcji `Skarbca`.
+8. Jeśli system nie odnajdzie odbiorcy lub nadawcy w spisie płatników lub firm, prosi użytkownika o wykonanie jednej z 
+następujących akcji:
+   - przyporządkowanie transakcji do istniejącego płatnika lub firmy wraz z uzupełnieniem nowych danych,
+   - utworzenie nowego obiektu poprzez wskazanie, czy jest to płatnik czy firma, oraz uzupełnienie dostępnych informacji 
+   (np. opisu działalności, dodatkowych numerów telefonu).
+9. Po udzieleniu odpowiedzi na wszystkie pytania historia transakcji `Skarbca` zostaje uzupełniona o nowe pozycje.
+10. Użytkownik zwija historię transakcji i rozwija spis płatników.
+   - Każda pozycja zawiera imię i nazwisko oraz numer konta lub numer telefonu.
+   - Po wybraniu pozycji system wyświetla dodatkowo adres zamieszkania płatnika, adres e-mail oraz profil użytkownika, 
+   jeśli istnieje on w systemie. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
+11. Użytkownik zwija spis płatników i rozwija spis firm.
+   - Każda pozycja zawiera nazwę firmy oraz numer konta.
+   - Po wybraniu pozycji system wyświetla dodatkowo adres siedziby, adresy e-mail, numery telefonów oraz opis 
+   działalności. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
+12. Wszystkie zmiany wprowadzone przez użytkownika są rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+13. Użytkownik zwija spis firm i wybiera opcję `"Wróć do Centrum Zarządzania"`.
+14. System wyświetla `Centrum Zarządzania`.
+
+---
