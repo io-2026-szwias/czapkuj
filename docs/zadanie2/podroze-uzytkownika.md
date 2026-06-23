@@ -253,6 +253,7 @@ Odhaczenie zadania jest możliwe wyłącznie po spełnieniu wszystkich warunków
 5. Użytkownik może dodawać oraz edytować zadania; każda zmiana jest rejestrowana na `Osi Czasu` w `Centrum Zarządzania`. 
 6. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`. 
 7. System wyświetla `Centrum Zarządzania`.
+
 ---
 
 ### WOR - Wywiad organizacji
@@ -262,12 +263,14 @@ Odhaczenie zadania jest możliwe wyłącznie po spełnieniu wszystkich warunków
 3. Użytkownik wybiera jedną z organizacji. 
 4. System wyświetla kartę wywiadu zawierającą: nazwę organizacji, adresy e-mail, obszar działania, 
 aktualne kierownictwo, rok założenia, listę członków, historię wspólnych wydarzeń oraz opinie poprzednich Zarządów. 
-5. Użytkownik dodaje opinię o organizacji w imieniu aktualnego Zarządu. 
+5. Użytkownik dodaje opinię o organizacji w imieniu aktualnego Zarządu. Może też edytować resztę informacji. 
 6. Użytkownik zamyka widok szczegółów organizacji. 
 7. Użytkownik wpisuje w wyszukiwarkę dowolną informację dotyczącą organizacji (np. adres e-mail lub nazwę). 
 8. System wyświetla powiązane organizacje na podstawie wprowadzonego zapytania. 
-9. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`.
-10. System wyświetla `Centrum Zarządzania`.
+9. Wszystkie dokonane przez użytkownika zmiany zostaną zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
+10. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`.
+11. System wyświetla `Centrum Zarządzania`.
+
 ---
 
 ### RSS - Rozporządzenia SSUJ
@@ -284,5 +287,10 @@ podzieloną na sekcje `„Nieprzeczytane”` oraz `„Przeczytane”`.
 prezentując szacowany czas potrzebny na wykonanie zadania. 
 9. Użytkownik oznacza nieaktualne rozporządzenia, korzystając ze streszczeń pozostawionych 
 przez poprzednich `Kasztelanów`. 
+10. Wszystkie dokonane przez użytkownika zmiany zostaną zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
+11. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`. 
+12. System wyświetla `Centrum Zarządzania`.
+
+---
 10. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`. 
 11. System wyświetla `Centrum Zarządzania`.
