@@ -182,18 +182,19 @@ System może integrować się z następującymi usługami:
 
 ### PIN - Piny belgijskie
 
-| Kod        | Wymaganie                                                                        | Priorytet |
-|------------|----------------------------------------------------------------------------------|-----------|
-| PIN-FR-001 | System musi prezentować katalog pinów w formie kafelków.                         | M         |
-| PIN-FR-002 | System musi prezentować nazwę, cenę i grafikę pina.                              | M         |
-| PIN-FR-003 | System musi umożliwiać wybór ilości pinów.                                       | M         |
-| PIN-FR-004 | System musi wyświetlać opis pina po najechaniu kursorem.                         | S         |
-| PIN-FR-005 | System musi umożliwiać filtrowanie pinów według kategorii.                       | M         |
-| PIN-FR-006 | System musi obsługiwać koszyk zakupowy.                                          | M         |
-| PIN-FR-007 | System musi wyświetlać sumę zamówienia.                                          | M         |
-| PIN-FR-008 | System musi umożliwiać wysłanie zamówienia do Skarbnika.                         | M         |
-| PIN-FR-009 | System musi umożliwiać ponowne przesłanie zamówienia przed upływem limitu czasu. | S         |
-| PIN-FR-010 | System musi prezentować licznik czasu na modyfikację zamówienia.                 | S         |
+| Kod        | Wymaganie                                                                                                        | Priorytet |
+|------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| PIN-FR-001 | System musi prezentować katalog pinów w formie kafelków.                                                         | M         |
+| PIN-FR-002 | System musi prezentować nazwę, cenę i grafikę pina.                                                              | M         |
+| PIN-FR-003 | System musi umożliwiać wybór ilości pinów.                                                                       | M         |
+| PIN-FR-004 | System musi wyświetlać opis pina po najechaniu kursorem.                                                         | S         |
+| PIN-FR-005 | System musi umożliwiać filtrowanie pinów według kategorii.                                                       | M         |
+| PIN-FR-006 | System musi obsługiwać koszyk zakupowy.                                                                          | M         |
+| PIN-FR-007 | System musi wyświetlać sumę zamówienia.                                                                          | M         |
+| PIN-FR-008 | System musi umożliwiać wysłanie zamówienia do Skarbnika.                                                         | M         |
+| PIN-FR-009 | System musi umożliwiać ponowne przesłanie zamówienia zastępującego poprzednią wersję przed upływem limitu czasu. | S         |
+| PIN-FR-010 | System musi prezentować licznik czasu na modyfikację zamówienia.                                                 | S         |
+| PIN-FR-011 | System musi umożliwiać zapisanie zamówienia pinów w wersji roboczej.                                             | M         |
 
 ### SKL - Składki
 
@@ -205,6 +206,121 @@ System może integrować się z następującymi usługami:
 | SKL-FR-004 | System musi umożliwiać deklarowanie dokonanej wpłaty.             | M         |
 | SKL-FR-005 | System musi przekazywać deklarację wpłaty do Skarbnika.           | M         |
 | SKL-FR-006 | System musi aktualizować historię wpłat i postęp realizacji celu. | M         |
+
+### PDZ - Plan działania
+
+| Kod        | Wymaganie                                                                                       | Priorytet |
+|------------|-------------------------------------------------------------------------------------------------|-----------|
+| PDZ-FR-001 | System musi umożliwiać otwarcie modułu Plan działania.                                          | M         |
+| PDZ-FR-002 | System musi wyświetlać listę zadań przypisanych do kadencji Zarządów.                           | M         |
+| PDZ-FR-003 | System musi wyświetlać szczegóły zadania.                                                       | M         |
+| PDZ-FR-004 | System musi prezentować listę kroków wymaganych do ukończenia zadania.                          | M         |
+| PDZ-FR-005 | System musi blokować oznaczenie zadania jako ukończonego przed spełnieniem wszystkich warunków. | M         |
+| PDZ-FR-006 | System musi umożliwiać dodawanie zadań.                                                         | M         |
+| PDZ-FR-007 | System musi umożliwiać edycję zadań.                                                            | M         |
+| PDZ-FR-008 | System musi rejestrować zmiany na Osi Czasu.                                                    | M         |
+
+### WOR - Wywiad organizacji
+
+| Kod        | Wymaganie                                                                | Priorytet |
+|------------|--------------------------------------------------------------------------|-----------|
+| WOR-FR-001 | System musi wyświetlać listę organizacji.                                | M         |
+| WOR-FR-002 | System musi prezentować kartę wywiadu organizacji.                       | M         |
+| WOR-FR-003 | System musi przechowywać dane kontaktowe organizacji.                    | M         |
+| WOR-FR-004 | System musi przechowywać historię współpracy z organizacją.              | M         |
+| WOR-FR-005 | System musi umożliwiać dodawanie opinii Zarządu.                         | M         |
+| WOR-FR-006 | System musi umożliwiać edycję danych organizacji.                        | M         |
+| WOR-FR-007 | System musi umożliwiać wyszukiwanie organizacji po dowolnym polu danych. | S         |
+| WOR-FR-008 | System musi wyświetlać organizacje powiązane z zapytaniem użytkownika.   | S         |
+| WOR-FR-009 | System musi rejestrować zmiany na Osi Czasu.                             | M         |
+
+### RSS - Rozporządzenia SSUJ
+
+| Kod        | Wymaganie                                                                          | Priorytet |
+|------------|------------------------------------------------------------------------------------|-----------|
+| RSS-FR-001 | System musi umożliwiać uwierzytelnienie przy użyciu konta Microsoft.               | M         |
+| RSS-FR-002 | System musi prezentować rozporządzenia podzielone na przeczytane i nieprzeczytane. | M         |
+| RSS-FR-003 | System musi umożliwiać filtrowanie rozporządzeń.                                   | M         |
+| RSS-FR-004 | System musi wyświetlać treść rozporządzenia.                                       | M         |
+| RSS-FR-005 | System musi umożliwiać wprowadzanie streszczenia rozporządzenia.                   | M         |
+| RSS-FR-006 | System musi umożliwiać oznaczanie aktualności rozporządzenia.                      | M         |
+| RSS-FR-007 | System musi wyszukiwać potencjalnie powiązane rozporządzenia.                      | S         |
+| RSS-FR-008 | System musi prezentować szacowany czas wykonania zadania weryfikacji.              | C         |
+| RSS-FR-009 | System musi rejestrować zmiany na Osi Czasu.                                       | M         |
+
+### WNI - Wnioski
+
+| Kod        | Wymaganie                                                                   | Priorytet |
+|------------|-----------------------------------------------------------------------------|-----------|
+| WNI-FR-001 | System musi wyświetlać listę wniosków.                                      | M         |
+| WNI-FR-002 | System musi umożliwiać sortowanie listy wniosków.                           | S         |
+| WNI-FR-003 | System musi umożliwiać grupowanie według statusu.                           | S         |
+| WNI-FR-004 | System musi wyświetlać szczegóły wniosku.                                   | M         |
+| WNI-FR-005 | System musi umożliwiać utworzenie nowego wniosku na podstawie istniejącego. | M         |
+| WNI-FR-006 | System musi umożliwiać edycję wniosku.                                      | M         |
+| WNI-FR-007 | System musi automatycznie aktualizować datę ostatniej modyfikacji.          | M         |
+| WNI-FR-008 | System musi nadawać nowym wnioskom status „Czeka na akceptację”.            | M         |
+| WNI-FR-009 | System musi rejestrować zmiany na Osi Czasu.                                | M         |
+
+### WMI - Wywiad miejscówek
+
+| Kod        | Wymaganie                                                            | Priorytet |
+|------------|----------------------------------------------------------------------|-----------|
+| WMI-FR-001 | System musi wyświetlać mapę miejsc wydarzeń.                         | M         |
+| WMI-FR-002 | System musi prezentować szczegóły miejscówki po wybraniu znacznika.  | M         |
+| WMI-FR-003 | System musi umożliwiać określenie parametrów planowanego wydarzenia. | M         |
+| WMI-FR-004 | System musi rekomendować miejsca na podstawie zadanych kryteriów.    | M         |
+| WMI-FR-005 | System musi umożliwiać filtrowanie rekomendowanych miejsc.           | S         |
+| WMI-FR-006 | System musi rekomendować miejsca na afterparty.                      | S         |
+| WMI-FR-007 | System musi umożliwiać oznaczenie miejsca wydarzenia.                | M         |
+| WMI-FR-008 | System musi umożliwiać edycję danych miejscówki.                     | M         |
+| WMI-FR-009 | System musi rejestrować zmiany na Osi Czasu.                         | M         |
+
+### SKA - Skarbiec
+
+| Kod        | Wymaganie                                                              | Priorytet |
+|------------|------------------------------------------------------------------------|-----------|
+| SKA-FR-001 | System musi prezentować saldo oraz numer konta.                        | M         |
+| SKA-FR-002 | System musi przechowywać historię transakcji.                          | M         |
+| SKA-FR-003 | System musi umożliwiać import historii transakcji z pliku CSV.         | S         |
+| SKA-FR-004 | System musi analizować zaimportowane transakcje.                       | S         |
+| SKA-FR-005 | System musi umożliwiać przypisywanie transakcji do płatników lub firm. | M         |
+| SKA-FR-006 | System musi umożliwiać tworzenie nowych płatników.                     | M         |
+| SKA-FR-007 | System musi umożliwiać tworzenie nowych firm.                          | M         |
+| SKA-FR-008 | System musi prowadzić rejestr płatników.                               | M         |
+| SKA-FR-009 | System musi prowadzić rejestr firm.                                    | M         |
+| SKA-FR-010 | System musi umożliwiać edycję danych płatników.                        | M         |
+| SKA-FR-011 | System musi umożliwiać edycję danych firm.                             | M         |
+| SKA-FR-012 | System musi rejestrować zmiany na Osi Czasu.                           | M         |
+
+### CSK - Cele składkowe
+
+| Kod        | Wymaganie                                                                        | Priorytet |
+|------------|----------------------------------------------------------------------------------|-----------|
+| CSK-FR-001 | System musi wyświetlać listę celów składkowych.                                  | M         |
+| CSK-FR-002 | System musi prezentować status wpłat dla każdego płatnika.                       | M         |
+| CSK-FR-003 | System musi automatycznie aktualizować status wpłat na podstawie danych Skarbca. | M         |
+| CSK-FR-004 | System musi umożliwiać zaznaczanie zalegających płatników.                       | M         |
+| CSK-FR-005 | System musi generować plik CSV do wysyłki przypomnień.                           | S         |
+| CSK-FR-006 | System musi wysyłać przypomnienia systemowe.                                     | M         |
+| CSK-FR-007 | System musi umożliwiać edycję celu składkowego.                                  | M         |
+| CSK-FR-008 | System musi powiadamiać zalegających płatników o zmianie terminu.                | S         |
+| CSK-FR-009 | System musi umożliwiać zamknięcie celu składkowego.                              | M         |
+| CSK-FR-010 | System musi rejestrować zamknięcie celu na Osi Czasu.                            | M         |
+
+### PBZ - Piny belgijskie zamówienie
+
+| Kod        | Wymaganie                                                             | Priorytet |
+|------------|-----------------------------------------------------------------------|-----------|
+| PBZ-FR-001 | System musi wyświetlać listę zamówień pinów belgijskich.              | M         |
+| PBZ-FR-002 | System musi prezentować status spłaty każdego zamówienia.             | M         |
+| PBZ-FR-003 | System musi wyświetlać szczegóły zamówienia wraz z katalogiem pinów.  | M         |
+| PBZ-FR-004 | System musi umożliwiać zmianę terminu spłaty zamówień.                | M         |
+| PBZ-FR-005 | System musi wysyłać powiadomienia o zmianie terminu spłaty.           | S         |
+| PBZ-FR-006 | System musi automatycznie tworzyć cel składkowy dla zamówienia pinów. | M         |
+| PBZ-FR-007 | System musi umożliwiać wygenerowanie pliku CSV dla przypomnień.       | S         |
+| PBZ-FR-008 | System musi umożliwiać edycję katalogu pinów belgijskich.             | M         |
+| PBZ-FR-009 | System musi rejestrować zmiany katalogu na Osi Czasu.                 | M         |
 
 
 ## 4.4.4 Wymagania niefunkcjonalne
