@@ -213,14 +213,15 @@ oraz kontrolkę wyboru ilości.
 7. System wyświetla piny dodane do koszyka w formie kafelków. 
 Kontrolka dodawania ilości zostaje zastąpiona kontrolką ustawiania ilości, 
 a przycisk dodawania do koszyka jest niedostępny. Na dole widoczna jest łączna suma kosztów zamówienia. 
-8. Użytkownik wybiera opcję `„Wyślij zamówienie do Skarbnika”`. 
-9. System wyświetla potwierdzenie pomyślnego przesłania zamówienia. 
-10. W prawym górnym rogu interfejsu widoczny jest licznik czasu pozostałego na modyfikację lub 
+8. Użytkownik wybiera opcję `"Zapisz zamówienie`.
+9. Użytkownik wybiera opcję `„Wyślij zamówienie do Skarbnika”`. 
+10. System wyświetla potwierdzenie pomyślnego przesłania zamówienia. 
+11. W prawym górnym rogu interfejsu widoczny jest licznik czasu pozostałego na modyfikację lub 
 ponowne przesłanie zamówienia; po jego upływie funkcja wysyłania zostaje zablokowana. 
-11. Użytkownik modyfikuje ilości pinów i ponownie wybiera opcję `„Wyślij zamówienie do Skarbnika”`, 
+12. Użytkownik modyfikuje ilości pinów i ponownie wybiera opcję `„Wyślij zamówienie do Skarbnika”`, 
 zastępując wcześniejszą wersję zamówienia aktualną. 
-12. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
-13. System wyświetla `Dashboard`.
+13. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
+14. System wyświetla `Dashboard`.
 
 ---
 
@@ -228,7 +229,7 @@ zastępując wcześniejszą wersję zamówienia aktualną.
 
 1. Użytkownik wybiera moduł `„Składki”` z `dashboardu`. 
 2. System wyświetla listę celów składkowych przypisanych do użytkownika wraz z postępem wpłat 
-w formacie „zapłacono x z y zł”. 
+w formacie „zapłacono x z y zł” oraz kodem do tytułu przelewu. 
 3. Użytkownik wybiera jeden z celów składkowych. 
 4. System wyświetla szczegóły celu, obejmujące tytuł, kwotę docelową, termin oraz ewentualny formularz wpłaty. 
 5. Użytkownik wpisuje zadeklarowaną kwotę w polu `„Zapłacił_m x zł”` i zatwierdza formularz. 
@@ -398,3 +399,31 @@ Operacja zostaje odnotowana na `Osi Czasu` w `Centrum Zarządzania`.
 14. System wyświetla `Centrum Zarządzania`.
 
 ---
+
+### PBZ - Piny belgijskie zamówienie
+
+1. Użytkownik wybiera opcję `"Piny belgijskie zamówienie"` z `Centrum Zarządzania`.
+2. System wyświetla listę zamówień. Każda pozycja zawiera odnośnik do płatnika, liczbę zamówionych pinów oraz status 
+spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
+3. Użytkownik wybiera jedną z pozycji. System wyświetla szczegóły zamówienia, obejmujące wcześniej widoczne informacje 
+oraz katalog zamówionych przez płatnika pinów. Każda pozycja katalogu zawiera nazwę pina, grafikę, 
+cenę jednostkową w euro oraz zamówioną ilość.
+4. Użytkownik zamyka widok szczegółów zamówienia.
+5. Użytkownik wybiera opcję `"Zmień termin spłaty"`.
+6. Użytkownik wprowadza nowy termin i zatwierdza zmianę. System wysyła powiadomienie do wszystkich płatników 
+posiadających zaległości.
+7. Zamówienie jest automatycznie rejestrowane jako cel składkowy w module `Cele składkowe` w `Panelu Skarbnika`.
+   - możliwe jest wygenerowanie pliku CSV do wykorzystania przy wysyłce wiadomości zbiorczej,
+   - zamknięcie celu składkowego dotyczącego pinów belgijskich powoduje zakończenie okresu spłaty oraz wysłanie 
+   powiadomienia do wszystkich zalegających płatników.
+8. Użytkownik wybiera opcję `"Edytuj katalog pinów"`.
+9. System wyświetla katalog wszystkich pinów belgijskich w formie analogicznej do modułu `"PIN - Piny belgijskie"`.
+10. Użytkownik może edytować informacje dotyczące pinów. Po zatwierdzeniu zmian zostają one zarejestrowane 
+na `Osi Czasu` w `Centrum Zarządzania`.
+11. Użytkownik wybiera opcję `"Wróć"`.
+12. System wyświetla listę zamówień.
+13. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
+14. System wyświetla `Centrum Zarządzania`.
+
+---
+
