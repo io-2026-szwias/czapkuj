@@ -155,7 +155,7 @@ miejsce oraz typ wydarzenia. W przypadku wydarzeń zakończonych wyświetlana je
 
 ---
 
-### Kronika (KRO) 
+### KRO - Kronika
 1. Użytkownik otwiera moduł `„Kronika”` z poziomu `dashboardu`. 
 2. System wyświetla listę rozwijalnych sekcji, takich jak `„Osoby”`, `„Dokumenty”`, `„Miejsca”` oraz pozostałe kategorie tematyczne. 
 3. Po rozwinięciu wybranej sekcji system wyświetla listę rozwijalnych podkategorii. 
@@ -321,8 +321,8 @@ przez SSUJ oraz podgląd dokumentu.
 1. Użytkownik wybiera moduł `"Wywiad miejscówek"` z `Panelu Kasztelana`.
 2. System wyświetla mapę świata sfokusowaną na Krakowie ze znacznikami odpowiadającymi miejscom, w których odbywały się 
 wydarzenia.
-   * Najechanie na znacznik wyświetla tooltip zawierający nazwę, kategorię oraz adres.
-   * Naciśnięcie na znacznik dodatkowo pokazuje godziny otwarcia, informację czy miejsce nadaje się na Karczmę, 
+   - Najechanie na znacznik wyświetla tooltip zawierający nazwę, kategorię oraz adres.
+   - Naciśnięcie na znacznik dodatkowo pokazuje godziny otwarcia, informację czy miejsce nadaje się na Karczmę, 
 ocenę Google, ocenę Zarządu, dostępne zniżki w poszczególne dni tygodnia oraz trzy ostatnie wydarzenia w danym miejscu.
 3. Użytkownik wybiera datę oraz czas rozpoczęcia i czas trwania planowanego wydarzenia w prawym panelu bocznym, określa 
 czy jest to Karczma i wybiera opcję `"Znajdź najlepsze miejsca"`.
@@ -369,6 +369,32 @@ następujących akcji:
    działalności. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
 12. Wszystkie zmiany wprowadzone przez użytkownika są rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
 13. Użytkownik zwija spis firm i wybiera opcję `"Wróć do Centrum Zarządzania"`.
+14. System wyświetla `Centrum Zarządzania`.
+
+---
+
+### CSK - Cele składkowe
+
+1. Użytkownik wybiera moduł `"Cele składkowe"` z `Panelu Skarbnika`.
+2. System wyświetla listę celów składkowych. Każda pozycja zawiera nazwę, termin, kod do tytułu przelewu oraz liczbę osób, które wpłaciły 
+dowolną kwotę i liczbę osób, które opłaciły składkę w całości, w formacie `x/y`.
+3. Użytkownik wybiera jeden z celów składkowych.
+4. System wyświetla okno zawierające nazwę celu, termin, kod do tytułu przelewu oraz listę płatników.
+   - Każda pozycja listy zawiera odnośnik do płatnika oraz status spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
+   - Status spłaty jest automatycznie aktualizowany na podstawie historii transakcji `Skarbca` i kodu składki.
+   - Wymagana kwota może być wspólna dla wszystkich płatników lub określana indywidualnie za pomocą pliku CSV, 
+   do którego odnośnik znajduje się w szczegółach celu składkowego.
+5. Użytkownik zaznacza wybranych płatników lub wybiera opcję `"Zaznacz zalegających płatników"`.
+6. Użytkownik wybiera opcję `"Wygeneruj CSV do maila zbiorczego"`.
+7. System generuje plik CSV zawierający brakujące kwoty przypisane do adresów e-mail zaznaczonych płatników.
+8. Użytkownik pobiera plik w celu wykorzystania go podczas wysyłania zbiorczego przypomnienia o składce.
+9. Użytkownik zaznacza wybranych płatników i wybiera opcję `"Wyślij przypomnienie systemowe"`.
+10. System wysyła przypomnienie do każdego zaznaczonego płatnika za pośrednictwem konta systemowego.
+11. Użytkownik wybiera opcję `"Edytuj cel składkowy"` i zmienia termin składki. Po zapisaniu zmian każdy zalegający 
+płatnik otrzymuje powiadomienie na swoje konto systemowe.
+12. Po uregulowaniu wpłat przez wszystkich płatników użytkownik wybiera opcję `"Zamknij cel składkowy"`. 
+Operacja zostaje odnotowana na `Osi Czasu` w `Centrum Zarządzania`.
+13. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
 14. System wyświetla `Centrum Zarządzania`.
 
 ---
