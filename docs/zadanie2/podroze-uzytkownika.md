@@ -115,7 +115,7 @@
 
 ### MAP - Mapa
 
-### Urządzenie: komputer 
+#### Urządzenie: komputer 
 1. Użytkownik otwiera moduł `„Mapa”` z poziomu `dashboardu`. 
 2. System wyświetla mapę świata ze znacznikami w formie emotikon, domyślnie wyśrodkowaną na obszarze Polski. 
 3. Mapa umożliwia przybliżanie, oddalanie oraz przewijanie. 
@@ -130,7 +130,7 @@ filtr `„Zamknięte na stałe”`.
 9. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 10. System wyświetla `Dashboard`. 
 
-### Urządzenie mobilne 
+#### Urządzenie mobilne 
 1. Użytkownik otwiera moduł `„Mapa”` z poziomu `dashboardu`. 
 2. Oprócz funkcjonalności dostępnych w wersji komputerowej system wyświetla niebieski wskaźnik kierunku oparty na 
 orientacji urządzenia. 
@@ -140,9 +140,32 @@ orientacji urządzenia.
 6. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 7. System wyświetla `Dashboard`.
 
+#### Użytkownik: KASZTELAN
+1. Użytkownik wybiera moduł `"Wywiad miejscówek"` z `Panelu Kasztelana`.
+2. System wyświetla mapę świata sfokusowaną na Krakowie ze znacznikami odpowiadającymi miejscom, w których odbywały się
+   wydarzenia.
+   - Najechanie na znacznik wyświetla tooltip zawierający nazwę, kategorię oraz adres.
+   - Naciśnięcie na znacznik dodatkowo pokazuje godziny otwarcia, informację czy miejsce nadaje się na Karczmę,
+     ocenę Google, ocenę Zarządu, dostępne zniżki w poszczególne dni tygodnia oraz trzy ostatnie wydarzenia w danym miejscu.
+3. Użytkownik wybiera datę oraz czas rozpoczęcia i czas trwania planowanego wydarzenia w prawym panelu bocznym, określa
+   czy jest to Karczma i wybiera opcję `"Znajdź najlepsze miejsca"`.
+4. System analizuje zniżki, natężenie ruchu, przydatność miejsca do organizacji Karczmy, oceny oraz inne czynniki i na
+   tej podstawie wskazuje najlepsze lokalizacje.
+5. Wyniki można filtrować według kategorii, odległości od centrum, przydatności do organizacji Karczmy, ocen oraz
+   dostępnych zniżek w danym dniu tygodnia.
+6. Użytkownik zaznacza jedną z rekomendowanych miejscówek jako miejsce wydarzenia i wybiera opcję
+   `"Znajdź miejscówki na after"`.
+7. System analizuje natężenie ruchu, odległość od wybranego miejsca wydarzenia oraz oceny, a następnie wskazuje
+   najlepsze lokalizacje na after.
+8. Użytkownik naciska jeden ze znaczników i wybiera opcję edycji.
+9. Użytkownik edytuje informacje i zapisuje zmiany. Akcje zostają zarejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+10. Użytkownik odznacza miejsce wydarzenia i wybiera opcję `"Wróć do Centrum Zarządzania"`.
+10. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`.
+11. System wyświetla `Centrum Zarządzania`.
+
 ---
 
-### Kalendarz (KAL) 
+### KAL - Kalendarz
 1. Użytkownik otwiera moduł `„Kalendarz”` z poziomu `dashboardu`. 
 2. System wyświetla kalendarz zawierający wydarzenia Bractwa. 
 3. Po wybraniu wydarzenia system wyświetla jego szczegóły, obejmujące nazwę, datę rozpoczęcia, datę zakończenia, 
@@ -203,6 +226,8 @@ bez opuszczania widoku szczegółów.
 
 ### PIN - Piny belgijskie
 
+#### Użytkownik: CZŁONEK
+
 1. Użytkownik wybiera moduł `„Piny belgijskie”` z `dashboardu`. 
 2. System wyświetla katalog pinów z pierwszej kategorii w formie kafelków; każdy kafelek zawiera nazwę, cenę, grafikę 
 oraz kontrolkę wyboru ilości. 
@@ -223,9 +248,40 @@ zastępując wcześniejszą wersję zamówienia aktualną.
 13. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 14. System wyświetla `Dashboard`.
 
+#### Użytkownik: SKARBNIK
+
+1. Użytkownik wybiera opcję `"Piny belgijskie zamówienie"` z `Centrum Zarządzania`.
+2. System wyświetla termin składania zamówień oraz listę zamówień. Każda pozycja zawiera odnośnik do płatnika, liczbę
+   zamówionych pinów oraz status spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
+3. Przed uruchomieniem opcji `"Otwórz zamówienia na piny"` lista zamówień pozostaje pusta.
+   - Każde wybranie opcji `"Wyślij zamówienie do Skarbnika"` powoduje dodanie nowej pozycji lub aktualizację istniejącej
+     pozycji na liście.
+   - Otwarcie zamówień jest rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+4. Użytkownik wybiera jedną z pozycji. System wyświetla szczegóły zamówienia, obejmujące wcześniej widoczne informacje
+   oraz katalog zamówionych przez płatnika pinów. Każda pozycja katalogu zawiera nazwę pina, grafikę, cenę jednostkową w
+   euro oraz zamówioną ilość.
+5. Użytkownik zamyka widok szczegółów zamówienia.
+6. Użytkownik wybiera opcję `"Zmień termin spłaty"`.
+7. Użytkownik wprowadza nowy termin i zatwierdza zmianę. System wysyła powiadomienie do wszystkich płatników
+   posiadających zaległości.
+8. Zamówienie jest automatycznie rejestrowane jako cel składkowy w module `Cele składkowe` w `Panelu Skarbnika`.
+   - możliwe jest wygenerowanie pliku CSV do wykorzystania przy wysyłce wiadomości zbiorczej,
+   - zamknięcie celu składkowego dotyczącego pinów belgijskich powoduje zakończenie okresu spłaty oraz wysłanie
+     powiadomienia do wszystkich zalegających płatników.
+9. Użytkownik wybiera opcję `"Edytuj katalog pinów"`.
+10. System wyświetla katalog wszystkich pinów belgijskich w formie analogicznej do modułu `"PIN - Piny belgijskie"`.
+11. Użytkownik edytuje informacje dotyczące pinów. Po zatwierdzeniu zmian są one rejestrowane na `Osi Czasu`
+    w `Centrum Zarządzania`.
+12. Użytkownik wybiera opcję `"Wróć"`.
+13. System wyświetla listę zamówień.
+14. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
+15. System wyświetla `Centrum Zarządzania`.
+
 ---
 
 ### SKL - Składki
+
+#### Użytkownik: CZŁONEK
 
 1. Użytkownik wybiera moduł `„Składki”` z `dashboardu`. 
 2. System wyświetla listę celów składkowych przypisanych do użytkownika wraz z postępem wpłat 
@@ -236,6 +292,30 @@ w formacie „zapłacono x z y zł” oraz kodem do tytułu przelewu.
 `Skarbnik` otrzymuje informację o deklaracji, aktualizuje historię wpłat, a system odświeża postęp realizacji składki. 
 6. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 7. System wyświetla `Dashboard`.
+
+#### Użytkownik: SKARBNIK
+
+1. Użytkownik wybiera moduł `"Cele składkowe"` z `Panelu Skarbnika`.
+2. System wyświetla listę celów składkowych. Każda pozycja zawiera nazwę, termin, kod do tytułu przelewu oraz liczbę osób, które wpłaciły
+   dowolną kwotę i liczbę osób, które opłaciły składkę w całości, w formacie `x/y`.
+3. Użytkownik wybiera jeden z celów składkowych.
+4. System wyświetla okno zawierające nazwę celu, termin, kod do tytułu przelewu oraz listę płatników.
+   - Każda pozycja listy zawiera odnośnik do płatnika oraz status spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
+   - Status spłaty jest automatycznie aktualizowany na podstawie historii transakcji `Skarbca` i kodu składki.
+   - Wymagana kwota może być wspólna dla wszystkich płatników lub określana indywidualnie za pomocą pliku CSV,
+     do którego odnośnik znajduje się w szczegółach celu składkowego.
+5. Użytkownik zaznacza wybranych płatników lub wybiera opcję `"Zaznacz zalegających płatników"`.
+6. Użytkownik wybiera opcję `"Wygeneruj CSV do maila zbiorczego"`.
+7. System generuje plik CSV zawierający brakujące kwoty przypisane do adresów e-mail zaznaczonych płatników.
+8. Użytkownik pobiera plik w celu wykorzystania go podczas wysyłania zbiorczego przypomnienia o składce.
+9. Użytkownik zaznacza wybranych płatników i wybiera opcję `"Wyślij przypomnienie systemowe"`.
+10. System wysyła przypomnienie do każdego zaznaczonego płatnika za pośrednictwem konta systemowego.
+11. Użytkownik wybiera opcję `"Edytuj cel składkowy"` i zmienia termin składki. Po zapisaniu zmian każdy zalegający
+    płatnik otrzymuje powiadomienie na swoje konto systemowe.
+12. Po uregulowaniu wpłat przez wszystkich płatników użytkownik wybiera opcję `"Zamknij cel składkowy"`.
+    Operacja zostaje odnotowana na `Osi Czasu` w `Centrum Zarządzania`.
+13. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
+14. System wyświetla `Centrum Zarządzania`.
 
 ---
 
@@ -317,32 +397,6 @@ przez SSUJ oraz podgląd dokumentu.
 
 ---
 
-### WMI - Wywiad miejscówek
-
-1. Użytkownik wybiera moduł `"Wywiad miejscówek"` z `Panelu Kasztelana`.
-2. System wyświetla mapę świata sfokusowaną na Krakowie ze znacznikami odpowiadającymi miejscom, w których odbywały się 
-wydarzenia.
-   - Najechanie na znacznik wyświetla tooltip zawierający nazwę, kategorię oraz adres.
-   - Naciśnięcie na znacznik dodatkowo pokazuje godziny otwarcia, informację czy miejsce nadaje się na Karczmę, 
-ocenę Google, ocenę Zarządu, dostępne zniżki w poszczególne dni tygodnia oraz trzy ostatnie wydarzenia w danym miejscu.
-3. Użytkownik wybiera datę oraz czas rozpoczęcia i czas trwania planowanego wydarzenia w prawym panelu bocznym, określa 
-czy jest to Karczma i wybiera opcję `"Znajdź najlepsze miejsca"`.
-4. System analizuje zniżki, natężenie ruchu, przydatność miejsca do organizacji Karczmy, oceny oraz inne czynniki i na 
-tej podstawie wskazuje najlepsze lokalizacje.
-5. Wyniki można filtrować według kategorii, odległości od centrum, przydatności do organizacji Karczmy, ocen oraz 
-dostępnych zniżek w danym dniu tygodnia.
-6. Użytkownik zaznacza jedną z rekomendowanych miejscówek jako miejsce wydarzenia i wybiera opcję 
-`"Znajdź miejscówki na after"`.
-7. System analizuje natężenie ruchu, odległość od wybranego miejsca wydarzenia oraz oceny, a następnie wskazuje 
-najlepsze lokalizacje na after.
-8. Użytkownik naciska jeden ze znaczników i wybiera opcję edycji.
-9. Użytkownik edytuje informacje i zapisuje zmiany. Akcje zostają zarejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
-10. Użytkownik odznacza miejsce wydarzenia i wybiera opcję `"Wróć do Centrum Zarządzania"`.
-10. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`. 
-11. System wyświetla `Centrum Zarządzania`.
-
----
-
 ### SKA - Skarbiec
 
 1. Użytkownik wybiera moduł `"Skarbiec"` z `Panelu Skarbnika`.
@@ -370,59 +424,6 @@ następujących akcji:
    działalności. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
 12. Wszystkie zmiany wprowadzone przez użytkownika są rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
 13. Użytkownik zwija spis firm i wybiera opcję `"Wróć do Centrum Zarządzania"`.
-14. System wyświetla `Centrum Zarządzania`.
-
----
-
-### CSK - Cele składkowe
-
-1. Użytkownik wybiera moduł `"Cele składkowe"` z `Panelu Skarbnika`.
-2. System wyświetla listę celów składkowych. Każda pozycja zawiera nazwę, termin, kod do tytułu przelewu oraz liczbę osób, które wpłaciły 
-dowolną kwotę i liczbę osób, które opłaciły składkę w całości, w formacie `x/y`.
-3. Użytkownik wybiera jeden z celów składkowych.
-4. System wyświetla okno zawierające nazwę celu, termin, kod do tytułu przelewu oraz listę płatników.
-   - Każda pozycja listy zawiera odnośnik do płatnika oraz status spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
-   - Status spłaty jest automatycznie aktualizowany na podstawie historii transakcji `Skarbca` i kodu składki.
-   - Wymagana kwota może być wspólna dla wszystkich płatników lub określana indywidualnie za pomocą pliku CSV, 
-   do którego odnośnik znajduje się w szczegółach celu składkowego.
-5. Użytkownik zaznacza wybranych płatników lub wybiera opcję `"Zaznacz zalegających płatników"`.
-6. Użytkownik wybiera opcję `"Wygeneruj CSV do maila zbiorczego"`.
-7. System generuje plik CSV zawierający brakujące kwoty przypisane do adresów e-mail zaznaczonych płatników.
-8. Użytkownik pobiera plik w celu wykorzystania go podczas wysyłania zbiorczego przypomnienia o składce.
-9. Użytkownik zaznacza wybranych płatników i wybiera opcję `"Wyślij przypomnienie systemowe"`.
-10. System wysyła przypomnienie do każdego zaznaczonego płatnika za pośrednictwem konta systemowego.
-11. Użytkownik wybiera opcję `"Edytuj cel składkowy"` i zmienia termin składki. Po zapisaniu zmian każdy zalegający 
-płatnik otrzymuje powiadomienie na swoje konto systemowe.
-12. Po uregulowaniu wpłat przez wszystkich płatników użytkownik wybiera opcję `"Zamknij cel składkowy"`. 
-Operacja zostaje odnotowana na `Osi Czasu` w `Centrum Zarządzania`.
-13. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
-14. System wyświetla `Centrum Zarządzania`.
-
----
-
-### PBZ - Piny belgijskie zamówienie
-
-1. Użytkownik wybiera opcję `"Piny belgijskie zamówienie"` z `Centrum Zarządzania`.
-2. System wyświetla listę zamówień. Każda pozycja zawiera odnośnik do płatnika, liczbę zamówionych pinów oraz status 
-spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
-3. Użytkownik wybiera jedną z pozycji. System wyświetla szczegóły zamówienia, obejmujące wcześniej widoczne informacje 
-oraz katalog zamówionych przez płatnika pinów. Każda pozycja katalogu zawiera nazwę pina, grafikę, 
-cenę jednostkową w euro oraz zamówioną ilość.
-4. Użytkownik zamyka widok szczegółów zamówienia.
-5. Użytkownik wybiera opcję `"Zmień termin spłaty"`.
-6. Użytkownik wprowadza nowy termin i zatwierdza zmianę. System wysyła powiadomienie do wszystkich płatników 
-posiadających zaległości.
-7. Zamówienie jest automatycznie rejestrowane jako cel składkowy w module `Cele składkowe` w `Panelu Skarbnika`.
-   - możliwe jest wygenerowanie pliku CSV do wykorzystania przy wysyłce wiadomości zbiorczej,
-   - zamknięcie celu składkowego dotyczącego pinów belgijskich powoduje zakończenie okresu spłaty oraz wysłanie 
-   powiadomienia do wszystkich zalegających płatników.
-8. Użytkownik wybiera opcję `"Edytuj katalog pinów"`.
-9. System wyświetla katalog wszystkich pinów belgijskich w formie analogicznej do modułu `"PIN - Piny belgijskie"`.
-10. Użytkownik może edytować informacje dotyczące pinów. Po zatwierdzeniu zmian zostają one zarejestrowane 
-na `Osi Czasu` w `Centrum Zarządzania`.
-11. Użytkownik wybiera opcję `"Wróć"`.
-12. System wyświetla listę zamówień.
-13. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
 14. System wyświetla `Centrum Zarządzania`.
 
 ---
