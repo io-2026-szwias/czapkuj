@@ -445,9 +445,20 @@ następujących akcji:
 
 ---
 
-### SMI - Social Media Integration
+### OCZ - Oś Czasu
 
-1. Użytkownik wybiera moduł `"Social Media Integration"` z `Panelu Sekretarza`.
-2. System wyświetla listę opcji: `"Stwórz posta"`, `"Stwórz rolkę"`, `"Stwórz relację"`.
-3. Użytkownik pisze posta w polu tekstowym.
-4. Użytkownik dodaje obrazy do posta za pomocą opcji `"Dodaj obraz"`.
+1. Użytkownik wybiera moduł `"Oś Czasu"` z `Panelu Wspólnego`.
+2. System wyświetla pionową oś czasu skierowaną ku górze, zawierającą wszystkie zatwierdzone akcje wykonane przez 
+obecny Zarząd.
+   - Każda pozycja zawiera informację o funkcji użytkownika wykonującego akcję (Wielki Mistrz, Kasztelan, Skarbnik, 
+   Sekretarz lub Cantandi), module, za pomocą którego wykonano akcję, oraz dacie i godzinie jej wykonania.
+3. Użytkownik wybiera opcję `"Odwróć oś o 90°"`.
+4. System zmienia orientację osi czasu na poziomą.
+5. Użytkownik filtruje akcje według funkcji wykonującego oraz miesiąca wykonania.
+6. Użytkownik wybiera opcję `"Tryb prezentacji"`.
+7. System przełącza widok w tryb pełnoekranowy z osią skierowaną w prawo. Przewijanie osi odbywa się za pomocą 
+klawiszy strzałek w lewo i w prawo.
+8. Użytkownik wybiera opcję `"Wróć"`, a następnie `"Wróć do Centrum Zarządzania"`.
+9. System wyświetla `Centrum Zarządzania`.
+
+---

@@ -342,6 +342,24 @@ System może integrować się z następującymi usługami:
 | SKA-FR-022 | System musi rejestrować utworzenie lub edycję firmy na Osi Czasu.                             | M         |
 | SKA-FR-023 | System musi umożliwiać powrót do Centrum Zarządzania.                                         | M         |
 
+### OCZ - Oś Czasu
+
+| Kod        | Wymaganie funkcjonalne                                                                          | Priorytet |
+|------------|-------------------------------------------------------------------------------------------------|-----------|
+| OCZ-FR-001 | System musi umożliwiać otwarcie modułu „Oś Czasu” z Panelu Wspólnego.                           | M         |
+| OCZ-FR-002 | System musi wyświetlać oś czasu zawierającą zatwierdzone akcje wykonane przez obecny Zarząd.    | M         |
+| OCZ-FR-003 | System musi prezentować dla każdej akcji funkcję użytkownika wykonującego akcję.                | M         |
+| OCZ-FR-004 | System musi prezentować dla każdej akcji moduł, za pomocą którego wykonano akcję.               | M         |
+| OCZ-FR-005 | System musi prezentować dla każdej akcji datę i godzinę jej wykonania.                          | M         |
+| OCZ-FR-006 | System musi umożliwiać zmianę orientacji osi czasu z pionowej na poziomą.                       | S         |
+| OCZ-FR-007 | System musi umożliwiać filtrowanie akcji według funkcji wykonującego.                           | M         |
+| OCZ-FR-008 | System musi umożliwiać filtrowanie akcji według miesiąca wykonania.                             | M         |
+| OCZ-FR-009 | System musi udostępniać tryb prezentacji w widoku pełnoekranowym.                               | S         |
+| OCZ-FR-010 | System musi umożliwiać nawigację po osi czasu w trybie prezentacji za pomocą klawiszy strzałek. | S         |
+| OCZ-FR-011 | System musi umożliwiać powrót z trybu prezentacji do standardowego widoku osi czasu.            | M         |
+| OCZ-FR-012 | System musi umożliwiać powrót do Centrum Zarządzania.                                           | M         |
+
+
 ## 4.4.4 Wymagania niefunkcjonalne
 
 **NFR-01 – Wydajność**
