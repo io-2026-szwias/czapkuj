@@ -144,13 +144,21 @@ System może integrować się z następującymi usługami:
 
 ### KAL - Kalendarz
 
-| Kod        | Wymaganie funkcjonalne                                              | Priorytet |
-|------------|---------------------------------------------------------------------|-----------|
-| KAL-FR-001 | System musi wyświetlać kalendarz wydarzeń.                          | M         |
-| KAL-FR-002 | System musi prezentować szczegóły wydarzenia.                       | M         |
-| KAL-FR-003 | System musi wyświetlać listę uczestników dla zakończonych wydarzeń. | S         |
-| KAL-FR-004 | System musi umożliwiać subskrypcję kalendarza w Google Calendar.    | S         |
-| KAL-FR-005 | System musi umożliwiać powrót do dashboardu.                        | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                                                                | Priorytet |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| KAL-FR-001 | System musi umożliwiać otwarcie modułu „Kalendarz” z dashboardu.                                                                                      | M         |
+| KAL-FR-002 | System musi wyświetlać kalendarz wydarzeń Bractwa.                                                                                                    | M         |
+| KAL-FR-003 | System musi prezentować szczegóły wydarzenia obejmujące nazwę, datę rozpoczęcia, datę zakończenia, miejsce oraz typ wydarzenia.                       | M         |
+| KAL-FR-004 | System musi wyświetlać listę uczestników dla zakończonych wydarzeń.                                                                                   | S         |
+| KAL-FR-005 | System musi umożliwiać subskrypcję kalendarza Bractwa w Google Calendar.                                                                              | S         |
+| KAL-FR-006 | System musi umożliwiać powrót do dashboardu.                                                                                                          | M         |
+| KAL-FR-007 | System musi umożliwiać Sekretarzowi otwarcie modułu „Edytuj kalendarz” z Panelu Sekretarza.                                                           | M         |
+| KAL-FR-008 | System musi umożliwiać dodawanie nowych wydarzeń do kalendarza.                                                                                       | M         |
+| KAL-FR-009 | System musi umożliwiać określenie tytułu, daty rozpoczęcia, daty zakończenia, miejsca, typu wydarzenia oraz uczestników podczas tworzenia wydarzenia. | M         |
+| KAL-FR-010 | System musi umożliwiać edycję istniejących wydarzeń.                                                                                                  | M         |
+| KAL-FR-011 | System musi rejestrować utworzenie wydarzenia na Osi Czasu w Centrum Zarządzania.                                                                     | M         |
+| KAL-FR-012 | System musi rejestrować edycję wydarzenia na Osi Czasu w Centrum Zarządzania.                                                                         | M         |
+| KAL-FR-013 | System musi umożliwiać powrót z modułu „Edytuj kalendarz” do Centrum Zarządzania.                                                                     | M         |
 
 ### KRO - Kronika
 
