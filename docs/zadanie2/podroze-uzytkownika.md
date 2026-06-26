@@ -15,7 +15,8 @@
 3. Użytkownik wybiera kategorię.
 4. System wyświetla listę piosenek przypisanych do wybranej kategorii.
 5. Użytkownik wybiera piosenkę.
-6. System wyświetla tekst piosenki wraz z akordami.
+6. System wyświetla tytuł piosenki, tytuł alternatywny, autorów, kategorie piosenki oraz jej tekst wraz z akordami, 
+ewentualnie tekst alternatywny.
 7. Użytkownik wybiera opcję `„Następna piosenka”`.
 8. System wyświetla kolejną piosenkę z bieżącej kategorii.
 9. Użytkownik wybiera opcję `„Wróć”`.
@@ -46,7 +47,33 @@
 10. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
 11. System wyświetla `Dashboard`.
 
+#### Użytkownik: CANTANDI
+
+1. Użytkownik otwiera moduł `"Edytuj śpiewnik"` z `Panelu Cantandiego`.
+2. System wyświetla zawartość modułu `SPI - Śpiewnik`, umożliwiając edycję każdej piosenki po wybraniu opcji 
+`"Edytuj piosenkę"`. Możliwa jest modyfikacja:
+   - tytułu i tytułu alternatywnego,
+   - autorów,
+   - kategorii,
+   - tekstu i tekstu alternatywnego,
+   - akordów.
+3. Wszystkie wprowadzone zmiany są rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+4. Użytkownik wybiera opcję `"Dodaj piosenkę"`.
+5. System wyświetla formularz umożliwiający wprowadzenie:
+   - tytułu i tytułu alternatywnego,
+   - autorów,
+   - kategorii,
+   oraz udostępnia możliwość pobrania lub skopiowania:
+   - pliku JSON zawierającego instrukcję korzystania z formatu,
+   - szablonu JSON do dodawania tekstu z akordami.
+6. Użytkownik dodaje tekst piosenki za pomocą opcji `"Dodaj tekst"` lub `"Dodaj tekst alternatywny"`.
+7. Użytkownik zatwierdza zmiany. Dodanie nowej piosenki zostaje zarejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+8. Nowa piosenka staje się dostępna dla wszystkich członków w module `Śpiewnik`.
+9. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
+10. System wyświetla `Centrum Zarządzania`.
+
 ---
+
 
 ### IDG - Interaktywne drzewo genealogiczne
 

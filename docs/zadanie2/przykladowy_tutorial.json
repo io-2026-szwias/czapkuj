@@ -1,0 +1,40 @@
+[
+  {
+    "tekst": "tu wpisz wers",
+    "chwyty": [
+      "akord 1",
+      "akord 2",
+      "akord 3"
+    ]
+  },
+  {
+    "tekst": "poniżej nie ma akordów",
+    "chwyty": []
+  },
+  {
+    "tekst": "tak się robi cudzysłów: I powiada - \" Dam ci dychę w zamian za twą duszę\"",
+    "chwyty": [
+      "akord 1",
+      "akord 2",
+      "akord 3"
+    ]
+  },
+  {
+    "tekst": "można też w jednej linii",
+    "chwyty": []
+  },
+  {
+    "tekst": "a tak się daje komentarz",
+    "chwyty": [],
+    "flaga": "komentarz"
+  },
+  {"tekst": "teraz zrobimy refren", "chwyty": []},
+  {"tekst": "", "chwyty": []},
+  {"tekst": "REF.:", "chwyty": []},
+  {"tekst": "refren", "chwyty": []},
+  {"tekst": "refren", "chwyty": []},
+  {"tekst": "refren", "chwyty": []},
+  {"tekst": "refren", "chwyty": []},
+  {"tekst": "", "chwyty": []},
+  {"tekst": "koniec tutorialu", "chwyty": []},
+]

@@ -64,27 +64,38 @@ System może integrować się z następującymi usługami:
 
 ## 4.4.3 Wymagania funkcjonalne
 
-### SPI - Śpiewnik
+### SPI - Śpiewnika
 
-| Kod        | Wymaganie funkcjonalne                                                       | Priorytet |
-|------------|------------------------------------------------------------------------------|-----------|
-| SPI-FR-001 | System musi umożliwiać otwarcie modułu Śpiewnik z dashboardu.                | M         |
-| SPI-FR-002 | System musi wyświetlać listę kategorii piosenek.                             | M         |
-| SPI-FR-003 | System musi udostępniać wyszukiwarkę piosenek.                               | M         |
-| SPI-FR-004 | System musi wyświetlać listę piosenek przypisanych do wybranej kategorii.    | M         |
-| SPI-FR-005 | System musi prezentować tekst piosenki wraz z akordami.                      | M         |
-| SPI-FR-006 | System musi umożliwiać przejście do następnej piosenki w obrębie kategorii.  | S         |
-| SPI-FR-007 | System musi umożliwiać zwijanie i rozwijanie list piosenek w kategorii.      | S         |
-| SPI-FR-008 | System musi umożliwiać powrót do dashboardu.                                 | M         |
-| SPI-FR-009 | System musi udostępniać wyszukiwanie zaawansowane po tytule.                 | S         |
-| SPI-FR-010 | System musi udostępniać wyszukiwanie po fragmencie tekstu.                   | S         |
-| SPI-FR-011 | System musi udostępniać wyszukiwanie po pierwszym akordzie.                  | S         |
-| SPI-FR-012 | System musi udostępniać wyszukiwanie po sekwencji akordów.                   | S         |
-| SPI-FR-013 | System musi grupować wyniki wyszukiwania według kategorii.                   | M         |
-| SPI-FR-014 | System musi udostępniać tryb Focus dla muzyków.                              | M         |
-| SPI-FR-015 | System musi umożliwiać wyświetlanie jednej lub dwóch zwrotek w trybie Focus. | M         |
-| SPI-FR-016 | System musi umożliwiać zmianę kolorystyki akordów w trybie Focus.            | M         |
-| SPI-FR-017 | System musi umożliwiać nawigację między zwrotkami.                           | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                                                  | Priorytet |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| SPI-FR-001 | System musi umożliwiać otwarcie modułu Śpiewnik z dashboardu.                                                                           | M         |
+| SPI-FR-002 | System musi wyświetlać listę kategorii piosenek.                                                                                        | M         |
+| SPI-FR-003 | System musi udostępniać wyszukiwarkę piosenek.                                                                                          | M         |
+| SPI-FR-004 | System musi wyświetlać listę piosenek przypisanych do wybranej kategorii.                                                               | M         |
+| SPI-FR-005 | System musi prezentować tytuł piosenki, tytuł alternatywny, autorów oraz kategorie piosenki.                                            | M         |
+| SPI-FR-006 | System musi prezentować tekst piosenki wraz z akordami.                                                                                 | M         |
+| SPI-FR-007 | System musi prezentować tekst alternatywny piosenki (jeśli istnieje).                                                                   | S         |
+| SPI-FR-008 | System musi umożliwiać przejście do następnej piosenki w obrębie kategorii.                                                             | S         |
+| SPI-FR-009 | System musi umożliwiać zwijanie i rozwijanie list piosenek w kategorii.                                                                 | S         |
+| SPI-FR-010 | System musi umożliwiać powrót do dashboardu.                                                                                            | M         |
+| SPI-FR-011 | System musi udostępniać wyszukiwanie zaawansowane po tytule.                                                                            | S         |
+| SPI-FR-012 | System musi udostępniać wyszukiwanie po fragmencie tekstu.                                                                              | S         |
+| SPI-FR-013 | System musi udostępniać wyszukiwanie po pierwszym akordzie.                                                                             | S         |
+| SPI-FR-014 | System musi udostępniać wyszukiwanie po sekwencji akordów.                                                                              | S         |
+| SPI-FR-015 | System musi grupować wyniki wyszukiwania według kategorii.                                                                              | M         |
+| SPI-FR-016 | System musi udostępniać tryb Focus dla muzyków.                                                                                         | M         |
+| SPI-FR-017 | System musi umożliwiać wyświetlanie jednej lub dwóch zwrotek w trybie Focus.                                                            | M         |
+| SPI-FR-018 | System musi umożliwiać zmianę kolorystyki akordów w trybie Focus.                                                                       | M         |
+| SPI-FR-019 | System musi umożliwiać nawigację między zwrotkami w trybie Focus.                                                                       | M         |
+| SPI-FR-020 | System musi umożliwiać otwarcie modułu edycji śpiewnika przez Cantandiego z Panelu Cantandiego.                                         | M         |
+| SPI-FR-021 | System musi umożliwiać edycję istniejących piosenek (tytuł, tytuł alternatywny, autorzy, kategorie, tekst, tekst alternatywny, akordy). | M         |
+| SPI-FR-022 | System musi rejestrować zmiany piosenek na Osi Czasu w Centrum Zarządzania.                                                             | M         |
+| SPI-FR-023 | System musi umożliwiać dodanie nowej piosenki.                                                                                          | M         |
+| SPI-FR-024 | System musi umożliwiać uzupełnienie metadanych nowej piosenki (tytuł, tytuł alternatywny, autorzy, kategorie).                          | M         |
+| SPI-FR-025 | System musi umożliwiać dodanie tekstu oraz tekstu alternatywnego piosenki.                                                              | M         |
+| SPI-FR-026 | System musi udostępniać szablon i instrukcję JSON do wprowadzania struktury piosenki.                                                   | S         |
+| SPI-FR-027 | System musi rejestrować dodanie nowej piosenki na Osi Czasu w Centrum Zarządzania.                                                      | M         |
+| SPI-FR-028 | System musi udostępniać nowo dodane piosenki wszystkim użytkownikom modułu Śpiewnik.                                                    | M         |
 
 ### IDG - Interaktywne drzewo genealogiczne
 
