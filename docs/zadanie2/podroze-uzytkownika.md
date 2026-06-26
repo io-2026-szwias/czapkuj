@@ -166,6 +166,9 @@ orientacji urządzenia.
 ---
 
 ### KAL - Kalendarz
+
+#### Użytkownik: CZŁONEK
+
 1. Użytkownik otwiera moduł `„Kalendarz”` z poziomu `dashboardu`. 
 2. System wyświetla kalendarz zawierający wydarzenia Bractwa. 
 3. Po wybraniu wydarzenia system wyświetla jego szczegóły, obejmujące nazwę, datę rozpoczęcia, datę zakończenia, 
@@ -176,11 +179,25 @@ miejsce oraz typ wydarzenia. W przypadku wydarzeń zakończonych wyświetlana je
 7. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 8. System wyświetla `Dashboard`.
 
+#### Użytkownik: SEKRETARZ
+
+1. Użytkownik otwiera moduł `"Edytuj kalendarz"` z `Panelu Sekretarza`.
+2. System wyświetla kalendarz zawierający wydarzenia Bractwa.
+3. Użytkownik wybiera opcję `"Dodaj wydarzenie"`.
+4. System wyświetla formularz dodawania wydarzenia obejmujący tytuł, datę rozpoczęcia, datę zakończenia,
+   a także wybór miejsca, typu wydarzenia i uczestników.
+5. Użytkownik zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
+6. Użytkownik wybiera wydarzenie, a następnie wybiera opcję `"Edytuj wydarzenie"`. 
+7. Użytkownik wprowadza a następnie zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` 
+w `Centrum zarządzania`.
+8. Użytkownik wybiera opcję `"Wróć do Centrum zarządzania`.
+9. System wyświetla `Centrum zarządzania`.
 ---
 
 ### KRO - Kronika
 1. Użytkownik otwiera moduł `„Kronika”` z poziomu `dashboardu`. 
-2. System wyświetla listę rozwijalnych sekcji, takich jak `„Osoby”`, `„Dokumenty”`, `„Miejsca”` oraz pozostałe kategorie tematyczne. 
+2. System wyświetla listę rozwijalnych sekcji, takich jak `„Osoby”`, `„Dokumenty”`, `„Miejsca”` oraz pozostałe 
+kategorie tematyczne. 
 3. Po rozwinięciu wybranej sekcji system wyświetla listę rozwijalnych podkategorii. 
 4. Użytkownik wybiera podkategorię. System wyświetla pozycje zawierające informacje przypisane do wybranego zakresu 
 tematycznego. 
@@ -428,3 +445,9 @@ następujących akcji:
 
 ---
 
+### SMI - Social Media Integration
+
+1. Użytkownik wybiera moduł `"Social Media Integration"` z `Panelu Sekretarza`.
+2. System wyświetla listę opcji: `"Stwórz posta"`, `"Stwórz rolkę"`, `"Stwórz relację"`.
+3. Użytkownik pisze posta w polu tekstowym.
+4. Użytkownik dodaje obrazy do posta za pomocą opcji `"Dodaj obraz"`.
