@@ -2,7 +2,7 @@
 
 ---
 
-## Waleria Wedel – Członek
+## Hans Barrakuda – Członek
 
 **Motto:**
 
@@ -169,5 +169,32 @@
 **Narzędzia:**
 - Google Workspace
 - Gmail
+
 ---
 
+## Wiktoria Wedel - Sekretarz
+
+**Motto:**
+
+"Komunikacja w jednym miejscu"
+
+**Zadania:**
+- ogłaszanie wydarzeń
+- promocja Bractwa w social mediach
+- prowadzenie kroniki Bractwa
+
+**Frustracje:**
+- oczekiwanie na grafiki do ogłoszenia wydarzeń
+- nikt nie widzi efektów pracy nad kroniką
+
+**Cele:**
+- ogłoszenia w narzędziu które nie potrzebuje grafik
+- kronika dostępna dla wszystkich
+
+**Narzędzia:**
+- MS Paint
+- Facebook
+- Instagram
+- TikTok
+
+---
