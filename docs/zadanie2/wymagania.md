@@ -192,13 +192,14 @@ System może integrować się z następującymi usługami:
 
 ### ENC – Encyklopedia
 
-| Kod        | Wymaganie funkcjonalne                                      | Priorytet |
-|------------|-------------------------------------------------------------|-----------|
-| ENC-FR-001 | System musi wyświetlać pojęcia pogrupowane alfabetycznie.   | M         |
-| ENC-FR-002 | System musi umożliwiać otwarcie artykułu encyklopedycznego. | M         |
-| ENC-FR-003 | System musi wyświetlać treść artykułu.                      | M         |
+| Kod        | Wymaganie funkcjonalne                                         | Priorytet |
+|------------|----------------------------------------------------------------|-----------|
+| ENC-FR-001 | System musi wyświetlać pojęcia pogrupowane alfabetycznie.      | M         |
+| ENC-FR-002 | System musi umożliwiać otwarcie artykułu encyklopedycznego.    | M         |
+| ENC-FR-003 | System musi wyświetlać treść artykułu.                         | M         |
+| ENC-FR-004 | System musi umożliwiać filtrowanie artykułów według kategorii. | M         |
 
-### CYT - Cytaty
+### CYT – Cytaty
 
 | Kod        | Wymaganie funkcjonalne                                       | Priorytet |
 |------------|--------------------------------------------------------------|-----------|
@@ -211,22 +212,26 @@ System może integrować się z następującymi usługami:
 
 ### PIN – Piny belgijskie
 
-| Kod        | Wymaganie funkcjonalne                                                      | Priorytet |
-|------------|-----------------------------------------------------------------------------|-----------|
-| PIN-FR-001 | System musi wyświetlać katalog pinów podzielony na kategorie.               | M         |
-| PIN-FR-002 | System musi umożliwiać dodawanie pinów do koszyka.                          | M         |
-| PIN-FR-003 | System musi prezentować opis pina po najechaniu kursorem.                   | S         |
-| PIN-FR-004 | System musi umożliwiać zapisywanie zamówienia.                              | M         |
-| PIN-FR-005 | System musi umożliwiać wysłanie zamówienia do Skarbnika.                    | M         |
-| PIN-FR-006 | System musi umożliwiać aktualizację wcześniej wysłanego zamówienia.         | S         |
-| PIN-FR-007 | System musi ograniczać możliwość modyfikacji zamówienia po upływie terminu. | M         |
-| PIN-FR-008 | System musi umożliwiać Skarbnikowi otwarcie okresu zamówień.                | M         |
-| PIN-FR-009 | System musi prezentować listę zamówień i status spłaty.                     | M         |
-| PIN-FR-010 | System musi automatycznie tworzyć cel składkowy dla zamówień pinów.         | M         |
-| PIN-FR-011 | System musi umożliwiać zmianę terminu spłaty.                               | M         |
-| PIN-FR-012 | System musi wysyłać powiadomienia o zaległościach.                          | S         |
-| PIN-FR-013 | System musi umożliwiać edycję katalogu pinów.                               | M         |
-| PIN-FR-014 | System musi rejestrować działania na Osi Czasu.                             | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                          | Priorytet |
+|------------|-----------------------------------------------------------------------------------------------------------------|-----------|
+| PIN-FR-001 | System musi wyświetlać katalog pinów podzielony na kategorie.                                                   | M         |
+| PIN-FR-002 | System musi umożliwiać dodawanie pinów do koszyka.                                                              | M         |
+| PIN-FR-003 | System musi prezentować opis pina po najechaniu kursorem.                                                       | S         |
+| PIN-FR-004 | System musi umożliwiać zapisywanie zamówienia.                                                                  | M         |
+| PIN-FR-005 | System musi umożliwiać wysłanie zamówienia do Skarbnika.                                                        | M         |
+| PIN-FR-006 | System musi umożliwiać aktualizację wcześniej wysłanego zamówienia w okresie aktywnego koszyka.                 | S         |
+| PIN-FR-007 | System musi ograniczać możliwość modyfikacji zamówienia po upływie terminu.                                     | M         |
+| PIN-FR-008 | System musi umożliwiać Skarbnikowi otwarcie okresu zamówień.                                                    | M         |
+| PIN-FR-009 | System musi prezentować listę zamówień i status spłaty.                                                         | M         |
+| PIN-FR-010 | System musi automatycznie tworzyć cel składkowy dla zamówień pinów.                                             | M         |
+| PIN-FR-011 | System musi umożliwiać zmianę terminu spłaty.                                                                   | M         |
+| PIN-FR-012 | System musi wysyłać powiadomienia o zaległościach.                                                              | S         |
+| PIN-FR-013 | System musi umożliwiać edycję katalogu pinów.                                                                   | M         |
+| PIN-FR-014 | System musi rejestrować działania na Osi Czasu.                                                                 | M         |
+| PIN-FR-015 | System musi umożliwiać dostęp do sklepu dla użytkownika odwiedzającego po uwierzytelnieniu Google.              | M         |
+| PIN-FR-016 | System musi umożliwiać przeglądanie historii zamówień w module konta użytkownika.                               | M         |
+| PIN-FR-017 | System musi umożliwiać ponowne użycie i modyfikację wcześniejszego zamówienia przez użytkownika odwiedzającego. | S         |
+| PIN-FR-018 | System musi przekazywać zamówienie użytkownika odwiedzającego do modułu Skarbnika.                              | M         |
 
 ### SKL – Składki
 
