@@ -1,5 +1,7 @@
 # WYMAGANIA
 
+---
+
 ## Ograniczenia
 
 **O-01 – Ograniczenia korespondencji z SSUJ**
@@ -21,6 +23,8 @@ Jeśli struktura strony się zmieni, funkcjonalność może przestać działać.
 
 System nie ma bezpośredniego dostępu do systemu bankowego i może przetwarzać historię transakcji wyłącznie na podstawie 
 plików eksportowanych przez użytkownika (np. CSV).
+
+---
 
 ## 4.4.2 Wymagania systemowe
 
@@ -62,9 +66,11 @@ System może integrować się z następującymi usługami:
 - Google Calendar
 - Google Drive
 
+---
+
 ## 4.4.3 Wymagania funkcjonalne
 
-### SPI - Śpiewnika
+### SPI – Śpiewnika
 
 | Kod        | Wymaganie funkcjonalne                                                                                                                  | Priorytet |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -97,7 +103,7 @@ System może integrować się z następującymi usługami:
 | SPI-FR-027 | System musi rejestrować dodanie nowej piosenki na Osi Czasu w Centrum Zarządzania.                                                      | M         |
 | SPI-FR-028 | System musi udostępniać nowo dodane piosenki wszystkim użytkownikom modułu Śpiewnik.                                                    | M         |
 
-### IDG - Interaktywne drzewo genealogiczne
+### IDG – Interaktywne drzewo genealogiczne
 
 | Kod        | Wymaganie funkcjonalne                                                                        | Priorytet |
 |------------|-----------------------------------------------------------------------------------------------|-----------|
@@ -120,7 +126,7 @@ System może integrować się z następującymi usługami:
 | IDG-FR-017 | System musi umożliwiać zapisanie pliku eksportu pod wskazaną nazwą.                           | M         |
 | IDG-FR-018 | System musi umożliwiać wyświetlenie uproszczonego drzewa z poziomu biografii członka.         | M         |
 
-### KOD - Kodeks
+### KOD – Kodeks
 
 | Kod        | Wymaganie funkcjonalne                                                | Priorytet |
 |------------|-----------------------------------------------------------------------|-----------|
@@ -131,7 +137,7 @@ System może integrować się z następującymi usługami:
 | KOD-FR-005 | System musi wyświetlać treść sekcji w postaci rozwijalnych kategorii. | M         |
 | KOD-FR-006 | System musi umożliwiać powrót do dashboardu.                          | M         |
 
-### MAP - Mapa
+### MAP – Mapa
 
 | Kod        | Wymaganie funkcjonalne                                                                         | Priorytet |
 |------------|------------------------------------------------------------------------------------------------|-----------|
@@ -153,7 +159,7 @@ System może integrować się z następującymi usługami:
 | MAP-FR-016 | System musi umożliwiać edycję danych miejsc przez Kasztelana.                                  | M         |
 | MAP-FR-017 | System musi rejestrować zmiany miejsc na Osi Czasu.                                            | M         |
 
-### KAL - Kalendarz
+### KAL – Kalendarz
 
 | Kod        | Wymaganie funkcjonalne                                                                                                                                | Priorytet |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -171,7 +177,7 @@ System może integrować się z następującymi usługami:
 | KAL-FR-012 | System musi rejestrować edycję wydarzenia na Osi Czasu w Centrum Zarządzania.                                                                         | M         |
 | KAL-FR-013 | System musi umożliwiać powrót z modułu „Edytuj kalendarz” do Centrum Zarządzania.                                                                     | M         |
 
-### KRO - Kronika
+### KRO – Kronika
 
 | Kod        | Wymaganie funkcjonalne                                                          | Priorytet |
 |------------|---------------------------------------------------------------------------------|-----------|
@@ -184,7 +190,7 @@ System może integrować się z następującymi usługami:
 | KRO-FR-007 | System musi prezentować wyniki wyszukiwania zaawansowanego w tabeli.            | S         |
 | KRO-FR-008 | System musi umożliwiać filtrowanie kolumn w trybie włączającym i wykluczającym. | S         |
 
-### ENC - Encyklopedia
+### ENC – Encyklopedia
 
 | Kod        | Wymaganie funkcjonalne                                      | Priorytet |
 |------------|-------------------------------------------------------------|-----------|
@@ -203,7 +209,7 @@ System może integrować się z następującymi usługami:
 | CYT-FR-005 | System musi umożliwiać przechodzenie do poprzedniego cytatu. | S         |
 | CYT-FR-006 | System musi udostępniać funkcję Cytat dnia.                  | S         |
 
-### PIN - Piny belgijskie
+### PIN – Piny belgijskie
 
 | Kod        | Wymaganie funkcjonalne                                                      | Priorytet |
 |------------|-----------------------------------------------------------------------------|-----------|
@@ -222,7 +228,7 @@ System może integrować się z następującymi usługami:
 | PIN-FR-013 | System musi umożliwiać edycję katalogu pinów.                               | M         |
 | PIN-FR-014 | System musi rejestrować działania na Osi Czasu.                             | M         |
 
-### SKL - Składki
+### SKL – Składki
 
 | Kod        | Wymaganie funkcjonalne                                                             | Priorytet |
 |------------|------------------------------------------------------------------------------------|-----------|
@@ -237,7 +243,7 @@ System może integrować się z następującymi usługami:
 | SKL-FR-009 | System musi umożliwiać wysyłanie przypomnień systemowych.                          | S         |
 | SKL-FR-010 | System musi umożliwiać zamknięcie celu składkowego.                                | M         |
 
-### PDZ - Plan działania
+### PDZ – Plan działania
 
 | Kod        | Wymaganie funkcjonalne                                                                                | Priorytet |
 |------------|-------------------------------------------------------------------------------------------------------|-----------|
@@ -254,7 +260,7 @@ System może integrować się z następującymi usługami:
 | PDZ-FR-011 | System musi rejestrować modyfikację zadania na Osi Czasu.                                             | M         |
 | PDZ-FR-012 | System musi umożliwiać powrót do Centrum Zarządzania.                                                 | M         |
 
-### WOR - Wywiad organizacji
+### WOR – Wywiad organizacji
 
 | Kod        | Wymaganie funkcjonalne                                                                       | Priorytet |
 |------------|----------------------------------------------------------------------------------------------|-----------|
@@ -277,7 +283,7 @@ System może integrować się z następującymi usługami:
 | WOR-FR-017 | System musi rejestrować modyfikację danych organizacji na Osi Czasu.                         | M         |
 | WOR-FR-018 | System musi umożliwiać powrót do Centrum Zarządzania.                                        | M         |
 
-### RSS - Rozporządzenia SSUJ
+### RSS – Rozporządzenia SSUJ
 
 | Kod        | Wymaganie funkcjonalne                                                                    | Priorytet |
 |------------|-------------------------------------------------------------------------------------------|-----------|
@@ -299,7 +305,7 @@ System może integrować się z następującymi usługami:
 | RSS-FR-016 | System musi rejestrować dodanie lub zmianę streszczenia na Osi Czasu.                     | M         |
 | RSS-FR-017 | System musi umożliwiać powrót do Centrum Zarządzania.                                     | M         |
 
-### WNI - Wnioski
+### WNI – Wnioski
 
 | Kod        | Wymaganie funkcjonalne                                                                   | Priorytet |
 |------------|------------------------------------------------------------------------------------------|-----------|
@@ -325,7 +331,7 @@ System może integrować się z następującymi usługami:
 | WNI-FR-020 | System musi rejestrować edycję wniosku na Osi Czasu.                                     | M         |
 | WNI-FR-021 | System musi umożliwiać powrót do Centrum Zarządzania.                                    | M         |
 
-### SKA - Skarbiec
+### SKA – Skarbiec
 
 | Kod        | Wymaganie funkcjonalne                                                                        | Priorytet |
 |------------|-----------------------------------------------------------------------------------------------|-----------|
@@ -353,7 +359,7 @@ System może integrować się z następującymi usługami:
 | SKA-FR-022 | System musi rejestrować utworzenie lub edycję firmy na Osi Czasu.                             | M         |
 | SKA-FR-023 | System musi umożliwiać powrót do Centrum Zarządzania.                                         | M         |
 
-### OCZ - Oś Czasu
+### OCZ – Oś Czasu
 
 | Kod        | Wymaganie funkcjonalne                                                                          | Priorytet |
 |------------|-------------------------------------------------------------------------------------------------|-----------|
