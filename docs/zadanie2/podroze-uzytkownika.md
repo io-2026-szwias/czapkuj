@@ -303,6 +303,30 @@ zastępując wcześniejszą wersję zamówienia aktualną.
 13. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 14. System wyświetla `Dashboard`.
 
+#### Użytkownik: ODWIEDZAJĄCY
+
+1. Użytkownik wybiera otwiera podstronę `Sklep`, następnie `Zamów piny belgijskie`. 
+2. Użytkownik loguje się swoim kontem Google, jeśli jeszcze nie jest zalogowany.
+3. System wyświetla katalog pinów z pierwszej kategorii w formie kafelków; każdy kafelek zawiera nazwę, cenę, grafikę
+      oraz kontrolkę wyboru ilości.
+4. Po najechaniu kursorem na kafelek pina wyświetlany jest jego opis.
+5. Użytkownik wybiera inną kategorię pinów z menu po lewej stronie.
+6. Wyświetlana lista pinów zostaje zaktualizowana zgodnie z wybraną kategorią.
+7. Użytkownik otwiera koszyk.
+8. System wyświetla piny dodane do koszyka w formie kafelków.
+   Kontrolka dodawania ilości zostaje zastąpiona kontrolką ustawiania ilości,
+   a przycisk dodawania do koszyka jest niedostępny. Na dole widoczna jest łączna suma kosztów zamówienia.
+9. Użytkownik wybiera opcję `"Zapisz zamówienie`.
+10. Użytkownik otwiera moduł `Konto` i wybiera akcję `Przeglądaj zamówienia`.
+11. Wyświetlają się wszystkie zamówienia wykonane w sklepie przez użytkownika.
+12. Użytkownik wybiera zamówienie na piny belgijskie.
+13. Wyświetla się koszyk sklepu z pinami belgijskimi.
+14. Użytkownik wybiera opcję `"Przejdź do sklepu`.
+15. Użytkownik dodaje nowe piny do koszyka.
+16. Użytkownik wybiera opcję `"Wyślij zamówienie do Skarbnika"`
+17. Skarbnik otrzymuje zamówienie na moduł `Piny belgijskie zamówienie`
+18. System wyświetla potwierdzenie pomyślnego przesłania zamówienia.
+
 #### Użytkownik: SKARBNIK
 
 1. Użytkownik wybiera opcję `"Piny belgijskie zamówienie"` z `Centrum Zarządzania`.
