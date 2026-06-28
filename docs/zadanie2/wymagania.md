@@ -370,6 +370,15 @@ System może integrować się z następującymi usługami:
 | OCZ-FR-011 | System musi umożliwiać powrót z trybu prezentacji do standardowego widoku osi czasu.            | M         |
 | OCZ-FR-012 | System musi umożliwiać powrót do Centrum Zarządzania.                                           | M         |
 
+### SLL – Słowniczek łaciński
+
+| Kod        | Wymaganie funkcjonalne                                                               | Priorytet |
+|------------|--------------------------------------------------------------------------------------|-----------|
+| SLL-FR-001 | System musi umożliwiać otwarcie modułu „Słowniczek łaciński” z dashboardu.           | M         |
+| SLL-FR-002 | System musi wyświetlać listę zwrotów łacińskich wraz z tłumaczeniem na język polski. | M         |
+| SLL-FR-003 | System musi umożliwiać filtrowanie zwrotów według kategorii.                         | M         |
+| SLL-FR-004 | System musi umożliwiać powrót do dashboardu.                                         | M         |
+
 
 ## 4.4.4 Wymagania niefunkcjonalne
 

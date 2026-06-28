@@ -269,7 +269,16 @@ bez opuszczania widoku szczegółów.
 
 ---
 
-### PIN - Piny belgijskie
+### SLL – Słowniczek łaciński
+
+1. Użytkownik otwiera moduł `"Słowniczek łaciński` z poziomu `dashboardu`.
+2. System wyświetla listę zwrotów. Każda pozycja zawiera zwrot w łacinie i tłumaczenie na polski
+3. Użytkownik może filtrować artykuły po kategorii
+4. Użytkownik wybiera opcję `"Wróć do dashboardu"`
+5. System wyświetla `Dashboard`
+
+---
+
 ### PIN – Piny belgijskie
 
 #### Użytkownik: CZŁONEK
