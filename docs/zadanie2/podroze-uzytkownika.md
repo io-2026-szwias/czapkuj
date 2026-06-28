@@ -6,7 +6,7 @@
 
 ---
 
-### SPI - Śpiewnik
+### SPI – Śpiewnik
 
 #### Użytkownik: CZŁONEK
 
@@ -62,7 +62,7 @@ ewentualnie tekst alternatywny.
 5. System wyświetla formularz umożliwiający wprowadzenie:
    - tytułu i tytułu alternatywnego,
    - autorów,
-   - kategorii,
+   - kategorii
    oraz udostępnia możliwość pobrania lub skopiowania:
    - pliku JSON zawierającego instrukcję korzystania z formatu,
    - szablonu JSON do dodawania tekstu z akordami.
@@ -75,7 +75,7 @@ ewentualnie tekst alternatywny.
 ---
 
 
-### IDG - Interaktywne drzewo genealogiczne
+### IDG – Interaktywne drzewo genealogiczne
 
 #### Z dashboardu
 
@@ -115,7 +115,7 @@ ewentualnie tekst alternatywny.
 
 ---
 
-### KOD - Kodeks
+### KOD – Kodeks
 
 1. Użytkownik wybiera moduł `„Kodeks”` z `dashboardu`.
 2. Wyświetlane są cztery sekcje:
@@ -140,7 +140,7 @@ ewentualnie tekst alternatywny.
 
 ---
 
-### MAP - Mapa
+### MAP – Mapa
 
 #### Urządzenie: komputer 
 1. Użytkownik otwiera moduł `„Mapa”` z poziomu `dashboardu`. 
@@ -187,12 +187,12 @@ orientacji urządzenia.
 8. Użytkownik naciska jeden ze znaczników i wybiera opcję edycji.
 9. Użytkownik edytuje informacje i zapisuje zmiany. Akcje zostają zarejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
 10. Użytkownik odznacza miejsce wydarzenia i wybiera opcję `"Wróć do Centrum Zarządzania"`.
-10. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`.
-11. System wyświetla `Centrum Zarządzania`.
+11. Użytkownik wybiera opcję `„Wróć do Centrum Zarządzania”`.
+12. System wyświetla `Centrum Zarządzania`.
 
 ---
 
-### KAL - Kalendarz
+### KAL – Kalendarz
 
 #### Użytkownik: CZŁONEK
 
@@ -215,13 +215,13 @@ miejsce oraz typ wydarzenia. W przypadku wydarzeń zakończonych wyświetlana je
    a także wybór miejsca, typu wydarzenia i uczestników.
 5. Użytkownik zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
 6. Użytkownik wybiera wydarzenie, a następnie wybiera opcję `"Edytuj wydarzenie"`. 
-7. Użytkownik wprowadza a następnie zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` 
+7. Użytkownik wprowadza, a następnie zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` 
 w `Centrum zarządzania`.
 8. Użytkownik wybiera opcję `"Wróć do Centrum zarządzania`.
 9. System wyświetla `Centrum zarządzania`.
 ---
 
-### KRO - Kronika
+### KRO – Kronika
 1. Użytkownik otwiera moduł `„Kronika”` z poziomu `dashboardu`. 
 2. System wyświetla listę rozwijalnych sekcji, takich jak `„Osoby”`, `„Dokumenty”`, `„Miejsca”` oraz pozostałe 
 kategorie tematyczne. 
@@ -241,21 +241,22 @@ zarówno w trybie włączającym (pokazanie wybranych wartości), jak i wyklucza
 
 ---
 
-### ENC - Encyklopedia
+### ENC – Encyklopedia
 
 1. Użytkownik otwiera moduł `„Encyklopedia”` z poziomu `dashboardu`.
 2. System wyświetla spis pojęć pogrupowanych alfabetycznie.
 3. Użytkownik wybiera pojęcie.
 4. System wyświetla artykuł encyklopedyczny dotyczący wybranego pojęcia.
-5. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
-6. System wyświetla `Dashboard`.
+5. Użytkownik może filtrować artykuły po kategorii.
+6. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
+7. System wyświetla `Dashboard`.
 
 ---
 
-### CYT - Cytaty
+### CYT – Cytaty
 
 1. Użytkownik otwiera moduł `„Cytaty”` z poziomu `dashboardu`. 
-1. System wyświetla cytaty pogrupowane według autorów; część cytatów może być skrócona za pomocą wielokropka. 
+2. System wyświetla cytaty pogrupowane według autorów; część cytatów może być skrócona za pomocą wielokropka. 
 3. Użytkownik wybiera cytat. 
 4. System wyświetla widok szczegółowy zawierający cytat, jego autora oraz kontekst. 
 5. W widoku dostępne są opcje `„Następny cytat”` oraz `„Poprzedni cytat”`, umożliwiające nawigację pomiędzy cytatami 
@@ -269,6 +270,7 @@ bez opuszczania widoku szczegółów.
 ---
 
 ### PIN - Piny belgijskie
+### PIN – Piny belgijskie
 
 #### Użytkownik: CZŁONEK
 
@@ -323,7 +325,7 @@ zastępując wcześniejszą wersję zamówienia aktualną.
 
 ---
 
-### SKL - Składki
+### SKL – Składki
 
 #### Użytkownik: CZŁONEK
 
@@ -367,7 +369,7 @@ w formacie „zapłacono x z y zł” oraz kodem do tytułu przelewu.
 
 ---
 
-### PDZ - Plan działania
+### PDZ – Plan działania
 
 1. Użytkownik wybiera moduł `„Plan działania”` z `Panelu Wielkiego Mistrza`. 
 2. System wyświetla listę zadań przypisanych do kadencji poszczególnych Zarządów. 
@@ -381,7 +383,7 @@ Odhaczenie zadania jest możliwe wyłącznie po spełnieniu wszystkich warunków
 
 ---
 
-### WOR - Wywiad organizacji
+### WOR – Wywiad organizacji
 
 1. Użytkownik wybiera moduł `„Wywiad organizacji”` z `Panelu Wielkiego Mistrza`. 
 2. System wyświetla listę organizacji studenckich, które weszły w kontakt z Bractwem. 
@@ -398,7 +400,7 @@ aktualne kierownictwo, rok założenia, listę członków, historię wspólnych 
 
 ---
 
-### RSS - Rozporządzenia SSUJ
+### RSS – Rozporządzenia SSUJ
 
 1. Użytkownik wybiera moduł `„Rozporządzenia SSUJ”` z `Panelu Kasztelana`. 
 2. System prosi o zalogowanie się kontem Microsoft, jeśli użytkownik nie jest jeszcze zalogowany. 
@@ -418,7 +420,7 @@ przez poprzednich `Kasztelanów`.
 
 ---
 
-### WNI - Wnioski
+### WNI – Wnioski
 
 1. Użytkownik wybiera moduł `„Wnioski”` z `Panelu Kasztelana`.
 2. System wyświetla listę dotychczasowych wniosków. Dostępne są opcje sortowania według daty złożenia lub daty 
@@ -441,7 +443,7 @@ przez SSUJ oraz podgląd dokumentu.
 
 ---
 
-### SKA - Skarbiec
+### SKA – Skarbiec
 
 1. Użytkownik wybiera moduł `"Skarbiec"` z `Panelu Skarbnika`.
 2. System wyświetla saldo oraz numer konta, a także skróty do historii transakcji, spisu płatników i spisu firm.
@@ -452,27 +454,27 @@ link do odbiorcy/adresata oraz saldo konta po transakcji.
 bankowego.
 6. Użytkownik dodaje plik CSV.
 7. System analizuje transakcje i dodaje je do historii transakcji `Skarbca`.
-8. Jeśli system nie odnajdzie odbiorcy lub nadawcy w spisie płatników lub firm, prosi użytkownika o wykonanie jednej z 
+8. Jeśli system nie odnajdzie odbiorcy lub nadawcy w spisie płatników, lub firm, prosi użytkownika o wykonanie jednej z 
 następujących akcji:
    - przyporządkowanie transakcji do istniejącego płatnika lub firmy wraz z uzupełnieniem nowych danych,
-   - utworzenie nowego obiektu poprzez wskazanie, czy jest to płatnik czy firma, oraz uzupełnienie dostępnych informacji 
+   - utworzenie nowego obiektu poprzez wskazanie, czy jest to płatnik, czy firma, oraz uzupełnienie dostępnych informacji 
    (np. opisu działalności, dodatkowych numerów telefonu).
 9. Po udzieleniu odpowiedzi na wszystkie pytania historia transakcji `Skarbca` zostaje uzupełniona o nowe pozycje.
-10. Użytkownik zwija historię transakcji i rozwija spis płatników.
-   - Każda pozycja zawiera imię i nazwisko oraz numer konta lub numer telefonu.
-   - Po wybraniu pozycji system wyświetla dodatkowo adres zamieszkania płatnika, adres e-mail oraz profil użytkownika, 
-   jeśli istnieje on w systemie. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
+10. Użytkownik zwija historię transakcji i rozwija spis płatników:
+    - Każda pozycja zawiera imię i nazwisko oraz numer konta lub numer telefonu.
+    - Po wybraniu pozycji system wyświetla dodatkowo miejsce zamieszkania płatnika, adres e-mail oraz profil użytkownika, 
+     jeśli istnieje on w systemie. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
 11. Użytkownik zwija spis płatników i rozwija spis firm.
-   - Każda pozycja zawiera nazwę firmy oraz numer konta.
-   - Po wybraniu pozycji system wyświetla dodatkowo adres siedziby, adresy e-mail, numery telefonów oraz opis 
-   działalności. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
+    - Każda pozycja zawiera nazwę firmy oraz numer konta.
+    - Po wybraniu pozycji system wyświetla dodatkowo adres siedziby, adresy e-mail, numery telefonów oraz opis
+      działalności. Dane można modyfikować po wybraniu opcji `"Edytuj"`.
 12. Wszystkie zmiany wprowadzone przez użytkownika są rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
 13. Użytkownik zwija spis firm i wybiera opcję `"Wróć do Centrum Zarządzania"`.
 14. System wyświetla `Centrum Zarządzania`.
 
 ---
 
-### OCZ - Oś Czasu
+### OCZ – Oś Czasu
 
 1. Użytkownik wybiera moduł `"Oś Czasu"` z `Panelu Wspólnego`.
 2. System wyświetla pionową oś czasu skierowaną ku górze, zawierającą wszystkie zatwierdzone akcje wykonane przez 
