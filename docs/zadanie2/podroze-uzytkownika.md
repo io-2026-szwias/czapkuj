@@ -2,6 +2,302 @@
 
 ---
 
+## STRONA czapkuj.pl
+
+---
+### OGÓLNODOSTĘPNE FUNKCJE STRONY
+
+1. Użytkownik otwiera stronę `czapkuj.pl`.
+2. System wyświetla stronę główną zawierającą powitanie oraz opis celu serwisu. 
+Ikona trybu wyświetlania w prawym górnym rogu jest ustawiona na tryb `"Odwiedzający"`.
+3. Użytkownik wybiera ikonę menu (hamburger).
+4. System wyświetla listę odnośników do podstron.
+5. Użytkownik otwiera podstronę `Kalendarz wydarzeń`.
+6. System wyświetla kalendarz przeszłych i nadchodzących wydarzeń Bractwa z widokiem ustawionym na bieżący miesiąc. 
+Użytkownik może dodać kalendarz do Kalendarza Google.
+7. Użytkownik otwiera podstronę `Sklep`.
+8. System wyświetla trzy dostępne opcje:
+   - `Zamów własną czapkę!`,
+   - `Zamów piny belgijskie`,
+   - `Zamów piny własnego projektu`.
+9. Użytkownik wybiera opcję `Zamów własną czapkę!`.
+10. System wyświetla ofertę czapki studenckiej oraz formularz uprawniający do uzyskania 50% zniżki. 
+Formularz zawiera pola:
+    - adres e-mail,
+    - imię i nazwisko,
+    - uczelnia,
+    - wydział,
+    - numer albumu.
+11. Użytkownik uzupełnia formularz i zatwierdza go. 
+Powiadomienie zawierające dane z formularza zostaje przesłane do `Powiadomień` w `Centrum Zarządzania`.
+12. Użytkownik wybiera opcję `Wróć`, a następnie `Zamów piny belgijskie`.
+13. System prosi użytkownika o zalogowanie przy użyciu konta Google.
+14. Użytkownik loguje się.
+15. System przekierowuje użytkownika do strony sklepu. 
+Szczegóły działania opisano w scenariuszu [PIN – Piny belgijskie, Użytkownik: ODWIEDZAJĄCY](#użytkownik-odwiedzający).
+16. Użytkownik wybiera opcję `Wróć`, a następnie `Zamów piny własnego projektu`.
+17. System wyświetla stronę zawierającą:
+    - instrukcję przygotowania pliku PNG ze wzorem pinów,
+    - szablon GIMP do przygotowania pliku PNG,
+    - formularz umożliwiający podanie adresu e-mail, przesłanie pliku PNG oraz określenie liczby pinów.
+18. Użytkownik przesyła plik PNG ze wzorem pinów oraz podaje liczbę zamawianych egzemplarzy.
+19. System oblicza koszt realizacji zamówienia w czasie rzeczywistym i wyświetla go obok pola z liczbą pinów.
+20. Użytkownik wybiera opcję `"Złóż zamówienie"`.
+21. System przekierowuje użytkownika do strony płatności.
+22. Po pomyślnym zakończeniu płatności system wyświetla potwierdzenie przyjęcia płatności.
+23. Powiadomienie zawierające dane zamówienia zostaje przesłane do `Powiadomień` w `Centrum Zarządzania`.
+24. Użytkownik otwiera podstronę `Blog`.
+25. System wyświetla listę dostępnych blogów. Każda pozycja zawiera:
+    - tytuł będący odnośnikiem do bloga,
+    - krótki opis tematyki bloga,
+    - początek najnowszego wpisu zakończony wielokropkiem oraz odnośnik `"Czytaj dalej"` 
+    prowadzący do pełnej treści wpisu.
+26. Użytkownik wybiera jeden z blogów.
+27. Blog umożliwia:
+    - czytanie wpisów,
+    - wybór wpisu z listy,
+    - dodawanie komentarzy. W tym celu użytkownik musi być zalogowany, 
+    a każdy komentarz wymaga zatwierdzenia przez moderatora przed publikacją. 
+    System informuje użytkownika o procesie moderacji.
+28. Użytkownik otwiera podstronę `Czapkowy słowniczek`.
+29. System wyświetla następujące sekcje:
+    - Czapkowe zwyczaje (wykorzystuje dane z modułu [Encyklopedia](#enc--encyklopedia)),
+    - Czapkowy żargon (wykorzystuje dane z modułu [Encyklopedia](#enc--encyklopedia)),
+    - Łacińskie zwroty (wykorzystuje dane z modułu [Słowniczek łaciński](#sll--słowniczek-łaciński)),
+    - Czapkowe cytaty (wykorzystuje dane z modułu [Cytaty](#cyt--cytaty)),
+    - Znane Czapki.
+
+    Po wybraniu jednej z sekcji system wyświetla listę odnośników do powiązanych artykułów.
+30. Użytkownik wybiera ikonę czatu.
+31. System prosi o zalogowanie, jeśli użytkownik nie jest jeszcze zalogowany.
+32. Po zalogowaniu system wyświetla okno czatu z moderatorem lub administratorem. Historia wiadomości jest zapisywana, 
+dzięki czemu użytkownik może kontynuować rozmowę podczas kolejnych wizyt.
+33. Użytkownik zamyka okno czatu i wybiera ikonę `"Zgłoś problem ze stroną"`.
+34. System wyświetla formularz zgłoszenia problemu z polem tekstowym oraz informacją, że w przypadku potrzeby uzyskania 
+pomocy użytkownik może skorzystać z czatu.
+35. Użytkownik wysyła formularz, a następnie wybiera ikonę `"Social media"`.
+36. System wyświetla odnośniki do oficjalnych profili Bractwa w mediach społecznościowych.
+37. Użytkownik wybiera ikonę `"Postaw nam piwo"`.
+38. System wyświetla dane do przelewu umożliwiającego dobrowolne wsparcie Bractwa.
+
+---
+
+### AKCJE KONTA
+
+---
+
+#### TRYB: ODWIEDZAJĄCY
+
+1. Użytkownik wybiera ikonę konta.
+2. System wyświetla listę dostępnych akcji:
+    - `"Poproś o awans na beana"`
+    - `"Powiadomienia"`
+    - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
+    - `"Wyloguj"` – widoczne dla zalogowanych.
+3. Użytkownik wybiera opcję `"Poproś o awans na beana"`.
+4. Jeśli użytkownik nie jest zalogowany, system prosi go o zalogowanie się.
+5. Po zalogowaniu system wyświetla formularz zawierający:
+    - opis korzyści wynikających z awansu,
+    - opis procedury awansu,
+    - pole do wprowadzenia 6-cyfrowego kodu,
+    - przycisk `"Poproś o awans"`.
+6. Użytkownik uzupełnia formularz i zatwierdza go.
+7. Dane z formularza zostają przesłane do `Powiadomień` na kontach moderatorskich i administratorskich.
+8. Po zaakceptowaniu prośby przez moderatora/administratora użytkownik otrzymuje powiadomienie z prośbą o uzupełnienie danych.
+9. Użytkownik otwiera formularz zawierający pola:
+    - imię,
+    - nazwisko,
+    - zaimki,
+    - przezwiska (oddzielone przecinkami),
+    - pierwsze wydarzenie czapkowe (wybór z listy lub zgłoszenie nowego wydarzenia).
+
+   W przypadku wybrania opcji dodania nowego wydarzenia, po zatwierdzeniu formularza system wyświetla kolejny formularz 
+zawierający pola:
+    - data wydarzenia,
+    - miejsce,
+    - nazwa wydarzenia,
+    - uwagi (opcjonalnie).
+10. Dane z formularzów zostają wysłane do moderatorów/administratora
+11. Po wypełnieniu formularzy system informuje użytkownika, że moderatorzy muszą wykonać ostatni etap procesu awansu.
+12. Po zakończeniu procesu status użytkownika oraz tryb wyświetlania strony zostają zmienione na 
+`"Czapkowicz"`.
+13. Użytkownik może zmieniać tryb wyświetlania strony za pomocą ikony trybu wyświetlania znajdującej się w prawym górnym 
+rogu strony.
+14. Użytkownik wybiera opcję `"Powiadomienia"`.
+15. System wyświetla listę powiadomień. Nieprzeczytane powiadomienia są oznaczone czerwoną ikoną wykrzyknika.
+16. Użytkownik wybiera jedno z powiadomień.
+17. System wyświetla pełną treść powiadomienia oraz przycisk `"Oznacz jako przeczytane"`.
+18. Użytkownik oznacza powiadomienie jako przeczytane, a następnie wybiera opcję `"Wróć"`.
+19. Użytkownik wybiera opcję `"Wyloguj"`.
+20. System wylogowuje użytkownika.
+21. Użytkownik wybiera opcję `"Zaloguj/zarejestruj"`.
+22. System umożliwia zalogowanie lub rejestrację za pomocą konta Google.
+
+---
+
+#### TRYB: CZAPKOWICZ
+
+1. Użytkownik wybiera ikonę konta.
+2. System wyświetla listę dostępnych akcji:
+    - `"Bio"`
+    - `"Dashboard"`
+    - `"Powiadomienia"`
+    - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
+    - `"Wyloguj"` – widoczne dla zalogowanych.
+3. Użytkownik wybiera opcję `"Bio"`.
+4. System wyświetla widok biografii użytkownika. Dostępne są:
+   - lista informacji osobowych:
+       - **imię** – edytowalne za zgodą moderatora,
+       - **imię czapkowe** – edytowalne za zgodą moderatora,
+       - **nazwisko** – edytowalne za zgodą moderatora,
+       - **zaimki** – edytowalne,
+       - **przezwiska** – edytowalne,
+       - **pierwsze wydarzenie** – edytowalne za zgodą moderatora,
+       - **rodzice czapkowi** – edytowalne za zgodą moderatora,
+       - **posiadane czapki** – edytowalne za zgodą moderatora,
+       - **członkostwo w organizacjach** – edytowalne za zgodą moderatora,
+       - **coś o sobie** – edytowalne.
+
+     Użytkownicy posiadający flair `"Członek"` lub `"Weteran"` mają dodatkowo dostępne pola:
+     - **wydarzenie chrzcielne** – edytowalne za zgodą moderatora,
+     - **zadanie czapkowe** – edytowalne za zgodą moderatora,
+     - **dzieci czapkowe** – edytowalne za zgodą moderatora.
+
+     Dodatkowo dostępne są:
+     - **lista odznak (flairs)** – nadawanych przez moderatorów,
+     - **zdjęcie profilowe** – edytowalne za zgodą moderatora,
+     - **przycisk podglądu drzewa genealogicznego** – generowanego automatycznie,
+     - **przycisk `"Poproś o usunięcie flagi"`** – umożliwiający wysłanie prośby do moderatora o usunięcie wybranej flagi,
+     - **przycisk `"Poproś o nadanie flagi"`** – umożliwiający wysłanie prośby o nadanie nowej flagi,
+     - **przycisk `"Poproś o zmianę statusu na Członka"`** – wysyłający prośbę o zmianę statusu,
+     - **przycisk `"Poproś o zmianę statusu na Weterana"`** – wysyłający prośbę o zmianę statusu.
+5. Użytkownik wybiera opcję `"Dashboard"`.
+6. System wyświetla komunikat powitalny w postaci `"Witaj, <imię>!"` oraz siatkę kafelków prowadzących do modułów:
+    - [Cytaty](#cyt--cytaty)
+    - [Drzewo genealogiczne](#idg--interaktywne-drzewo-genealogiczne)
+    - [Encyklopedia](#enc--encyklopedia)
+    - [Kalendarz](#kal--kalendarz)
+    - [Kodeks](#kod--kodeks)
+    - [Kronika](#kro--kronika)
+    - [Mapa](#map--mapa)
+    - [Piny belgijskie](#pin--piny-belgijskie)
+    - [Składki](#skl--składki)
+    - [Słowniczek łaciński](#sll--słowniczek-łaciński)
+    - [Śpiewnik](#spi--śpiewnik)
+7. Pozostałe akcje konta działają analogicznie jak w trybie `"Odwiedzający"`.
+
+---
+
+#### TRYB: CZŁONEK ZARZĄDU
+
+Obejmuje tryby: `Wielki Mistrz`, `Kasztelan`, `Skarbnik`, `Sekretarz` oraz `Cantandi`.
+
+Każdy członek Zarządu może przeglądać moduły ze wszystkich paneli w `Centrum Zarządzania`, 
+jednak wprowadzanie zmian jest możliwe wyłącznie w modułach przypisanych do pełnionej funkcji.
+
+1. Użytkownik wybiera ikonę konta.
+2. System wyświetla listę dostępnych akcji:
+    - `"Bio"`
+    - `"Dashboard"`
+    - `"Centrum Zarządzania"`
+    - `"Powiadomienia"`
+    - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
+    - `"Wyloguj"` – widoczne dla zalogowanych.
+3. Użytkownik wybiera opcję `"Centrum Zarządzania"`.
+4. System wyświetla komunikat powitalny w postaci `"Witaj, <funkcja w Zarządzie>!"` oraz panele zawierające moduły:
+    - `Panel Wspólny`
+        - [Oś Czasu](#ocz--oś-czasu)
+    - `Panel Wielkiego Mistrza`
+        - [Plan działania](#pdz--plan-działania)
+        - [Wywiad organizacji](#wor--wywiad-organizacji)
+    - `Panel Kasztelana`
+        - [Rozporządzenia SSUJ](#rss--rozporządzenia-ssuj)
+        - [Wywiad miejscówek](#użytkownik-kasztelan)
+        - [Wnioski](#wni--wnioski)
+    - `Panel Skarbnika`
+        - [Skarbiec](#ska--skarbiec)
+        - [Cele składkowe](#użytkownik-skarbnik-1)
+        - [Piny belgijskie zamówienie](#użytkownik-skarbnik)
+    - `Panel Sekretarza`
+        - [Edytuj kalendarz](#kal--kalendarz)
+    - `Panel Cantandiego`
+        - [Edytuj śpiewnik](#użytkownik-cantandi)
+5. Pozostałe akcje konta działają analogicznie jak w trybie `"Czapkowicz"`.
+
+---
+
+#### TRYB: MODERATOR
+
+1. Użytkownik wybiera ikonę konta.
+2. System wyświetla listę dostępnych akcji:
+    - `"Powiadomienia"`
+    - `"Panel moderatora"`
+    - `"Dashboard"`
+    - `"Komentarze"`
+    - `"Rozpatrz prośby"`
+    - `"Wygeneruj kody awansu na beana"`
+    - `"Logi zmian"`
+    - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
+    - `"Wyloguj"` – widoczne dla zalogowanych.
+3. Użytkownik wybiera opcję `"Panel moderatora"`
+4. Wyświetla się system umożliwiający takie opcje jak panel admina w Django
+5. Użytkownik wybiera opcję `"Komentarze"`
+6. Wyświetla się lista komentarzy, filtrowalnych po statusie moderacji. Każda pozycja zawiera:
+   - okienko do zaznaczania
+   - datę i czas zarejestrowania komentarza
+   - email komentującego, będący linkiem do konta
+   - tytuł komentowanego posta
+   - treść komentarza
+7. Użytkownik zaznacza komentarze, a następnie naciska przycisk `"Zatwierdź"`, `"Odrzuć"`
+8. Autor komentarza zostanie poinformowany o decyzji w powiadomieniu na jego konto. 
+W razie zatwierdzenia komentarz stanie się widoczny dla wszystkich
+9. Użytkownik podąża za linkiem
+10. Wyświetla się okienko z kartami:
+    - **Konto**
+    - **Bio** – dostępne, jeśli użytkownik ma status `"Czapkowicz"`
+    
+    Wybranie karty `"Konto"` pokaże:
+    - email
+    - datę rejestracji
+    - historię aktywności
+    - przycisk `"Banuj"`
+    
+    Wybranie karty `"Bio"` wyświetli `Bio` użytkownika, jeśli je posiada (ma status `"Czapkowicz"`)
+11. Użytkownik naciska przycisk `"Banuj"`
+12. Wyświetlają się opcja wyboru długości bana oraz opcja `"Do odwołania"`
+13. Użytkownik wybiera jedną z opcji, a następnie zatwierdza
+14. Zbanowany użytkownik zostanie o tym poinformowany w powiadomieniu. Traci możliwość komentowania, korzystania z czatu 
+oraz zgłaszania problemów
+15. Użytkownik wybiera opcję `"Rozpatrz prośby`
+16. Wyświetla się lista próśb o zmianę informacji, statusu, flagi itp. Każda pozycja zawiera:
+    - okienko do zaznaczania
+    - datę i czas zarejestrowania prośby
+    - email proszącego, będący linkiem do konta
+    - treść prośby
+17. Użytkownik zaznacza prośby, a następnie naciska przycisk `"Zatwierdź"`, `"Odrzuć"`
+18. Jeśli była to prośba o:
+    - **zmianę informacji w `Bio`** – informacja zostanie zmieniona
+    - **zmianę statusu** – status proszącego zostanie zmieniony
+    - **nadanie flagi** – użytkownik zostanie poproszony o wybór flagi lub wprowadzenie tytułu nowej flagi. 
+    Po zatwierdzeniu nowa flaga będzie widoczna w `Bio` proszącego
+    - **usunięcie flagi** – flaga zostanie usunięta z `Bio` proszącego
+    - **awans na beana** – status proszącego zostanie zmieniony na `"Czapkowicz"` 
+    lub zostanie do niego przesłany formularz uzupełnienia danych
+19. Użytkownik wybiera opcję `"Wygeneruj kody awansu na beana"`
+20. Użytkownik wprowadza liczbę kodów do wygenerowania. 
+21. System wyświetla listę kodów wraz z datą wygenerowania oraz datą wygaśnięcia. 
+Każdy kod jest jednorazowy i może być użyty tylko raz.
+22. Użytkownik wybiera opcję `"Wydrukuj kody"` i zatwierdza.
+23. System generuje plik PDF zawierający listę kodów wraz z datą wygenerowania oraz datą wygaśnięcia, 
+sformatowaną w formie ułatwiającej wycięcie kodów.
+24. Użytkownik wybiera opcję `"Logi zmian"`.
+25. System wyświetla listę zmian wprowadzonych przez moderatorów i administratorów. Każda pozycja zawiera:
+    - datę i czas wprowadzenia zmiany
+    - email użytkownika, który wprowadził zmianę
+    - opis zmiany
+26. Reszta akcji konta działa analogicznie jak w trybie `"Czapkowicz"`.
+---
+
 ## APLIKACJE CZŁONKOWSKIE
 
 ---
