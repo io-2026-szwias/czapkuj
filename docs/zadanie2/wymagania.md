@@ -432,40 +432,48 @@ System może integrować się z następującymi usługami:
 
 ### AKO – Akcje Konta Odwiedzającego
 
-| Kod        | Wymaganie funkcjonalne                                                                                            | Priorytet |
-|------------|-------------------------------------------------------------------------------------------------------------------|-----------|
-| AKO-FR-001 | System musi umożliwiać otwarcie menu konta przez użytkownika.                                                     | M         |
-| AKO-FR-002 | System musi wyświetlać listę akcji: „Poproś o awans na beana”, „Powiadomienia”, „Zaloguj/zarejestruj”, „Wyloguj”. | M         |
-| AKO-FR-003 | System musi umożliwiać złożenie wniosku o awans na beana.                                                         | M         |
-| AKO-FR-004 | System musi wymagać logowania przed złożeniem wniosku o awans.                                                    | M         |
-| AKO-FR-005 | System musi umożliwiać przesłanie formularza awansu z kodem 6-cyfrowym.                                           | M         |
-| AKO-FR-006 | System musi wysyłać wniosek o awans do powiadomień moderatorów i administratorów.                                 | M         |
-| AKO-FR-007 | System musi umożliwiać uzupełnienie danych po wstępnej akceptacji awansu.                                         | M         |
-| AKO-FR-008 | System musi obsługiwać formularz danych osobowych (imię, nazwisko, zaimki, przezwiska, pierwsze wydarzenie).      | M         |
-| AKO-FR-009 | System musi obsługiwać prośbę o dodanie nowego wydarzenia czapkowego wraz z dodatkowymi danymi.                   | S         |
-| AKO-FR-010 | System musi aktualizować status użytkownika na „Czapkowicz” po zakończeniu procesu awansu.                        | M         |
-| AKO-FR-011 | System musi umożliwiać dostęp do powiadomień użytkownika.                                                         | M         |
-| AKO-FR-012 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                                   | S         |
-| AKO-FR-013 | System musi umożliwiać wylogowanie i ponowne logowanie użytkownika.                                               | M         |
-| AKO-FR-014 | System musi umożliwiać rejestrację/logowanie przez Google.                                                        | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                                                                                   | Priorytet |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| AKO-FR-001 | System musi umożliwiać otwarcie menu konta przez użytkownika.                                                                                                            | M         |
+| AKO-FR-002 | System musi wyświetlać listę akcji: „Poproś o awans na beana”, „Powiadomienia”, „Zaloguj/zarejestruj”, „Wyloguj”.                                                        | M         |
+| AKO-FR-003 | System musi umożliwiać złożenie wniosku o awans z użyciem 6-cyfrowego kodu.                                                                                              | M         |
+| AKO-FR-004 | System musi wymagać zalogowania przed rozpoczęciem procesu awansu.                                                                                                       | M         |
+| AKO-FR-005 | System musi wyświetlać formularz awansu zawierający opis procedury oraz pole kodu.                                                                                       | M         |
+| AKO-FR-006 | System musi przesyłać wniosek o awans do powiadomień moderatorów i administratorów.                                                                                      | M         |
+| AKO-FR-007 | System musi umożliwiać uzupełnienie danych po zaakceptowaniu wniosku.                                                                                                    | M         |
+| AKO-FR-008 | System musi obsługiwać formularz danych osobowych użytkownika.                                                                                                           | M         |
+| AKO-FR-009 | System musi umożliwiać zgłoszenie nowego wydarzenia czapkowego wraz z dodatkowymi informacjami.                                                                          | S         |
+| AKO-FR-010 | System musi obsługiwać różne typy kodów awansu i dynamicznie dostosowywać zakres formularza do rodzaju kodu.                                                             | M         |
+| AKO-FR-011 | System musi umożliwiać zgłaszanie nowych wartości dla pól wybieranych z list (np. wydarzeń, organizacji, czapek, rodziców czapkowych) do rozpatrzenia przez moderatorów. | S         |
+| AKO-FR-012 | System musi przesyłać wszystkie formularze uzupełniające do moderatorów i administratorów.                                                                               | M         |
+| AKO-FR-013 | System musi aktualizować status użytkownika po zakończeniu procesu awansu.                                                                                               | M         |
+| AKO-FR-014 | System musi umożliwiać zmianę trybu wyświetlania zgodnie z posiadanym statusem użytkownika.                                                                              | M         |
+| AKO-FR-015 | System musi umożliwiać przeglądanie powiadomień.                                                                                                                         | M         |
+| AKO-FR-016 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                                                                                          | S         |
+| AKO-FR-017 | System musi umożliwiać wylogowanie użytkownika.                                                                                                                          | M         |
+| AKO-FR-018 | System musi umożliwiać logowanie i rejestrację przy użyciu konta Google.                                                                                                 | M         |
 
 ### AKC – Akcje Konta Czapkowicza
 
-| Kod        | Wymaganie funkcjonalne                                                                                  | Priorytet |
-|------------|---------------------------------------------------------------------------------------------------------|-----------|
-| AKC-FR-001 | System musi umożliwiać otwarcie menu konta przez użytkownika Czapkowicza.                               | M         |
-| AKC-FR-002 | System musi wyświetlać akcje: Bio, Dashboard, Powiadomienia, Zaloguj/zarejestruj, Wyloguj.              | M         |
-| AKC-FR-003 | System musi umożliwiać wyświetlanie i edycję Bio użytkownika.                                           | M         |
-| AKC-FR-004 | System musi wymagać zgody moderatora dla zmian wybranych pól Bio.                                       | M         |
-| AKC-FR-005 | System musi obsługiwać pola Bio (imię, nazwisko, zaimki, przezwiska, wydarzenia, relacje, itd.).        | M         |
-| AKC-FR-006 | System musi udostępniać dodatkowe pola Bio dla użytkowników z odpowiednimi statusami (Członek/Weteran). | S         |
-| AKC-FR-007 | System musi umożliwiać zarządzanie odznakami (flairs).                                                  | M         |
-| AKC-FR-008 | System musi umożliwiać wyświetlanie drzewa genealogicznego.                                             | S         |
-| AKC-FR-009 | System musi umożliwiać wysyłanie próśb o zmianę danych Bio i statusów.                                  | M         |
-| AKC-FR-010 | System musi umożliwiać przejście do Dashboardu z modułami użytkownika.                                  | M         |
-| AKC-FR-011 | System musi umożliwiać dostęp do powiadomień.                                                           | M         |
-| AKC-FR-012 | System musi umożliwiać wylogowanie użytkownika.                                                         | M         |
-| AKC-FR-013 | System musi utrzymywać spójny dostęp do trybu „Czapkowicz” po zmianie statusu.                          | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                           | Priorytet |
+|------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| AKC-FR-001 | System musi umożliwiać otwarcie menu konta użytkownika.                                                          | M         |
+| AKC-FR-002 | System musi wyświetlać akcje: Bio, Dashboard, Powiadomienia, Zaloguj/zarejestruj, Wyloguj.                       | M         |
+| AKC-FR-003 | System musi umożliwiać wyświetlanie Bio użytkownika.                                                             | M         |
+| AKC-FR-004 | System musi umożliwiać edycję pól Bio zgodnie z posiadanymi uprawnieniami.                                       | M         |
+| AKC-FR-005 | System musi wymagać zatwierdzenia moderatora dla pól oznaczonych jako edytowalne za zgodą moderatora.            | M         |
+| AKC-FR-006 | System musi udostępniać dodatkowe pola Bio użytkownikom posiadającym status „Członek” lub „Weteran”.             | S         |
+| AKC-FR-007 | System musi wyświetlać listę odznak (flairs) przypisanych użytkownikowi.                                         | M         |
+| AKC-FR-008 | System musi umożliwiać wyświetlenie drzewa genealogicznego użytkownika.                                          | S         |
+| AKC-FR-009 | System musi umożliwiać wysyłanie próśb o zmianę informacji w Bio.                                                | M         |
+| AKC-FR-010 | System musi umożliwiać wysyłanie próśb o nadanie i usunięcie flag.                                               | M         |
+| AKC-FR-011 | System musi umożliwiać wysyłanie próśb o zmianę statusu użytkownika.                                             | M         |
+| AKC-FR-012 | System musi przesyłać formularz uzupełniający po zaakceptowaniu prośby o zmianę statusu, jeśli jest wymagany.    | M         |
+| AKC-FR-013 | System musi automatycznie aktualizować status użytkownika po zakończeniu procesu zatwierdzania przez moderatora. | M         |
+| AKC-FR-014 | System musi umożliwiać przejście do Dashboardu.                                                                  | M         |
+| AKC-FR-015 | System musi wyświetlać Dashboard zawierający moduły dostępne dla Czapkowicza.                                    | M         |
+| AKC-FR-016 | System musi umożliwiać korzystanie z powiadomień analogicznie jak w trybie Odwiedzający.                         | M         |
+| AKC-FR-017 | System musi umożliwiać wylogowanie i ponowne logowanie użytkownika.                                              | M         |
 
 ### AKZ - Akcje Kont Zarządowych
 
@@ -485,25 +493,29 @@ System może integrować się z następującymi usługami:
 
 ### AKM - Akcje Konta Moderatora
 
-| Kod        | Wymaganie funkcjonalne                                                                                                                                              | Priorytet |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| AKM-FR-001 | System musi umożliwiać dostęp do menu moderatora.                                                                                                                   | M         |
-| AKM-FR-002 | System musi wyświetlać akcje: Powiadomienia, Panel moderatora, Dashboard, Komentarze, Rozpatrz prośby, Kody awansu, Logi zmian, Logowanie/Rejestracja, Wylogowanie. | M         |
-| AKM-FR-003 | System musi udostępniać Panel moderatora (funkcjonalność administracyjna).                                                                                          | M         |
-| AKM-FR-004 | System musi umożliwiać przegląd i moderację komentarzy.                                                                                                             | M         |
-| AKM-FR-005 | System musi umożliwiać filtrowanie komentarzy po statusie.                                                                                                          | S         |
-| AKM-FR-006 | System musi umożliwiać zatwierdzanie i odrzucanie komentarzy.                                                                                                       | M         |
-| AKM-FR-007 | System musi wysyłać powiadomienia o decyzji moderacji do użytkowników.                                                                                              | M         |
-| AKM-FR-008 | System musi umożliwiać przegląd kont użytkowników (Konto + Bio).                                                                                                    | M         |
-| AKM-FR-009 | System musi umożliwiać banowanie użytkowników (czasowe lub bezterminowe).                                                                                           | M         |
-| AKM-FR-010 | System musi blokować zbanowanym użytkownikom dostęp do komentarzy, czatu i zgłoszeń.                                                                                | M         |
-| AKM-FR-011 | System musi umożliwiać przegląd i rozpatrywanie próśb użytkowników.                                                                                                 | M         |
-| AKM-FR-012 | System musi obsługiwać różne typy próśb (Bio, status, flaga, awans).                                                                                                | M         |
-| AKM-FR-013 | System musi umożliwiać nadawanie i usuwanie flag użytkowników.                                                                                                      | M         |
-| AKM-FR-014 | System musi umożliwiać generowanie kodów awansu na beana.                                                                                                           | M         |
-| AKM-FR-015 | System musi umożliwiać eksport kodów do PDF.                                                                                                                        | S         |
-| AKM-FR-016 | System musi umożliwiać przegląd logów zmian systemowych.                                                                                                            | M         |
-| AKM-FR-017 | System musi rejestrować wszystkie działania moderatorów w logach zmian.                                                                                             | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                                                               | Priorytet |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| AKM-FR-001 | System musi umożliwiać dostęp do menu moderatora.                                                                                                    | M         |
+| AKM-FR-002 | System musi wyświetlać wszystkie akcje dostępne moderatorowi.                                                                                        | M         |
+| AKM-FR-003 | System musi udostępniać panel moderatora umożliwiający administrację danymi.                                                                         | M         |
+| AKM-FR-004 | System musi umożliwiać przeglądanie komentarzy oczekujących na moderację.                                                                            | M         |
+| AKM-FR-005 | System musi umożliwiać filtrowanie komentarzy według statusu moderacji.                                                                              | S         |
+| AKM-FR-006 | System musi umożliwiać zbiorcze zatwierdzanie i odrzucanie komentarzy.                                                                               | M         |
+| AKM-FR-007 | System musi powiadamiać autora komentarza o decyzji moderatora.                                                                                      | M         |
+| AKM-FR-008 | System musi umożliwiać przegląd informacji o kontach użytkowników oraz ich Bio.                                                                      | M         |
+| AKM-FR-009 | System musi umożliwiać nakładanie blokad czasowych i bezterminowych na użytkowników.                                                                 | M         |
+| AKM-FR-010 | System musi blokować zbanowanym użytkownikom możliwość komentowania, korzystania z czatu oraz zgłaszania problemów.                                  | M         |
+| AKM-FR-011 | System musi umożliwiać przeglądanie i rozpatrywanie próśb użytkowników.                                                                              | M         |
+| AKM-FR-012 | System musi obsługiwać wszystkie typy próśb dotyczących Bio, statusów, flag i awansów.                                                               | M         |
+| AKM-FR-013 | System musi umożliwiać nadawanie nowych flag oraz usuwanie istniejących flag użytkowników.                                                           | M         |
+| AKM-FR-014 | System musi umożliwiać generowanie kodów awansu na Beana.                                                                                            | M         |
+| AKM-FR-015 | System musi zapewniać jednorazowość wygenerowanych kodów oraz kontrolować termin ich ważności.                                                       | M         |
+| AKM-FR-016 | System musi umożliwiać eksport wygenerowanych kodów do pliku PDF.                                                                                    | S         |
+| AKM-FR-017 | System musi umożliwiać przeglądanie logów zmian moderatorów i administratorów.                                                                       | M         |
+| AKM-FR-018 | System musi rejestrować działania moderatorów w logach zmian.                                                                                        | M         |
+| AKM-FR-019 | System musi umożliwiać moderatorowi zmianę trybu wyświetlania na tryb „Czapkowicz” lub dostępny tryb Zarządu zgodnie z posiadanymi uprawnieniami.    | M         |
+| AKM-FR-020 | System musi ograniczać dostęp do funkcji Bio i komentowania w trybie „Moderator”, udostępniając je wyłącznie po przełączeniu do odpowiedniego trybu. | M         |
+
 ### AKA - Akcje Konta Administratora
 
 | Kod        | Wymaganie funkcjonalne                                                                                                               | Priorytet |

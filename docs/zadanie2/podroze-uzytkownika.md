@@ -254,63 +254,67 @@ jednak wprowadzanie zmian jest możliwe wyłącznie w modułach przypisanych do 
     - `"Logi zmian"`
     - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
     - `"Wyloguj"` – widoczne dla zalogowanych.
-3. Użytkownik wybiera opcję `"Panel moderatora"`
-4. Wyświetla się system umożliwiający takie opcje jak panel admina w Django
-5. Użytkownik wybiera opcję `"Komentarze"`
-6. Wyświetla się lista komentarzy, filtrowalnych po statusie moderacji. Każda pozycja zawiera:
-   - okienko do zaznaczania
-   - datę i czas zarejestrowania komentarza
-   - email komentującego, będący linkiem do konta
-   - tytuł komentowanego posta
-   - treść komentarza
-7. Użytkownik zaznacza komentarze, a następnie naciska przycisk `"Zatwierdź"`, `"Odrzuć"`
-8. Autor komentarza zostanie poinformowany o decyzji w powiadomieniu na jego konto. 
-W razie zatwierdzenia komentarz stanie się widoczny dla wszystkich
-9. Użytkownik podąża za linkiem
-10. Wyświetla się okienko z kartami:
-    - **Konto**
-    - **Bio** – dostępne, jeśli użytkownik ma status `"Czapkowicz"`
-    
-    Wybranie karty `"Konto"` pokaże:
-    - email
-    - datę rejestracji
-    - historię aktywności
-    - przycisk `"Banuj"`
-    
-    Wybranie karty `"Bio"` wyświetli `Bio` użytkownika, jeśli je posiada (ma status `"Czapkowicz"`)
-11. Użytkownik naciska przycisk `"Banuj"`
-12. Wyświetlają się opcja wyboru długości bana oraz opcja `"Do odwołania"`
-13. Użytkownik wybiera jedną z opcji, a następnie zatwierdza
-14. Zbanowany użytkownik zostanie o tym poinformowany w powiadomieniu. Traci możliwość komentowania, korzystania z czatu 
-oraz zgłaszania problemów
-15. Użytkownik wybiera opcję `"Rozpatrz prośby`
-16. Wyświetla się lista próśb o zmianę informacji, statusu, flagi itp. Każda pozycja zawiera:
-    - okienko do zaznaczania
-    - datę i czas zarejestrowania prośby
-    - email proszącego, będący linkiem do konta
-    - treść prośby
-17. Użytkownik zaznacza prośby, a następnie naciska przycisk `"Zatwierdź"`, `"Odrzuć"`
-18. Jeśli była to prośba o:
-    - **zmianę informacji w `Bio`** – informacja zostanie zmieniona
-    - **zmianę statusu** – status proszącego zostanie zmieniony
-    - **nadanie flagi** – użytkownik zostanie poproszony o wybór flagi lub wprowadzenie tytułu nowej flagi. 
-    Po zatwierdzeniu nowa flaga będzie widoczna w `Bio` proszącego
-    - **usunięcie flagi** – flaga zostanie usunięta z `Bio` proszącego
-    - **awans na beana** – status proszącego zostanie zmieniony na `"Czapkowicz"` 
-    lub zostanie do niego przesłany formularz uzupełnienia danych
-19. Użytkownik wybiera opcję `"Wygeneruj kody awansu na beana"`
-20. Użytkownik wprowadza liczbę kodów do wygenerowania. 
-21. System wyświetla listę kodów wraz z datą wygenerowania oraz datą wygaśnięcia. 
-Każdy kod jest jednorazowy i może być użyty tylko raz.
-22. Użytkownik wybiera opcję `"Wydrukuj kody"` i zatwierdza.
-23. System generuje plik PDF zawierający listę kodów wraz z datą wygenerowania oraz datą wygaśnięcia, 
-sformatowaną w formie ułatwiającej wycięcie kodów.
+3. Użytkownik wybiera opcję `"Panel moderatora"`.
+4. System wyświetla panel administracyjny umożliwiający zarządzanie danymi w sposób analogiczny do panelu administratora Django.
+5. Użytkownik wybiera opcję `"Komentarze"`.
+6. System wyświetla listę komentarzy z możliwością filtrowania według statusu moderacji. Każda pozycja zawiera:
+    - pole wyboru,
+    - datę i godzinę dodania komentarza,
+    - adres e-mail autora będący odnośnikiem do jego konta,
+    - tytuł komentowanego wpisu,
+    - treść komentarza.
+7. Użytkownik zaznacza wybrane komentarze, a następnie wybiera opcję `"Zatwierdź"` lub `"Odrzuć"`.
+8. Autor komentarza otrzymuje powiadomienie o decyzji moderatora. W przypadku zatwierdzenia komentarz staje się publicznie widoczny.
+9. Użytkownik wybiera odnośnik do konta autora komentarza.
+10. System wyświetla okno zawierające karty:
+    - **Konto**,
+    - **Bio** – dostępną wyłącznie dla użytkowników posiadających status `"Czapkowicz"`.
+
+    Karta **Konto** zawiera:
+    - adres e-mail,
+    - datę rejestracji,
+    - historię aktywności,
+    - przycisk `"Banuj"`.
+
+    Karta **Bio** wyświetla biografię użytkownika, jeśli ją posiada.
+11. Użytkownik wybiera opcję `"Banuj"`.
+12. System wyświetla możliwość wyboru czasu trwania blokady oraz opcję `"Do odwołania"`.
+13. Użytkownik wybiera jedną z opcji i zatwierdza decyzję.
+14. Zablokowany użytkownik otrzymuje powiadomienie o nałożeniu blokady. Od tego momentu nie może komentować, 
+korzystać z czatu ani zgłaszać problemów ze stroną.
+15. Użytkownik wybiera opcję `"Rozpatrz prośby"`.
+16. System wyświetla listę próśb dotyczących zmian informacji, statusów, flag oraz innych danych. Każda pozycja zawiera:
+    - pole wyboru,
+    - datę i godzinę zgłoszenia,
+    - adres e-mail zgłaszającego będący odnośnikiem do jego konta,
+    - treść prośby.
+17. Użytkownik zaznacza wybrane prośby, a następnie wybiera opcję `"Zatwierdź"` lub `"Odrzuć"`.
+18. W zależności od rodzaju prośby system:
+    - **zmienia informacje w `Bio`** – aktualizuje wskazane dane,
+    - **zmienia status użytkownika** – nadaje nowy status,
+    - **nadaje flagę** – umożliwia wybór istniejącej flagi lub utworzenie nowej poprzez podanie jej nazwy. 
+    Po zatwierdzeniu flaga zostaje przypisana do użytkownika,
+    - **usuwa flagę** – usuwa wskazaną flagę z `Bio` użytkownika,
+    - **rozpatruje prośbę o awans na beana** – zmienia status użytkownika na `"Czapkowicz"` 
+    lub przesyła formularz uzupełnienia danych, jeśli jest on wymagany.
+19. Użytkownik wybiera opcję `"Wygeneruj kody awansu na beana"`.
+20. Użytkownik podaje liczbę kodów do wygenerowania.
+21. System wyświetla wygenerowane kody wraz z datą utworzenia oraz datą wygaśnięcia. Każdy kod jest jednorazowy i może 
+zostać wykorzystany tylko raz.
+22. Użytkownik wybiera opcję `"Wydrukuj kody"` i zatwierdza operację.
+23. System generuje plik PDF zawierający listę kodów wraz z datami wygenerowania i wygaśnięcia, przygotowany w układzie 
+ułatwiającym wycięcie pojedynczych kodów.
 24. Użytkownik wybiera opcję `"Logi zmian"`.
 25. System wyświetla listę zmian wprowadzonych przez moderatorów i administratorów. Każda pozycja zawiera:
-    - datę i czas wprowadzenia zmiany
-    - email użytkownika, który wprowadził zmianę
-    - opis zmiany
-26. Reszta akcji konta działa analogicznie jak w trybie `"Czapkowicz"`.
+    - datę i godzinę wprowadzenia zmiany,
+    - adres e-mail użytkownika, który wprowadził zmianę,
+    - opis zmiany.
+26. Pozostałe akcje konta działają analogicznie jak w trybie `"Czapkowicz"`.
+27. Użytkownik wybiera ikonę zmiany trybu wyświetlania w prawym górnym rogu strony i przełącza się do 
+trybu `"Czapkowicz"` lub, jeśli ma odpowiednie uprawnienia, do jednego z trybów Zarządu. 
+W tych trybach ponownie uzyskuje dostęp do funkcji komentowania oraz własnego `Bio`, 
+które nie są dostępne w trybie `"Moderator"`.
+
 ---
 
 ### TRYB: ADMINISTRATOR
