@@ -82,7 +82,7 @@ pomocy użytkownik może skorzystać z czatu.
 
 ---
 
-### AKCJE KONTA
+### AKCJE KONTA NA czapkuj.pl
 
 ---
 
@@ -103,7 +103,8 @@ pomocy użytkownik może skorzystać z czatu.
     - przycisk `"Poproś o awans"`.
 6. Użytkownik uzupełnia formularz i zatwierdza go.
 7. Dane z formularza zostają przesłane do `Powiadomień` na kontach moderatorskich i administratorskich.
-8. Po zaakceptowaniu prośby przez moderatora/administratora użytkownik otrzymuje powiadomienie z prośbą o uzupełnienie danych.
+8. Po zaakceptowaniu prośby przez moderatora/administratora użytkownik otrzymuje powiadomienie z prośbą o uzupełnienie 
+danych.
 9. Użytkownik otwiera formularz zawierający pola:
     - imię,
     - nazwisko,
@@ -117,21 +118,33 @@ zawierający pola:
     - miejsce,
     - nazwa wydarzenia,
     - uwagi (opcjonalnie).
-10. Dane z formularzów zostają wysłane do moderatorów/administratora
-11. Po wypełnieniu formularzy system informuje użytkownika, że moderatorzy muszą wykonać ostatni etap procesu awansu.
-12. Po zakończeniu procesu status użytkownika oraz tryb wyświetlania strony zostają zmienione na 
+10. Możliwy jest również awans bezpośrednio do statusu `"Członek"` z pominięciem statusu `"Bean"`. 
+Zakres formularza zależy od rodzaju użytego 6-cyfrowego kodu. 
+Jeżeli kod uprawnia do bezpośredniego awansu, system wyświetla dodatkowe pola:
+    - wydarzenie chrzcielne (wybór z listy),
+    - rodzice czapkowi (wybór z listy),
+    - zadanie czapkowe,
+    - dzieci czapkowe (wybór z listy),
+    - posiadane czapki (wybór z listy),
+    - członkostwo w organizacjach (wybór z listy).
+
+    Jeżeli wymagana wartość nie znajduje się na liście, użytkownik może wybrać opcję jej dodania. 
+System wyświetla wówczas odpowiedni formularz, którego treść zostaje przesłana do moderatorów w celu rozpatrzenia.
+11. Dane z formularzów zostają wysłane do moderatorów/administratora
+12. Po wypełnieniu formularzy system informuje użytkownika, że moderatorzy muszą wykonać ostatni etap procesu awansu.
+13. Po zakończeniu procesu status użytkownika oraz tryb wyświetlania strony zostają zmienione na 
 `"Czapkowicz"`.
-13. Użytkownik może zmieniać tryb wyświetlania strony za pomocą ikony trybu wyświetlania znajdującej się w prawym górnym 
+14. Użytkownik może zmieniać tryb wyświetlania strony za pomocą ikony trybu wyświetlania znajdującej się w prawym górnym 
 rogu strony.
-14. Użytkownik wybiera opcję `"Powiadomienia"`.
-15. System wyświetla listę powiadomień. Nieprzeczytane powiadomienia są oznaczone czerwoną ikoną wykrzyknika.
-16. Użytkownik wybiera jedno z powiadomień.
-17. System wyświetla pełną treść powiadomienia oraz przycisk `"Oznacz jako przeczytane"`.
-18. Użytkownik oznacza powiadomienie jako przeczytane, a następnie wybiera opcję `"Wróć"`.
-19. Użytkownik wybiera opcję `"Wyloguj"`.
-20. System wylogowuje użytkownika.
-21. Użytkownik wybiera opcję `"Zaloguj/zarejestruj"`.
-22. System umożliwia zalogowanie lub rejestrację za pomocą konta Google.
+15. Użytkownik wybiera opcję `"Powiadomienia"`.
+16. System wyświetla listę powiadomień. Nieprzeczytane powiadomienia są oznaczone czerwoną ikoną wykrzyknika.
+17. Użytkownik wybiera jedno z powiadomień.
+18. System wyświetla pełną treść powiadomienia oraz przycisk `"Oznacz jako przeczytane"`.
+19. Użytkownik oznacza powiadomienie jako przeczytane, a następnie wybiera opcję `"Wróć"`.
+20. Użytkownik wybiera opcję `"Wyloguj"`.
+21. System wylogowuje użytkownika.
+22. Użytkownik wybiera opcję `"Zaloguj/zarejestruj"`.
+23. System umożliwia zalogowanie lub rejestrację za pomocą konta Google.
 
 ---
 
@@ -169,7 +182,9 @@ rogu strony.
      - **przycisk podglądu drzewa genealogicznego** – generowanego automatycznie,
      - **przycisk `"Poproś o usunięcie flagi"`** – umożliwiający wysłanie prośby do moderatora o usunięcie wybranej flagi,
      - **przycisk `"Poproś o nadanie flagi"`** – umożliwiający wysłanie prośby o nadanie nowej flagi,
-     - **przycisk `"Poproś o zmianę statusu na Członka"`** – wysyłający prośbę o zmianę statusu,
+     - **przycisk `"Poproś o zmianę statusu na Członka"`** – wysyłający prośbę o zmianę statusu. W razie pozytywnego 
+     rozpatrzenia użytkownik dostaje w powiadomieniu formularz do wypełnienia, który po zatwierdzeniu przez 
+     moderatora zmienia status użytkownika na `"Członek"`,
      - **przycisk `"Poproś o zmianę statusu na Weterana"`** – wysyłający prośbę o zmianę statusu.
 5. Użytkownik wybiera opcję `"Dashboard"`.
 6. System wyświetla komunikat powitalny w postaci `"Witaj, <imię>!"` oraz siatkę kafelków prowadzących do modułów:
@@ -296,6 +311,44 @@ sformatowaną w formie ułatwiającej wycięcie kodów.
     - email użytkownika, który wprowadził zmianę
     - opis zmiany
 26. Reszta akcji konta działa analogicznie jak w trybie `"Czapkowicz"`.
+---
+
+### TRYB: ADMINISTRATOR
+
+1. Użytkownik wybiera ikonę konta.
+2. System wyświetla listę dostępnych akcji:
+
+    - `"Powiadomienia"`
+    - `"Dashboard"`
+    - `"Wygeneruj specjalne kody"`
+    - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
+    - `"Wyloguj"` – widoczne dla zalogowanych.
+3. Użytkownik wybiera opcję `"Wygeneruj specjalne kody"`.
+4. Użytkownik wybiera opcję `"Dodaj nową pozycję"`, a następnie określa typ generowanych kodów:
+    - `"Kod awansu na Beana"`
+    - `"Kod awansu na Członka"`
+    - `"Kod awansu na Weterana"`
+    - `"Kod awansu na Wielkiego Mistrza"`
+    - `"Kod awansu na Kasztelana"`
+    - `"Kod awansu na Skarbnika"`
+    - `"Kod awansu na Sekretarza"`
+    - `"Kod awansu na Cantandiego"`
+    - `"Kod awansu na Moderatora"`
+    - `"Kod awansu na Administratora"`
+
+   oraz liczbę kodów do wygenerowania.
+5. System wyświetla wygenerowane kody wraz z datą utworzenia oraz datą wygaśnięcia.
+Każdy kod jest jednorazowy i może zostać wykorzystany tylko raz.
+6. Użytkownik może wielokrotnie powtarzać krok 4, a następnie wybiera opcję `"Wydrukuj kody"` i zatwierdza operację.
+7. System generuje plik PDF zawierający listę kodów wraz z datami wygenerowania i wygaśnięcia, 
+przygotowany w układzie ułatwiającym wycięcie pojedynczych kodów.
+8. Pozostałe akcje konta działają analogicznie jak w trybie `"Moderator"`.
+9. Administrator ma dostęp do wszystkich trybów wyświetlania strony, w tym do wszystkich trybów Zarządu, 
+co umożliwia mu wprowadzanie zmian we wszystkich panelach `Centrum Zarządzania`. 
+Funkcje komentowania oraz korzystania z `Bio` są dostępne w trybach `"Odwiedzający"`, `"Czapkowicz"` i zarządowych. 
+
+---
+
 ---
 
 ## APLIKACJE CZŁONKOWSKIE

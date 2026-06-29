@@ -504,6 +504,24 @@ System może integrować się z następującymi usługami:
 | AKM-FR-015 | System musi umożliwiać eksport kodów do PDF.                                                                                                                        | S         |
 | AKM-FR-016 | System musi umożliwiać przegląd logów zmian systemowych.                                                                                                            | M         |
 | AKM-FR-017 | System musi rejestrować wszystkie działania moderatorów w logach zmian.                                                                                             | M         |
+### AKA - Akcje Konta Administratora
+
+| Kod        | Wymaganie funkcjonalne                                                                                                               | Priorytet |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| AKA-FR-001 | System musi umożliwiać administratorowi dostęp do menu administratora.                                                               | M         |
+| AKA-FR-002 | System musi wyświetlać akcje: Powiadomienia, Dashboard, Wygeneruj specjalne kody, Zaloguj/zarejestruj, Wyloguj.                      | M         |
+| AKA-FR-003 | System musi umożliwiać generowanie specjalnych kodów awansu.                                                                         | M         |
+| AKA-FR-004 | System musi umożliwiać wybór rodzaju generowanych kodów spośród wszystkich obsługiwanych statusów systemowych.                       | M         |
+| AKA-FR-005 | System musi umożliwiać określenie liczby generowanych kodów dla każdego typu.                                                        | M         |
+| AKA-FR-006 | System musi wyświetlać wygenerowane kody wraz z datą wygenerowania i datą wygaśnięcia.                                               | M         |
+| AKA-FR-007 | System musi zapewniać jednorazowość wygenerowanych kodów.                                                                            | M         |
+| AKA-FR-008 | System musi umożliwiać wielokrotne dodawanie kolejnych partii kodów przed wygenerowaniem dokumentu PDF.                              | S         |
+| AKA-FR-009 | System musi umożliwiać eksport wszystkich wygenerowanych kodów do pliku PDF.                                                         | M         |
+| AKA-FR-010 | System musi umożliwiać administratorowi korzystanie ze wszystkich funkcji dostępnych moderatorowi.                                   | M         |
+| AKA-FR-011 | System musi umożliwiać administratorowi przełączanie się do wszystkich trybów wyświetlania strony.                                   | M         |
+| AKA-FR-012 | System musi umożliwiać administratorowi edycję wszystkich modułów Centrum Zarządzania niezależnie od przypisanej funkcji zarządowej. | M         |
+| AKA-FR-013 | System musi udostępniać funkcje Bio oraz komentowania po przełączeniu administratora do odpowiedniego trybu użytkownika.             | M         |
+
 
 ---
 
