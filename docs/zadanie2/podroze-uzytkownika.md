@@ -353,9 +353,143 @@ Funkcje komentowania oraz korzystania z `Bio` są dostępne w trybach `"Odwiedza
 
 ---
 
+## APLIKACJE OGÓLNODOSTĘPNE
+
 ---
 
-## APLIKACJE CZŁONKOWSKIE
+### KAL – Kalendarz
+
+#### Użytkownik: CZŁONEK
+
+1. Użytkownik otwiera moduł `„Kalendarz”` z poziomu `dashboardu`.
+2. System wyświetla kalendarz zawierający wydarzenia Bractwa.
+3. Po wybraniu wydarzenia system wyświetla jego szczegóły, obejmujące nazwę, datę rozpoczęcia, datę zakończenia,
+   miejsce oraz typ wydarzenia. W przypadku wydarzeń zakończonych wyświetlana jest również lista uczestników.
+4. Użytkownik zamyka okno szczegółów wydarzenia.
+5. Użytkownik wybiera opcję `„Skopiuj kalendarz do Kalendarza Google”`.
+6. System dodaje kalendarz Bractwa do kalendarza użytkownika w usłudze Google Calendar.
+7. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
+8. System wyświetla `Dashboard`.
+
+#### Użytkownik: SEKRETARZ
+
+1. Użytkownik otwiera moduł `"Edytuj kalendarz"` z `Panelu Sekretarza`.
+2. System wyświetla kalendarz zawierający wydarzenia Bractwa.
+3. Użytkownik wybiera opcję `"Dodaj wydarzenie"`.
+4. System wyświetla formularz dodawania wydarzenia obejmujący tytuł, datę rozpoczęcia, datę zakończenia,
+   a także wybór miejsca, typu wydarzenia i uczestników.
+5. Użytkownik zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
+6. Użytkownik wybiera wydarzenie, a następnie wybiera opcję `"Edytuj wydarzenie"`.
+7. Użytkownik wprowadza, a następnie zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu`
+   w `Centrum zarządzania`.
+8. Użytkownik wybiera opcję `"Wróć do Centrum zarządzania`.
+9. System wyświetla `Centrum zarządzania`.
+
+
+---
+
+### ENC – Encyklopedia
+
+1. Użytkownik otwiera moduł `„Encyklopedia”` z poziomu `dashboardu`.
+2. System wyświetla spis pojęć pogrupowanych alfabetycznie.
+3. Użytkownik wybiera pojęcie.
+4. System wyświetla artykuł encyklopedyczny dotyczący wybranego pojęcia.
+5. Użytkownik może filtrować artykuły po kategorii.
+6. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
+7. System wyświetla `Dashboard`.
+
+---
+
+### SLL – Słowniczek łaciński
+
+1. Użytkownik otwiera moduł `"Słowniczek łaciński` z poziomu `dashboardu`.
+2. System wyświetla listę zwrotów. Każda pozycja zawiera zwrot w łacinie i tłumaczenie na polski
+3. Użytkownik może filtrować artykuły po kategorii
+4. Użytkownik wybiera opcję `"Wróć do dashboardu"`
+5. System wyświetla `Dashboard`
+
+---
+
+### PIN – Piny belgijskie
+
+#### Użytkownik: CZŁONEK
+
+1. Użytkownik wybiera moduł `„Piny belgijskie”` z `dashboardu`.
+2. System wyświetla katalog pinów z pierwszej kategorii w formie kafelków; każdy kafelek zawiera nazwę, cenę, grafikę
+   oraz kontrolkę wyboru ilości.
+3. Po najechaniu kursorem na kafelek pina wyświetlany jest jego opis.
+4. Użytkownik wybiera inną kategorię pinów z menu po lewej stronie.
+5. Wyświetlana lista pinów zostaje zaktualizowana zgodnie z wybraną kategorią.
+6. Użytkownik otwiera koszyk.
+7. System wyświetla piny dodane do koszyka w formie kafelków.
+   Kontrolka dodawania ilości zostaje zastąpiona kontrolką ustawiania ilości,
+   a przycisk dodawania do koszyka jest niedostępny. Na dole widoczna jest łączna suma kosztów zamówienia.
+8. Użytkownik wybiera opcję `"Zapisz zamówienie`.
+9. Użytkownik wybiera opcję `„Wyślij zamówienie do Skarbnika”`.
+10. System wyświetla potwierdzenie pomyślnego przesłania zamówienia.
+11. W prawym górnym rogu interfejsu widoczny jest licznik czasu pozostałego na modyfikację lub
+    ponowne przesłanie zamówienia; po jego upływie funkcja wysyłania zostaje zablokowana.
+12. Użytkownik modyfikuje ilości pinów i ponownie wybiera opcję `„Wyślij zamówienie do Skarbnika”`,
+    zastępując wcześniejszą wersję zamówienia aktualną.
+13. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
+14. System wyświetla `Dashboard`.
+
+#### Użytkownik: ODWIEDZAJĄCY
+
+1. Użytkownik wybiera otwiera podstronę `Sklep`, następnie `Zamów piny belgijskie`.
+2. Użytkownik loguje się swoim kontem Google, jeśli jeszcze nie jest zalogowany.
+3. System wyświetla katalog pinów z pierwszej kategorii w formie kafelków; każdy kafelek zawiera nazwę, cenę, grafikę
+   oraz kontrolkę wyboru ilości.
+4. Po najechaniu kursorem na kafelek pina wyświetlany jest jego opis.
+5. Użytkownik wybiera inną kategorię pinów z menu po lewej stronie.
+6. Wyświetlana lista pinów zostaje zaktualizowana zgodnie z wybraną kategorią.
+7. Użytkownik otwiera koszyk.
+8. System wyświetla piny dodane do koszyka w formie kafelków.
+   Kontrolka dodawania ilości zostaje zastąpiona kontrolką ustawiania ilości,
+   a przycisk dodawania do koszyka jest niedostępny. Na dole widoczna jest łączna suma kosztów zamówienia.
+9. Użytkownik wybiera opcję `"Zapisz zamówienie`.
+10. Użytkownik otwiera moduł `Konto` i wybiera akcję `Przeglądaj zamówienia`.
+11. Wyświetlają się wszystkie zamówienia wykonane w sklepie przez użytkownika.
+12. Użytkownik wybiera zamówienie na piny belgijskie.
+13. Wyświetla się koszyk sklepu z pinami belgijskimi.
+14. Użytkownik wybiera opcję `"Przejdź do sklepu`.
+15. Użytkownik dodaje nowe piny do koszyka.
+16. Użytkownik wybiera opcję `"Wyślij zamówienie do Skarbnika"`
+17. Skarbnik otrzymuje zamówienie na moduł `Piny belgijskie zamówienie`
+18. System wyświetla potwierdzenie pomyślnego przesłania zamówienia.
+
+#### Użytkownik: SKARBNIK
+
+1. Użytkownik wybiera opcję `"Piny belgijskie zamówienie"` z `Centrum Zarządzania`.
+2. System wyświetla termin składania zamówień oraz listę zamówień. Każda pozycja zawiera odnośnik do płatnika, liczbę
+   zamówionych pinów oraz status spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
+3. Przed uruchomieniem opcji `"Otwórz zamówienia na piny"` lista zamówień pozostaje pusta.
+    - Każde wybranie opcji `"Wyślij zamówienie do Skarbnika"` powoduje dodanie nowej pozycji lub aktualizację istniejącej
+      pozycji na liście.
+    - Otwarcie zamówień jest rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
+4. Użytkownik wybiera jedną z pozycji. System wyświetla szczegóły zamówienia, obejmujące wcześniej widoczne informacje
+   oraz katalog zamówionych przez płatnika pinów. Każda pozycja katalogu zawiera nazwę pina, grafikę, cenę jednostkową w
+   euro oraz zamówioną ilość.
+5. Użytkownik zamyka widok szczegółów zamówienia.
+6. Użytkownik wybiera opcję `"Zmień termin spłaty"`.
+7. Użytkownik wprowadza nowy termin i zatwierdza zmianę. System wysyła powiadomienie do wszystkich płatników
+   posiadających zaległości.
+8. Zamówienie jest automatycznie rejestrowane jako cel składkowy w module `Cele składkowe` w `Panelu Skarbnika`.
+    - możliwe jest wygenerowanie pliku CSV do wykorzystania przy wysyłce wiadomości zbiorczej,
+    - zamknięcie celu składkowego dotyczącego pinów belgijskich powoduje zakończenie okresu spłaty oraz wysłanie
+      powiadomienia do wszystkich zalegających płatników.
+9. Użytkownik wybiera opcję `"Edytuj katalog pinów"`.
+10. System wyświetla katalog wszystkich pinów belgijskich w formie analogicznej do modułu `"PIN - Piny belgijskie"`.
+11. Użytkownik edytuje informacje dotyczące pinów. Po zatwierdzeniu zmian są one rejestrowane na `Osi Czasu`
+    w `Centrum Zarządzania`.
+12. Użytkownik wybiera opcję `"Wróć"`.
+13. System wyświetla listę zamówień.
+14. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
+15. System wyświetla `Centrum Zarządzania`.
+
+---
+
+## APLIKACJE DASHBOARDOWE
 
 ---
 
@@ -426,7 +560,6 @@ ewentualnie tekst alternatywny.
 10. System wyświetla `Centrum Zarządzania`.
 
 ---
-
 
 ### IDG – Interaktywne drzewo genealogiczne
 
@@ -545,36 +678,8 @@ orientacji urządzenia.
 
 ---
 
-### KAL – Kalendarz
-
-#### Użytkownik: CZŁONEK
-
-1. Użytkownik otwiera moduł `„Kalendarz”` z poziomu `dashboardu`. 
-2. System wyświetla kalendarz zawierający wydarzenia Bractwa. 
-3. Po wybraniu wydarzenia system wyświetla jego szczegóły, obejmujące nazwę, datę rozpoczęcia, datę zakończenia, 
-miejsce oraz typ wydarzenia. W przypadku wydarzeń zakończonych wyświetlana jest również lista uczestników. 
-4. Użytkownik zamyka okno szczegółów wydarzenia. 
-5. Użytkownik wybiera opcję `„Skopiuj kalendarz do Kalendarza Google”`. 
-6. System dodaje kalendarz Bractwa do kalendarza użytkownika w usłudze Google Calendar. 
-7. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
-8. System wyświetla `Dashboard`.
-
-#### Użytkownik: SEKRETARZ
-
-1. Użytkownik otwiera moduł `"Edytuj kalendarz"` z `Panelu Sekretarza`.
-2. System wyświetla kalendarz zawierający wydarzenia Bractwa.
-3. Użytkownik wybiera opcję `"Dodaj wydarzenie"`.
-4. System wyświetla formularz dodawania wydarzenia obejmujący tytuł, datę rozpoczęcia, datę zakończenia,
-   a także wybór miejsca, typu wydarzenia i uczestników.
-5. Użytkownik zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` w `Centrum zarządzania`.
-6. Użytkownik wybiera wydarzenie, a następnie wybiera opcję `"Edytuj wydarzenie"`. 
-7. Użytkownik wprowadza, a następnie zatwierdza zmiany. Zmiany zostają zarejestrowane na `Osi Czasu` 
-w `Centrum zarządzania`.
-8. Użytkownik wybiera opcję `"Wróć do Centrum zarządzania`.
-9. System wyświetla `Centrum zarządzania`.
----
-
 ### KRO – Kronika
+
 1. Użytkownik otwiera moduł `„Kronika”` z poziomu `dashboardu`. 
 2. System wyświetla listę rozwijalnych sekcji, takich jak `„Osoby”`, `„Dokumenty”`, `„Miejsca”` oraz pozostałe 
 kategorie tematyczne. 
@@ -594,18 +699,6 @@ zarówno w trybie włączającym (pokazanie wybranych wartości), jak i wyklucza
 
 ---
 
-### ENC – Encyklopedia
-
-1. Użytkownik otwiera moduł `„Encyklopedia”` z poziomu `dashboardu`.
-2. System wyświetla spis pojęć pogrupowanych alfabetycznie.
-3. Użytkownik wybiera pojęcie.
-4. System wyświetla artykuł encyklopedyczny dotyczący wybranego pojęcia.
-5. Użytkownik może filtrować artykuły po kategorii.
-6. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
-7. System wyświetla `Dashboard`.
-
----
-
 ### CYT – Cytaty
 
 1. Użytkownik otwiera moduł `„Cytaty”` z poziomu `dashboardu`. 
@@ -619,95 +712,6 @@ bez opuszczania widoku szczegółów.
 8. System wyświetla cytat przypisany do danego dnia wraz z jego autorem i kontekstem. 
 9. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
 10. System wyświetla `Dashboard`.
-
----
-
-### SLL – Słowniczek łaciński
-
-1. Użytkownik otwiera moduł `"Słowniczek łaciński` z poziomu `dashboardu`.
-2. System wyświetla listę zwrotów. Każda pozycja zawiera zwrot w łacinie i tłumaczenie na polski
-3. Użytkownik może filtrować artykuły po kategorii
-4. Użytkownik wybiera opcję `"Wróć do dashboardu"`
-5. System wyświetla `Dashboard`
-
----
-
-### PIN – Piny belgijskie
-
-#### Użytkownik: CZŁONEK
-
-1. Użytkownik wybiera moduł `„Piny belgijskie”` z `dashboardu`. 
-2. System wyświetla katalog pinów z pierwszej kategorii w formie kafelków; każdy kafelek zawiera nazwę, cenę, grafikę 
-oraz kontrolkę wyboru ilości. 
-3. Po najechaniu kursorem na kafelek pina wyświetlany jest jego opis. 
-4. Użytkownik wybiera inną kategorię pinów z menu po lewej stronie. 
-5. Wyświetlana lista pinów zostaje zaktualizowana zgodnie z wybraną kategorią. 
-6. Użytkownik otwiera koszyk. 
-7. System wyświetla piny dodane do koszyka w formie kafelków. 
-Kontrolka dodawania ilości zostaje zastąpiona kontrolką ustawiania ilości, 
-a przycisk dodawania do koszyka jest niedostępny. Na dole widoczna jest łączna suma kosztów zamówienia. 
-8. Użytkownik wybiera opcję `"Zapisz zamówienie`.
-9. Użytkownik wybiera opcję `„Wyślij zamówienie do Skarbnika”`. 
-10. System wyświetla potwierdzenie pomyślnego przesłania zamówienia. 
-11. W prawym górnym rogu interfejsu widoczny jest licznik czasu pozostałego na modyfikację lub 
-ponowne przesłanie zamówienia; po jego upływie funkcja wysyłania zostaje zablokowana. 
-12. Użytkownik modyfikuje ilości pinów i ponownie wybiera opcję `„Wyślij zamówienie do Skarbnika”`, 
-zastępując wcześniejszą wersję zamówienia aktualną. 
-13. Użytkownik wybiera opcję `„Wróć do dashboardu”`. 
-14. System wyświetla `Dashboard`.
-
-#### Użytkownik: ODWIEDZAJĄCY
-
-1. Użytkownik wybiera otwiera podstronę `Sklep`, następnie `Zamów piny belgijskie`. 
-2. Użytkownik loguje się swoim kontem Google, jeśli jeszcze nie jest zalogowany.
-3. System wyświetla katalog pinów z pierwszej kategorii w formie kafelków; każdy kafelek zawiera nazwę, cenę, grafikę
-      oraz kontrolkę wyboru ilości.
-4. Po najechaniu kursorem na kafelek pina wyświetlany jest jego opis.
-5. Użytkownik wybiera inną kategorię pinów z menu po lewej stronie.
-6. Wyświetlana lista pinów zostaje zaktualizowana zgodnie z wybraną kategorią.
-7. Użytkownik otwiera koszyk.
-8. System wyświetla piny dodane do koszyka w formie kafelków.
-   Kontrolka dodawania ilości zostaje zastąpiona kontrolką ustawiania ilości,
-   a przycisk dodawania do koszyka jest niedostępny. Na dole widoczna jest łączna suma kosztów zamówienia.
-9. Użytkownik wybiera opcję `"Zapisz zamówienie`.
-10. Użytkownik otwiera moduł `Konto` i wybiera akcję `Przeglądaj zamówienia`.
-11. Wyświetlają się wszystkie zamówienia wykonane w sklepie przez użytkownika.
-12. Użytkownik wybiera zamówienie na piny belgijskie.
-13. Wyświetla się koszyk sklepu z pinami belgijskimi.
-14. Użytkownik wybiera opcję `"Przejdź do sklepu`.
-15. Użytkownik dodaje nowe piny do koszyka.
-16. Użytkownik wybiera opcję `"Wyślij zamówienie do Skarbnika"`
-17. Skarbnik otrzymuje zamówienie na moduł `Piny belgijskie zamówienie`
-18. System wyświetla potwierdzenie pomyślnego przesłania zamówienia.
-
-#### Użytkownik: SKARBNIK
-
-1. Użytkownik wybiera opcję `"Piny belgijskie zamówienie"` z `Centrum Zarządzania`.
-2. System wyświetla termin składania zamówień oraz listę zamówień. Każda pozycja zawiera odnośnik do płatnika, liczbę
-   zamówionych pinów oraz status spłaty w formacie `<zapłacono> zł / <pełna kwota> zł`.
-3. Przed uruchomieniem opcji `"Otwórz zamówienia na piny"` lista zamówień pozostaje pusta.
-   - Każde wybranie opcji `"Wyślij zamówienie do Skarbnika"` powoduje dodanie nowej pozycji lub aktualizację istniejącej
-     pozycji na liście.
-   - Otwarcie zamówień jest rejestrowane na `Osi Czasu` w `Centrum Zarządzania`.
-4. Użytkownik wybiera jedną z pozycji. System wyświetla szczegóły zamówienia, obejmujące wcześniej widoczne informacje
-   oraz katalog zamówionych przez płatnika pinów. Każda pozycja katalogu zawiera nazwę pina, grafikę, cenę jednostkową w
-   euro oraz zamówioną ilość.
-5. Użytkownik zamyka widok szczegółów zamówienia.
-6. Użytkownik wybiera opcję `"Zmień termin spłaty"`.
-7. Użytkownik wprowadza nowy termin i zatwierdza zmianę. System wysyła powiadomienie do wszystkich płatników
-   posiadających zaległości.
-8. Zamówienie jest automatycznie rejestrowane jako cel składkowy w module `Cele składkowe` w `Panelu Skarbnika`.
-   - możliwe jest wygenerowanie pliku CSV do wykorzystania przy wysyłce wiadomości zbiorczej,
-   - zamknięcie celu składkowego dotyczącego pinów belgijskich powoduje zakończenie okresu spłaty oraz wysłanie
-     powiadomienia do wszystkich zalegających płatników.
-9. Użytkownik wybiera opcję `"Edytuj katalog pinów"`.
-10. System wyświetla katalog wszystkich pinów belgijskich w formie analogicznej do modułu `"PIN - Piny belgijskie"`.
-11. Użytkownik edytuje informacje dotyczące pinów. Po zatwierdzeniu zmian są one rejestrowane na `Osi Czasu`
-    w `Centrum Zarządzania`.
-12. Użytkownik wybiera opcję `"Wróć"`.
-13. System wyświetla listę zamówień.
-14. Użytkownik wybiera opcję `"Wróć do Centrum Zarządzania"`.
-15. System wyświetla `Centrum Zarządzania`.
 
 ---
 
