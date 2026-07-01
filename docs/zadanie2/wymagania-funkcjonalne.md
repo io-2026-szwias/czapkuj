@@ -339,7 +339,7 @@
 | SPI-FR-005 | System musi prezentować tytuł piosenki, tytuł alternatywny, autorów oraz kategorie piosenki.                                            | M         |
 | SPI-FR-006 | System musi prezentować tekst piosenki wraz z akordami.                                                                                 | M         |
 | SPI-FR-007 | System musi prezentować tekst alternatywny piosenki (jeśli istnieje).                                                                   | S         |
-| SPI-FR-008 | System musi umożliwiać przejście do następnej piosenki w obrębie kategorii.                                                             | S         |
+| SPI-FR-008 | System musi umożliwiać przejście do następnej lub poprzedniej piosenki w obrębie kategorii.                                             | S         |
 | SPI-FR-009 | System musi umożliwiać zwijanie i rozwijanie list piosenek w kategorii.                                                                 | S         |
 | SPI-FR-010 | System musi umożliwiać powrót do dashboardu.                                                                                            | M         |
 | SPI-FR-011 | System musi udostępniać wyszukiwanie zaawansowane po tytule.                                                                            | S         |

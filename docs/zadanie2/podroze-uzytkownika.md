@@ -506,12 +506,14 @@ Funkcje komentowania oraz korzystania z `Bio` są dostępne w trybach `"Odwiedza
 ewentualnie tekst alternatywny.
 7. Użytkownik wybiera opcję `„Następna piosenka”`.
 8. System wyświetla kolejną piosenkę z bieżącej kategorii.
-9. Użytkownik wybiera opcję `„Wróć”`.
-10. System powraca do widoku listy kategorii.
-11. Użytkownik ponownie wybiera wcześniej wybraną kategorię.
-12. Lista piosenek w tej kategorii zostaje zwinięta.
-13. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
-14. System wyświetla `dashboard`.
+9. Użytkownik wybiera opcję `"Poprzednia piosenka"`.
+10. System wyświetla poprzednią piosenkę z bieżącej kategorii.
+11. Użytkownik wybiera opcję `„Wróć”`.
+12. System powraca do widoku listy kategorii.
+13. Użytkownik ponownie wybiera wcześniej wybraną kategorię.
+14. Lista piosenek w tej kategorii zostaje zwinięta.
+15. Użytkownik wybiera opcję `„Wróć do dashboardu”`.
+16. System wyświetla `dashboard`.
 
 #### Użytkownik: MUZYK
 
