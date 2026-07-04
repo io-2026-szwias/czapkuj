@@ -386,43 +386,43 @@
 
 ### STR - Strona czapkuj.pl
 
-| Kod        | Wymaganie funkcjonalne                                                                                        | Priorytet |
-|------------|---------------------------------------------------------------------------------------------------------------|-----------|
-| STR-FR-001 | System musi umożliwiać wyświetlenie strony głównej z opisem serwisu i trybem użytkownika.                     | M         |
-| STR-FR-002 | System musi umożliwiać przełączanie trybu widoku (np. „Odwiedzający”, „Czapkowicz”).                          | M         |
-| STR-FR-003 | System musi udostępniać menu hamburgerowe prowadzące do podstron serwisu.                                     | M         |
-| STR-FR-004 | System musi umożliwiać nawigację do modułu „Kalendarz wydarzeń” z poziomu strony głównej.                     | M         |
-| STR-FR-005 | System musi wyświetlać kalendarz wydarzeń Bractwa z widokiem bieżącego miesiąca.                              | M         |
-| STR-FR-006 | System musi umożliwiać dodanie kalendarza do Google Calendar.                                                 | S         |
-| STR-FR-007 | System musi umożliwiać dostęp do sekcji „Sklep” z trzema opcjami zamówień.                                    | M         |
-| STR-FR-008 | System musi umożliwiać składanie zamówienia na czapkę studencką wraz z formularzem zniżkowym.                 | M         |
-| STR-FR-009 | System musi przesyłać dane formularza zniżkowego do modułu Powiadomień w Centrum Zarządzania.                 | M         |
-| STR-FR-010 | System musi umożliwiać zamówienie pinów belgijskich oraz przekierowanie do dedykowanego modułu sklepu.        | M         |
-| STR-FR-011 | System musi wymagać logowania Google przed dostępem do sklepu dla odwiedzających.                             | M         |
-| STR-FR-012 | System musi umożliwiać zamówienie pinów własnego projektu wraz z przesyłaniem pliku PNG.                      | M         |
-| STR-FR-013 | System musi dynamicznie obliczać koszt zamówienia pinów własnego projektu w czasie rzeczywistym.              | M         |
-| STR-FR-014 | System musi przekierowywać użytkownika do płatności przy finalizacji zamówienia niestandardowego.             | M         |
-| STR-FR-015 | System musi wysyłać powiadomienia o zamówieniach do modułu Powiadomień w Centrum Zarządzania.                 | M         |
-| STR-FR-016 | System musi wyświetlać listę blogów z tytułem, opisem i fragmentem najnowszego wpisu.                         | M         |
-| STR-FR-017 | System musi umożliwiać czytanie wpisów blogowych oraz nawigację między wpisami.                               | M         |
-| STR-FR-018 | System musi umożliwiać dodawanie komentarzy do wpisów blogowych po zalogowaniu użytkownika.                   | M         |
-| STR-FR-019 | System musi wymagać moderacji komentarzy przed ich publikacją.                                                | M         |
-| STR-FR-020 | System musi umożliwiać dostęp do „Czapkowego słowniczka” z agregacją danych z wielu modułów.                  | M         |
-| STR-FR-021 | System musi wyświetlać sekcję „Czapkowe zwyczaje” na podstawie modułu Encyklopedia. Encyklopedia              | S         |
-| STR-FR-022 | System musi wyświetlać sekcję „Czapkowy żargon” na podstawie modułu Encyklopedia. Encyklopedia                | S         |
-| STR-FR-023 | System musi wyświetlać sekcję „Łacińskie zwroty” na podstawie modułu Słowniczek łaciński. Słowniczek łaciński | S         |
-| STR-FR-024 | System musi wyświetlać sekcję „Czapkowe cytaty” na podstawie modułu Cytaty. Cytaty                            | S         |
-| STR-FR-025 | System musi umożliwiać dostęp do czatu z moderatorem po zalogowaniu użytkownika.                              | M         |
-| STR-FR-026 | System musi przechowywać historię rozmów czatu użytkownika między sesjami.                                    | M         |
-| STR-FR-027 | System musi umożliwiać zgłaszanie problemów poprzez formularz kontaktowy.                                     | S         |
-| STR-FR-028 | System musi udostępniać sekcję social media z linkami do oficjalnych profili Bractwa.                         | S         |
-| STR-FR-029 | System musi udostępniać funkcję dobrowolnego wsparcia („Postaw nam piwo”) z danymi przelewu.                  | C         |
-| STR-FR-030 | System musi umożliwiać dostęp do powiadomień użytkownika z oznaczeniem nieprzeczytanych wiadomości.           | M         |
-| STR-FR-031 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                               | M         |
-| STR-FR-032 | System musi wymagać logowania Google do wykonania operacji zakupowych i interakcji społecznych.               | M         |
-| STR-FR-033 | System musi umożliwiać rejestrację i logowanie użytkownika przez Google OAuth.                                | M         |
-| STR-FR-034 | System musi blokować lub ograniczać funkcje użytkownika w przypadku statusu „zbanowany”.                      | M         |
-| STR-FR-035 | System musi przekierowywać użytkownika do odpowiednich modułów zgodnie z rolą i statusem konta.               | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                   | Priorytet |
+|------------|----------------------------------------------------------------------------------------------------------|-----------|
+| STR-FR-001 | System musi umożliwiać wyświetlenie strony głównej z opisem serwisu i trybem użytkownika.                | M         |
+| STR-FR-002 | System musi umożliwiać przełączanie trybu widoku (np. „Odwiedzający”, „Czapkowicz”).                     | M         |
+| STR-FR-003 | System musi udostępniać menu hamburgerowe prowadzące do podstron serwisu.                                | M         |
+| STR-FR-004 | System musi umożliwiać nawigację do modułu „Kalendarz wydarzeń” z poziomu menu.                          | M         |
+| STR-FR-005 | System musi wyświetlać kalendarz wydarzeń Bractwa z widokiem bieżącego miesiąca.                         | M         |
+| STR-FR-006 | System musi umożliwiać dodanie kalendarza do Google Calendar.                                            | S         |
+| STR-FR-007 | System musi umożliwiać dostęp do sekcji „Sklep” z trzema opcjami zamówień z poziomu menu.                | M         |
+| STR-FR-008 | System musi umożliwiać składanie zamówienia na czapkę studencką wraz z formularzem zniżkowym.            | M         |
+| STR-FR-009 | System musi przesyłać dane formularza zniżkowego do modułu Powiadomień w Centrum Zarządzania.            | M         |
+| STR-FR-010 | System musi umożliwiać zamówienie pinów belgijskich oraz przekierowanie do dedykowanego modułu sklepu.   | M         |
+| STR-FR-011 | System musi wymagać logowania Google przed dostępem do sklepu dla odwiedzających.                        | M         |
+| STR-FR-012 | System musi umożliwiać zamówienie pinów własnego projektu wraz z przesyłaniem pliku PNG.                 | M         |
+| STR-FR-013 | System musi dynamicznie obliczać koszt zamówienia pinów własnego projektu w czasie rzeczywistym.         | M         |
+| STR-FR-014 | System musi przekierowywać użytkownika do płatności przy finalizacji zamówienia pinów własnego projektu. | M         |
+| STR-FR-015 | System musi wysyłać powiadomienia o zamówieniach do modułu Powiadomień w Centrum Zarządzania.            | M         |
+| STR-FR-016 | System musi wyświetlać listę blogów z tytułem, opisem i fragmentem najnowszego wpisu.                    | M         |
+| STR-FR-017 | System musi umożliwiać czytanie wpisów blogowych oraz nawigację między wpisami.                          | M         |
+| STR-FR-018 | System musi umożliwiać dodawanie komentarzy do wpisów blogowych po zalogowaniu użytkownika.              | M         |
+| STR-FR-019 | System musi wymagać moderacji komentarzy przed ich publikacją.                                           | M         |
+| STR-FR-020 | System musi umożliwiać dostęp do „Czapkowego słowniczka” z agregacją danych z wielu modułów.             | M         |
+| STR-FR-021 | System musi wyświetlać sekcję „Czapkowe zwyczaje” na podstawie modułu Encyklopedia.                      | S         |
+| STR-FR-022 | System musi wyświetlać sekcję „Czapkowy żargon” na podstawie modułu Encyklopedia.                        | S         |
+| STR-FR-023 | System musi wyświetlać sekcję „Łacińskie zwroty” na podstawie modułu Słowniczek łaciński.                | S         |
+| STR-FR-024 | System musi wyświetlać sekcję „Czapkowe cytaty” na podstawie modułu Cytaty.                              | S         |
+| STR-FR-025 | System musi umożliwiać dostęp do czatu z moderatorem po zalogowaniu użytkownika.                         | M         |
+| STR-FR-026 | System musi przechowywać historię rozmów czatu użytkownika między sesjami.                               | M         |
+| STR-FR-027 | System musi umożliwiać zgłaszanie problemów poprzez formularz kontaktowy.                                | S         |
+| STR-FR-028 | System musi udostępniać sekcję social media z linkami do oficjalnych profili Bractwa.                    | S         |
+| STR-FR-029 | System musi udostępniać funkcję dobrowolnego wsparcia („Postaw nam piwo”) z danymi przelewu.             | C         |
+| STR-FR-030 | System musi umożliwiać dostęp do powiadomień użytkownika z oznaczeniem nieprzeczytanych wiadomości.      | M         |
+| STR-FR-031 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                          | M         |
+| STR-FR-032 | System musi wymagać logowania Google do wykonania operacji zakupowych i interakcji społecznych.          | M         |
+| STR-FR-033 | System musi umożliwiać rejestrację i logowanie użytkownika przez Google OAuth.                           | M         |
+| STR-FR-034 | System musi blokować lub ograniczać funkcje użytkownika w przypadku statusu „zbanowany”.                 | M         |
+| STR-FR-035 | System musi przekierowywać użytkownika do odpowiednich modułów zgodnie z rolą i statusem konta.          | M         |
 
 ---
 
