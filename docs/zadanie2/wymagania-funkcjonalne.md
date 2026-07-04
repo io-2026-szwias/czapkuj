@@ -459,23 +459,21 @@
 
 | Kod        | Wymaganie funkcjonalne                                                                                           | Priorytet |
 |------------|------------------------------------------------------------------------------------------------------------------|-----------|
-| AKC-FR-001 | System musi umożliwiać otwarcie menu konta użytkownika.                                                          | M         |
-| AKC-FR-002 | System musi wyświetlać akcje: Bio, Dashboard, Powiadomienia, Zaloguj/zarejestruj, Wyloguj.                       | M         |
+| AKC-FR-001 | System musi wyświetlać akcje: Bio, Dashboard, Powiadomienia, Zaloguj/zarejestruj, Wyloguj.                       | M         |
 | AKC-FR-003 | System musi umożliwiać wyświetlanie Bio użytkownika.                                                             | M         |
 | AKC-FR-004 | System musi umożliwiać edycję pól Bio zgodnie z posiadanymi uprawnieniami.                                       | M         |
-| AKC-FR-005 | System musi wymagać zatwierdzenia moderatora dla pól oznaczonych jako edytowalne za zgodą moderatora.            | M         |
+| AKC-FR-005 | System musi wymagać zatwierdzenia moderatora dla pól oznaczonych jako edytowalne za zgodą moderatora w Bio.      | M         |
 | AKC-FR-006 | System musi udostępniać dodatkowe pola Bio użytkownikom posiadającym status „Członek” lub „Weteran”.             | S         |
-| AKC-FR-007 | System musi wyświetlać listę odznak (flairs) przypisanych użytkownikowi.                                         | M         |
-| AKC-FR-008 | System musi umożliwiać wyświetlenie drzewa genealogicznego użytkownika.                                          | S         |
+| AKC-FR-007 | System musi wyświetlać listę odznak (flairs) przypisanych użytkownikowi w Bio.                                   | M         |
+| AKC-FR-008 | System musi umożliwiać wyświetlenie drzewa genealogicznego użytkownika w Bio.                                    | S         |
 | AKC-FR-009 | System musi umożliwiać wysyłanie próśb o zmianę informacji w Bio.                                                | M         |
-| AKC-FR-010 | System musi umożliwiać wysyłanie próśb o nadanie i usunięcie flag.                                               | M         |
-| AKC-FR-011 | System musi umożliwiać wysyłanie próśb o zmianę statusu użytkownika.                                             | M         |
+| AKC-FR-010 | System musi umożliwiać wysyłanie próśb o nadanie i usunięcie flag z poziomu Bio.                                 | M         |
+| AKC-FR-011 | System musi umożliwiać wysyłanie próśb o zmianę statusu użytkownika z poziomu Bio.                               | M         |
 | AKC-FR-012 | System musi przesyłać formularz uzupełniający po zaakceptowaniu prośby o zmianę statusu, jeśli jest wymagany.    | M         |
 | AKC-FR-013 | System musi automatycznie aktualizować status użytkownika po zakończeniu procesu zatwierdzania przez moderatora. | M         |
 | AKC-FR-014 | System musi umożliwiać przejście do Dashboardu.                                                                  | M         |
 | AKC-FR-015 | System musi wyświetlać Dashboard zawierający moduły dostępne dla Czapkowicza.                                    | M         |
 | AKC-FR-016 | System musi umożliwiać korzystanie z powiadomień analogicznie jak w trybie Odwiedzający.                         | M         |
-| AKC-FR-017 | System musi umożliwiać wylogowanie i ponowne logowanie użytkownika.                                              | M         |
 
 ---
 
