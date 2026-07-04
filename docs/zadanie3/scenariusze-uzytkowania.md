@@ -4,6 +4,7 @@
 
 ## Hierarchia aktorów
 
+```
 Użytkownik
 ├── Odwiedzający
 ├── Posiadacz dashboardu
@@ -16,6 +17,7 @@ Użytkownik
 │   │   └── Cantandi
 │   └── Moderator
 └── Administrator
+```
 
 ---
 
@@ -23,7 +25,7 @@ Użytkownik
 
 ---
 
-### UC-01: Przeglądanie strony głównej i nawigacja
+### UC-STR-01: Przeglądanie podstron serwisu
 
 **Aktor:**
 
@@ -42,10 +44,9 @@ Użytkownik
 
 1. Użytkownik otwiera stronę czapkuj.pl.
 2. System wyświetla stronę główną zawierającą powitanie oraz opis celu serwisu.
-3. System ustawia ikonę trybu wyświetlania na tryb „Odwiedzający”.
-4. Użytkownik wybiera ikonę menu (hamburger).
-5. System wyświetla listę dostępnych podstron.
-6. Użytkownik wybiera interesującą go podstronę.
+3. Użytkownik wybiera ikonę menu (hamburger).
+4. System wyświetla listę dostępnych podstron.
+5. Użytkownik wybiera interesującą go podstronę.
 
 **Scenariusze alternatywne:**
 
@@ -54,7 +55,138 @@ Użytkownik
 
 ---
 
-### UC-02: Przeglądanie kalendarza wydarzeń
+### UC-STR-02: Zmiana trybu wyświetlania strony
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik ma otwartą stronę czapkuj.pl lub którąś z jej podstron.
+
+**Warunki końcowe:**
+
+* Dostępne dla użytkownika funkcje zostały zmienione zgodnie z wybranym trybem wyświetlania strony.
+
+**Scenariusz główny:**
+
+1. Użytkownik wybiera ikonę trybu wyświetlania strony.
+2. Użytkownik wybiera jedną z opcji.
+3. Wygląd ikony się zmienia.
+
+---
+
+### UC-STR-03: Korzystanie z czatu
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik znajduje się na dowolnej stronie serwisu.
+
+**Warunki końcowe:**
+
+* Rozmowa została zapisana w historii czatu.
+
+**Scenariusz główny:**
+
+1. Użytkownik wybiera ikonę czatu.
+2. System sprawdza, czy użytkownik jest zalogowany.
+3. W razie potrzeby system wyświetla ekran logowania.
+4. Po zalogowaniu system otwiera okno czatu.
+5. Użytkownik prowadzi rozmowę z moderatorem lub administratorem.
+6. System zapisuje historię wiadomości.
+
+**Scenariusze alternatywne:**
+
+* A1. Użytkownik rezygnuje z logowania – czat nie zostaje uruchomiony.
+* A2. Moderator jest niedostępny – system informuje o oczekiwaniu na odpowiedź.
+
+---
+
+### UC-STR-04: Zgłoszenie problemu ze stroną
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik znajduje się na stronie serwisu.
+
+**Warunki końcowe:**
+
+* Zgłoszenie zostało zapisane.
+
+**Scenariusz główny:**
+
+1. Użytkownik wybiera ikonę „Zgłoś problem ze stroną”.
+2. System wyświetla formularz zgłoszenia.
+3. Użytkownik opisuje problem.
+4. Użytkownik wysyła formularz.
+5. System zapisuje zgłoszenie.
+
+**Scenariusze alternatywne:**
+
+* A1. Pole opisu pozostaje puste – system uniemożliwia wysłanie formularza.
+* A2. Użytkownik rezygnuje z wysłania zgłoszenia.
+
+---
+
+### UC-STR-05: Wyświetlenie odnośników do mediów społecznościowych
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik znajduje się na stronie serwisu.
+
+**Warunki końcowe:**
+
+* Wyświetlono odnośniki do oficjalnych profili Bractwa.
+
+**Scenariusz główny:**
+
+1. Użytkownik wybiera ikonę „Social media”.
+2. System wyświetla odnośniki do oficjalnych profili Bractwa.
+
+**Scenariusze alternatywne:**
+
+* Brak.
+
+---
+
+### UC-STR-06: Dobrowolne wsparcie Bractwa
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik znajduje się na stronie serwisu.
+
+**Warunki końcowe:**
+
+* Użytkownik otrzymał dane do wykonania przelewu.
+
+**Scenariusz główny:**
+
+1. Użytkownik wybiera ikonę „Postaw nam piwo”.
+2. System wyświetla dane do przelewu umożliwiającego wsparcie Bractwa.
+
+**Scenariusze alternatywne:**
+
+* A1. Użytkownik zamyka okno bez wykonania dalszych działań.
+
+---
+
+### UC-STR-07: Przeglądanie kalendarza wydarzeń
 
 **Aktor:**
 
@@ -66,15 +198,41 @@ Użytkownik
 
 **Warunki końcowe:**
 
-* Użytkownik zapoznał się z kalendarzem wydarzeń lub dodał go do Kalendarza Google.
+* Użytkownik zapoznał się z kalendarzem wydarzeń.
 
 **Scenariusz główny:**
 
 1. Użytkownik otwiera podstronę „Kalendarz wydarzeń”.
 2. System wyświetla kalendarz wydarzeń z widokiem bieżącego miesiąca.
 3. System prezentuje przeszłe i nadchodzące wydarzenia Bractwa.
-4. Użytkownik wybiera opcję dodania kalendarza do Kalendarza Google.
-5. System przekierowuje użytkownika do procesu dodawania kalendarza.
+4. Użytkownik wybiera wydarzenie.
+5. System prezentuje informacje dotyczące wydarzenia.
+
+**Scenariusze alternatywne:**
+
+* A1. W wybranym miesiącu nie ma żadnych wydarzeń – system wyświetla pusty kalendarz.
+* A2. Użytkownik rezygnuje z wyboru wydarzenia.
+
+---
+
+### UC-STR-08: Dodanie kalendarza wydarzeń do Google Calendar
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik ma otwarty kalendarz wydarzeń.
+
+**Warunki końcowe:**
+
+* Użytkownik dodał kalendarz wydarzeń do Kalendarza Google.
+
+**Scenariusz główny:**
+
+1. Użytkownik wybiera opcję dodania kalendarza do Kalendarza Google.
+2. System przekierowuje użytkownika do procesu dodawania kalendarza.
 
 **Scenariusze alternatywne:**
 
@@ -83,7 +241,7 @@ Użytkownik
 
 ---
 
-### UC-03: Zgłoszenie chęci zamówienia własnej czapki
+### UC-STR-09: Zgłoszenie chęci zamówienia własnej czapki
 
 **Aktor:**
 
@@ -114,7 +272,7 @@ Użytkownik
 
 ---
 
-### UC-04: Przejście do sklepu z pinami belgijskimi
+### UC-STR-10: Przejście do sklepu z pinami belgijskimi
 
 **Aktor:**
 
@@ -144,7 +302,7 @@ Użytkownik
 
 ---
 
-### UC-05: Zamówienie pinów własnego projektu
+### UC-STR-11: Zamówienie pinów własnego projektu
 
 **Aktor:**
 
@@ -180,7 +338,7 @@ Użytkownik
 
 ---
 
-### UC-06: Przeglądanie blogów i komentowanie wpisów
+### UC-STR-12: Przeglądanie blogów i komentowanie wpisów
 
 **Aktor:**
 
@@ -211,116 +369,7 @@ Użytkownik
 
 ---
 
-### UC-07: Korzystanie z czatu
-
-**Aktor:**
-
-* Użytkownik
-
-**Warunki początkowe:**
-
-* Użytkownik znajduje się na dowolnej stronie serwisu.
-
-**Warunki końcowe:**
-
-* Rozmowa została zapisana w historii czatu.
-
-**Scenariusz główny:**
-
-1. Użytkownik wybiera ikonę czatu.
-2. System sprawdza, czy użytkownik jest zalogowany.
-3. W razie potrzeby system wyświetla ekran logowania.
-4. Po zalogowaniu system otwiera okno czatu.
-5. Użytkownik prowadzi rozmowę z moderatorem lub administratorem.
-6. System zapisuje historię wiadomości.
-
-**Scenariusze alternatywne:**
-
-* A1. Użytkownik rezygnuje z logowania – czat nie zostaje uruchomiony.
-* A2. Moderator jest niedostępny – system informuje o oczekiwaniu na odpowiedź.
-
----
-
-### UC-08: Zgłoszenie problemu ze stroną
-
-**Aktor:**
-
-* Użytkownik
-
-**Warunki początkowe:**
-
-* Użytkownik znajduje się na stronie serwisu.
-
-**Warunki końcowe:**
-
-* Zgłoszenie zostało zapisane.
-
-**Scenariusz główny:**
-
-1. Użytkownik wybiera ikonę „Zgłoś problem ze stroną”.
-2. System wyświetla formularz zgłoszenia.
-3. Użytkownik opisuje problem.
-4. Użytkownik wysyła formularz.
-5. System zapisuje zgłoszenie.
-
-**Scenariusze alternatywne:**
-
-* A1. Pole opisu pozostaje puste – system uniemożliwia wysłanie formularza.
-* A2. Użytkownik rezygnuje z wysłania zgłoszenia.
-
----
-
-### UC-09: Wyświetlenie odnośników do mediów społecznościowych
-
-**Aktor:**
-
-* Użytkownik
-
-**Warunki początkowe:**
-
-* Użytkownik znajduje się na stronie serwisu.
-
-**Warunki końcowe:**
-
-* Wyświetlono odnośniki do oficjalnych profili Bractwa.
-
-**Scenariusz główny:**
-
-1. Użytkownik wybiera ikonę „Social media”.
-2. System wyświetla odnośniki do oficjalnych profili Bractwa.
-
-**Scenariusze alternatywne:**
-
-* Brak.
-
----
-
-### UC-10: Dobrowolne wsparcie Bractwa
-
-**Aktor:**
-
-* Użytkownik
-
-**Warunki początkowe:**
-
-* Użytkownik znajduje się na stronie serwisu.
-
-**Warunki końcowe:**
-
-* Użytkownik otrzymał dane do wykonania przelewu.
-
-**Scenariusz główny:**
-
-1. Użytkownik wybiera ikonę „Postaw nam piwo”.
-2. System wyświetla dane do przelewu umożliwiającego wsparcie Bractwa.
-
-**Scenariusze alternatywne:**
-
-* A1. Użytkownik zamyka okno bez wykonania dalszych działań.
-
----
-
-### UC-11: Przeglądanie Czapkowego słowniczka
+### UC-STR-13: Przeglądanie Czapkowego słowniczka
 
 **Aktor:**
 

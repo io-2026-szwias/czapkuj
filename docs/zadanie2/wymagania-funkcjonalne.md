@@ -475,7 +475,6 @@
 | AKC-FR-015 | System musi umożliwiać korzystanie z powiadomień analogicznie jak w trybie Odwiedzający.                         | M         |
 | AKC-FR-016 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                            | M         |
 
-
 ---
 
 ### AKZ - Akcje Kont Zarządowych
@@ -522,7 +521,6 @@
 | AKM-FR-020 | System musi ograniczać dostęp do funkcji Bio i komentowania w trybie „Moderator”, udostępniając je wyłącznie po przełączeniu do odpowiedniego trybu. | M         |
 | AKM-FR-021 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                                                | M         |
 
-
 ---
 
 ### AKA - Akcje Konta Administratora
@@ -543,6 +541,5 @@
 | AKA-FR-012 | System musi umożliwiać administratorowi edycję wszystkich modułów Centrum Zarządzania niezależnie od przypisanej funkcji zarządowej. | M         |
 | AKA-FR-013 | System musi udostępniać funkcje Bio oraz komentowania po przełączeniu administratora do odpowiedniego trybu użytkownika.             | M         |
 | AKA-FR-014 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                                | M         |
-
 
 ---
