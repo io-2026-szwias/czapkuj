@@ -450,8 +450,7 @@
 | AKO-FR-013 | System musi aktualizować status użytkownika po zakończeniu procesu awansu.                                                                                               | M         |
 | AKO-FR-014 | System musi umożliwiać przeglądanie powiadomień.                                                                                                                         | M         |
 | AKO-FR-015 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                                                                                          | S         |
-| AKO-FR-016 | System musi umożliwiać wylogowanie użytkownika i ponowne logowanie użytkownika.                                                                                          | M         |
-| AKO-FR-017 | System musi umożliwiać logowanie i rejestrację przy użyciu konta Google.                                                                                                 | M         |
+| AKO-FR-016 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                                                                    | M         |
 
 ---
 
@@ -474,24 +473,26 @@
 | AKC-FR-013 | System musi umożliwiać przejście do Dashboardu.                                                                  | M         |
 | AKC-FR-014 | System musi wyświetlać Dashboard zawierający moduły dostępne dla Czapkowicza.                                    | M         |
 | AKC-FR-015 | System musi umożliwiać korzystanie z powiadomień analogicznie jak w trybie Odwiedzający.                         | M         |
+| AKC-FR-016 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                            | M         |
+
 
 ---
 
 ### AKZ - Akcje Kont Zarządowych
 
-| Kod        | Wymaganie funkcjonalne                                                                                                | Priorytet |
-|------------|-----------------------------------------------------------------------------------------------------------------------|-----------|
-| AKZ-FR-001 | System musi umożliwiać dostęp do menu konta członka Zarządu.                                                          | M         |
-| AKZ-FR-002 | System musi wyświetlać akcje: Bio, Dashboard, Centrum Zarządzania, Powiadomienia, Logowanie/Rejestracja, Wylogowanie. | M         |
-| AKZ-FR-003 | System musi umożliwiać dostęp do Centrum Zarządzania.                                                                 | M         |
-| AKZ-FR-004 | System musi wyświetlać odpowiednie panele Zarządu zależnie od funkcji użytkownika.                                    | M         |
-| AKZ-FR-005 | System musi ograniczać możliwość edycji modułów do przypisanych ról Zarządu.                                          | M         |
-| AKZ-FR-006 | System musi umożliwiać przegląd wszystkich paneli w trybie tylko do odczytu.                                          | S         |
-| AKZ-FR-007 | System musi udostępniać Panel Wspólny (Oś Czasu).                                                                     | M         |
-| AKZ-FR-008 | System musi umożliwiać dostęp do paneli: Wielkiego Mistrza, Kasztelana, Skarbnika, Sekretarza, Cantandiego.           | M         |
-| AKZ-FR-009 | System musi umożliwiać przegląd i zapis zmian w Osi Czasu.                                                            | M         |
-| AKZ-FR-010 | System musi umożliwiać dostęp do powiadomień i Bio użytkownika.                                                       | S         |
-| AKZ-FR-011 | System musi umożliwiać wylogowanie i ponowne logowanie.                                                               | M         |
+| Kod        | Wymaganie funkcjonalne                                                                                                 | Priorytet |
+|------------|------------------------------------------------------------------------------------------------------------------------|-----------|
+| AKZ-FR-001 | System musi umożliwiać dostęp do menu konta członka Zarządu.                                                           | M         |
+| AKZ-FR-002 | System musi wyświetlać akcje: Bio, Dashboard, Centrum Zarządzania, Powiadomienia, Logowanie/Rejestracja, Wylogowanie.  | M         |
+| AKZ-FR-003 | System musi umożliwiać dostęp do Centrum Zarządzania.                                                                  | M         |
+| AKZ-FR-004 | System musi wyświetlać odpowiednie panele Zarządu zależnie od funkcji użytkownika.                                     | M         |
+| AKZ-FR-005 | System musi ograniczać możliwość edycji modułów do przypisanych ról Zarządu.                                           | M         |
+| AKZ-FR-006 | System musi umożliwiać przegląd wszystkich paneli w trybie tylko do odczytu.                                           | S         |
+| AKZ-FR-007 | System musi udostępniać Panel Wspólny (Oś Czasu).                                                                      | M         |
+| AKZ-FR-008 | System musi umożliwiać dostęp do paneli: Wielkiego Mistrza, Kasztelana, Skarbnika, Sekretarza, Cantandiego, Wspólnego. | M         |
+| AKZ-FR-009 | System musi umożliwiać przegląd i zapis zmian w Osi Czasu.                                                             | M         |
+| AKZ-FR-010 | System musi umożliwiać dostęp do powiadomień i Bio użytkownika.                                                        | S         |
+| AKZ-FR-011 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                  | M         |
 
 ---
 
@@ -519,6 +520,8 @@
 | AKM-FR-018 | System musi rejestrować działania moderatorów w logach zmian.                                                                                        | M         |
 | AKM-FR-019 | System musi umożliwiać moderatorowi zmianę trybu wyświetlania na tryb „Czapkowicz” lub dostępny tryb Zarządu zgodnie z posiadanymi uprawnieniami.    | M         |
 | AKM-FR-020 | System musi ograniczać dostęp do funkcji Bio i komentowania w trybie „Moderator”, udostępniając je wyłącznie po przełączeniu do odpowiedniego trybu. | M         |
+| AKM-FR-021 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                                                | M         |
+
 
 ---
 
@@ -539,5 +542,7 @@
 | AKA-FR-011 | System musi umożliwiać administratorowi przełączanie się do wszystkich trybów wyświetlania strony.                                   | M         |
 | AKA-FR-012 | System musi umożliwiać administratorowi edycję wszystkich modułów Centrum Zarządzania niezależnie od przypisanej funkcji zarządowej. | M         |
 | AKA-FR-013 | System musi udostępniać funkcje Bio oraz komentowania po przełączeniu administratora do odpowiedniego trybu użytkownika.             | M         |
+| AKA-FR-014 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                                | M         |
+
 
 ---
