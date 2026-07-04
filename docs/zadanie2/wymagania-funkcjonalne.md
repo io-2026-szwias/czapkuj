@@ -423,6 +423,7 @@
 | STR-FR-033 | System musi umożliwiać rejestrację i logowanie użytkownika przez Google OAuth.                           | M         |
 | STR-FR-034 | System musi blokować lub ograniczać funkcje użytkownika w przypadku statusu „zbanowany”.                 | M         |
 | STR-FR-035 | System musi przekierowywać użytkownika do odpowiednich modułów zgodnie z rolą i statusem konta.          | M         |
+| STR-FR-036 | System musi umożliwiać zmianę trybu wyświetlania zgodnie z posiadanym statusem użytkownika.              | M         |
 
 ---
 
@@ -447,11 +448,10 @@
 | AKO-FR-011 | System musi umożliwiać zgłaszanie nowych wartości dla pól wybieranych z list (np. wydarzeń, organizacji, czapek, rodziców czapkowych) do rozpatrzenia przez moderatorów. | S         |
 | AKO-FR-012 | System musi przesyłać wszystkie formularze uzupełniające do moderatorów i administratorów.                                                                               | M         |
 | AKO-FR-013 | System musi aktualizować status użytkownika po zakończeniu procesu awansu.                                                                                               | M         |
-| AKO-FR-014 | System musi umożliwiać zmianę trybu wyświetlania zgodnie z posiadanym statusem użytkownika.                                                                              | M         |
-| AKO-FR-015 | System musi umożliwiać przeglądanie powiadomień.                                                                                                                         | M         |
-| AKO-FR-016 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                                                                                          | S         |
-| AKO-FR-017 | System musi umożliwiać wylogowanie użytkownika.                                                                                                                          | M         |
-| AKO-FR-018 | System musi umożliwiać logowanie i rejestrację przy użyciu konta Google.                                                                                                 | M         |
+| AKO-FR-014 | System musi umożliwiać przeglądanie powiadomień.                                                                                                                         | M         |
+| AKO-FR-015 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                                                                                          | S         |
+| AKO-FR-016 | System musi umożliwiać wylogowanie użytkownika i ponowne logowanie użytkownika.                                                                                          | M         |
+| AKO-FR-017 | System musi umożliwiać logowanie i rejestrację przy użyciu konta Google.                                                                                                 | M         |
 
 ---
 
