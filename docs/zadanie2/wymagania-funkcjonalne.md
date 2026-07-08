@@ -322,9 +322,6 @@
 | PIN-FR-013 | System musi umożliwiać edycję katalogu pinów.                                                                   | M         |
 | PIN-FR-014 | System musi rejestrować działania na Osi Czasu.                                                                 | M         |
 | PIN-FR-015 | System musi umożliwiać dostęp do sklepu dla użytkownika odwiedzającego po uwierzytelnieniu Google.              | M         |
-| PIN-FR-016 | System musi umożliwiać przeglądanie historii zamówień w module konta użytkownika.                               | M         |
-| PIN-FR-017 | System musi umożliwiać ponowne użycie i modyfikację wcześniejszego zamówienia przez użytkownika odwiedzającego. | S         |
-| PIN-FR-018 | System musi przekazywać zamówienie użytkownika odwiedzającego do modułu Skarbnika.                              | M         |
 
 ---
 
