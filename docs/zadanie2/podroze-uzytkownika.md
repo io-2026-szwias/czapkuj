@@ -92,6 +92,7 @@ pomocy użytkownik może skorzystać z czatu.
 2. System wyświetla listę dostępnych akcji:
     - `"Poproś o awans na beana"`
     - `"Powiadomienia"`
+    - `"Historia zamówień"`
     - `"Zaloguj/zarejestruj"` – widoczne dla niezalogowanych.
     - `"Wyloguj"` – widoczne dla zalogowanych.
 3. Użytkownik wybiera opcję `"Poproś o awans na beana"`.
@@ -141,10 +142,14 @@ rogu strony.
 17. Użytkownik wybiera jedno z powiadomień.
 18. System wyświetla pełną treść powiadomienia oraz przycisk `"Oznacz jako przeczytane"`.
 19. Użytkownik oznacza powiadomienie jako przeczytane, a następnie wybiera opcję `"Wróć"`.
-20. Użytkownik wybiera opcję `"Wyloguj"`.
-21. System wylogowuje użytkownika.
-22. Użytkownik wybiera opcję `"Zaloguj/zarejestruj"`.
-23. System umożliwia zalogowanie lub rejestrację za pomocą konta Google.
+20. Użytkownik wybiera opcję `"Historia zamówień"`.
+21. Wyświetla się lista podsumowań dawnych zamówień w `Sklepie`. 
+    - Każda pozycja zawiera nazwę sekcji sklepu i datę zakupu. 
+    - Kliknięcie rozwija szczegóły zamówienia.
+22. Użytkownik wybiera opcję `"Wyloguj"`.
+23. System wylogowuje użytkownika.
+24. Użytkownik wybiera opcję `"Zaloguj/zarejestruj"`.
+25. System umożliwia zalogowanie lub rejestrację za pomocą konta Google.
 
 ---
 

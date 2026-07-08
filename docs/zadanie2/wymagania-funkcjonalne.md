@@ -451,6 +451,7 @@
 | AKO-FR-014 | System musi umożliwiać przeglądanie powiadomień.                                                                                                                         | M         |
 | AKO-FR-015 | System musi umożliwiać oznaczanie powiadomień jako przeczytane.                                                                                                          | S         |
 | AKO-FR-016 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                                                                                    | M         |
+| AKO-FR-017 | System musi umożliwiać przeglądanie historii zamówień w module konta użytkownika.                                                                                        | M         |
 
 ---
 
@@ -474,6 +475,7 @@
 | AKC-FR-014 | System musi wyświetlać Dashboard zawierający moduły dostępne dla Czapkowicza.                                    | M         |
 | AKC-FR-015 | System musi umożliwiać korzystanie z powiadomień analogicznie jak w trybie Odwiedzający.                         | M         |
 | AKC-FR-016 | System musi umożliwiać wylogowanie, logowanie i rejestrację przy użyciu konta Google.                            | M         |
+| AKC-FR-017 | System musi umożliwiać przeglądanie historii zamówień w module konta użytkownika.                                | M         |
 
 ---
 
