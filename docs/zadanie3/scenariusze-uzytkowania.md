@@ -338,7 +338,7 @@ Użytkownik
 
 ---
 
-### UC-STR-12: Przeglądanie blogów i komentowanie wpisów
+### UC-STR-12: Przeglądanie blogów
 
 **Aktor:**
 
@@ -346,11 +346,11 @@ Użytkownik
 
 **Warunki początkowe:**
 
-* Użytkownik otworzył podstronę „Blog”.
+* Użytkownik otworzył podstronę „Blogi”.
 
 **Warunki końcowe:**
 
-* Użytkownik przeczytał wpis lub dodał komentarz.
+* Użytkownik przeczytał wpis.
 
 **Scenariusz główny:**
 
@@ -359,17 +359,39 @@ Użytkownik
 3. Użytkownik wybiera blog.
 4. System wyświetla wpisy.
 5. Użytkownik czyta wpis.
-6. Użytkownik dodaje komentarz.
-7. System informuje, że komentarz oczekuje na akceptację moderatora.
+
+**Scenariusze alternatywne:**
+
+* Brak
+
+---
+
+### UC-STR-13: Komentowanie wpisów blogowych
+
+**Aktor:**
+
+* Użytkownik
+
+**Warunki początkowe:**
+
+* Użytkownik czyta wpis na blogu.
+
+**Warunki końcowe:**
+
+* Użytkownik dodał komentarz.
+
+**Scenariusz główny:**
+
+1. Użytkownik dodaje komentarz.
+2. System informuje, że komentarz oczekuje na akceptację moderatora.
 
 **Scenariusze alternatywne:**
 
 * A1. Użytkownik nie jest zalogowany – system uniemożliwia dodanie komentarza.
-* A2. Użytkownik jedynie przegląda wpisy bez dodawania komentarza.
 
 ---
 
-### UC-STR-13: Przeglądanie Czapkowego słowniczka
+### UC-STR-14: Przeglądanie Czapkowego słowniczka
 
 **Aktor:**
 
