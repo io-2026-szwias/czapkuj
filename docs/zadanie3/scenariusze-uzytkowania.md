@@ -63,7 +63,7 @@ Użytkownik
 
 **Warunki początkowe:**
 
-* Użytkownik ma otwartą stronę czapkuj.pl lub którąś z jej podstron.
+* Użytkownik znajduje się na dowolnej stronie serwisu.
 
 **Warunki końcowe:**
 
@@ -115,7 +115,7 @@ Użytkownik
 
 **Warunki początkowe:**
 
-* Użytkownik znajduje się na stronie serwisu.
+* Użytkownik znajduje się na dowolnej stronie serwisu.
 
 **Warunki końcowe:**
 
@@ -144,7 +144,7 @@ Użytkownik
 
 **Warunki początkowe:**
 
-* Użytkownik znajduje się na stronie serwisu.
+* Użytkownik znajduje się na dowolnej stronie serwisu.
 
 **Warunki końcowe:**
 
@@ -169,7 +169,7 @@ Użytkownik
 
 **Warunki początkowe:**
 
-* Użytkownik znajduje się na stronie serwisu.
+* Użytkownik znajduje się na dowolnej stronie serwisu.
 
 **Warunki końcowe:**
 
